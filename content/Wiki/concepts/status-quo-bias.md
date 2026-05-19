@@ -36,7 +36,7 @@ Status quo bias manifests in intelligence analysis as:
 - **Threat underestimation**: status quo thinking frames a stable situation as the default; adversary actions that would disrupt stability are assessed as less probable than they are
 - **Scenario narrowing**: analysts implicitly treat the current geopolitical configuration as the reference and only consider deviations from it as "scenarios," missing configurations that would require wholesale reframing
 
-[[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]'s taxonomy names the related concept as "resistance" (perceptions resist change even in the face of new evidence) and addresses it through the full SAT apparatus.
+[[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]'s taxonomy names the related concept as "resistance" (perceptions resist change even in the face of new evidence) and addresses it through the full SAT apparatus.
 
 ---
 
@@ -48,16 +48,16 @@ LLMs exhibit status quo bias in several forms:
 - **Prompt default capture**: if a user's prompt implies a default (e.g., "this is generally true"), the model will struggle to fully internalize a contrary hypothesis even when asked to
 - **Revision resistance**: LLMs often partially revise their outputs while preserving the overall structure/conclusion of the original, exhibiting the insufficient adjustment of anchoring and status quo bias together
 
-See [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
+See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
 
 ---
 
 ## SATs That Control For This Bias
 
-- **[[Wiki/concepts/what-if-analysis|What If? Analysis]]** — forcibly displaces the status quo by *assuming* a different outcome has already occurred; the current state is no longer the reference point
-- **[[Wiki/concepts/alternative-futures-analysis|Alternative Futures Analysis]]** — treats multiple futures as equally constructable, decentering the current state as the default trajectory
-- **[[Wiki/concepts/devils-advocacy|Devil's Advocacy]]** — explicitly assigns the task of arguing *against* the current analytic line; institutionalizes the challenge to status quo thinking
-- **[[Wiki/concepts/key-assumptions-check|Key Assumptions Check]]** — makes "the current situation will continue" explicit as an assumption rather than a background default
+- **[[concepts/what-if-analysis|What If? Analysis]]** — forcibly displaces the status quo by *assuming* a different outcome has already occurred; the current state is no longer the reference point
+- **[[concepts/alternative-futures-analysis|Alternative Futures Analysis]]** — treats multiple futures as equally constructable, decentering the current state as the default trajectory
+- **[[concepts/devils-advocacy|Devil's Advocacy]]** — explicitly assigns the task of arguing *against* the current analytic line; institutionalizes the challenge to status quo thinking
+- **[[concepts/key-assumptions-check|Key Assumptions Check]]** — makes "the current situation will continue" explicit as an assumption rather than a background default
 
 ---
 
@@ -66,10 +66,10 @@ See [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mit
 - Samuelson, W. & Zeckhauser, R. (1988). "Status Quo Bias in Decision Making." *Journal of Risk and Uncertainty*, 1(1), 7–59.
 - Kahneman, D. & Tversky, A. (1979). "Prospect Theory." *Econometrica*, 47(2), 263–291.
 - Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. (Chapter 26)
-- [[Wiki/entities/richards-j-heuer-jr|Richards j. heuer jr.]] — *The Psychology of Intelligence Analysis* (1999), Chapter 5: "Do You Really Need More Information?"
+- [[entities/richards-j-heuer-jr|Richards j. heuer jr.]] — *The Psychology of Intelligence Analysis* (1999), Chapter 5: "Do You Really Need More Information?"
 
 ---
 
 ## See Also
 
-[[Wiki/concepts/cognitive-bias|Cognitive Bias]] | [[Wiki/concepts/anchoring-bias|Anchoring Bias]] | [[Wiki/concepts/motivated-reasoning|Motivated Reasoning]] | [[Wiki/concepts/mind-set|Mind-Set]]
+[[concepts/cognitive-bias|Cognitive Bias]] | [[concepts/anchoring-bias|Anchoring Bias]] | [[concepts/motivated-reasoning|Motivated Reasoning]] | [[concepts/mind-set|Mind-Set]]

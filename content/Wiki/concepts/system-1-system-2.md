@@ -9,9 +9,9 @@ domain: cognitive-psychology
 
 # System 1 / System 2 (Dual-Process Theory)
 
-The theoretical framework underlying the entire [[Wiki/concepts/cognitive-bias|Cognitive Bias]] research program. Proposed by [[Wiki/entities/daniel-kahneman|Daniel Kahneman]] (drawing on earlier work by [[Wiki/entities/amos-tversky|Amos Tversky]] and Stanovich & West), and synthesized in *Thinking, Fast and Slow* (2011).
+The theoretical framework underlying the entire [[concepts/cognitive-bias|Cognitive Bias]] research program. Proposed by [[entities/daniel-kahneman|Daniel Kahneman]] (drawing on earlier work by [[entities/amos-tversky|Amos Tversky]] and Stanovich & West), and synthesized in *Thinking, Fast and Slow* (2011).
 
-**The core claim:** human cognition operates via two distinct systems with different speeds, capacities, and error profiles. [[Wiki/concepts/structured-analytic-techniques|Structured Analytic Techniques]] work because they impose System 2 structure onto processes that System 1 would otherwise handle — badly.
+**The core claim:** human cognition operates via two distinct systems with different speeds, capacities, and error profiles. [[concepts/structured-analytic-techniques|Structured Analytic Techniques]] work because they impose System 2 structure onto processes that System 1 would otherwise handle — badly.
 
 ---
 
@@ -37,11 +37,11 @@ System 1 solves hard problems by substituting easier ones — **heuristics**. Th
 
 | Heuristic | What System 1 Does | Resulting Bias |
 |-----------|-------------------|---------------|
-| Availability | Judges probability by ease of recall | [[Wiki/concepts/availability-heuristic|Availability Heuristic]] |
-| Anchoring and adjustment | Takes first number as anchor; adjusts insufficiently | [[Wiki/concepts/anchoring-bias|Anchoring Bias]] |
+| Availability | Judges probability by ease of recall | [[concepts/availability-heuristic|Availability Heuristic]] |
+| Anchoring and adjustment | Takes first number as anchor; adjusts insufficiently | [[concepts/anchoring-bias|Anchoring Bias]] |
 | Representativeness | Judges by resemblance to prototype | Base rate neglect, conjunction fallacy |
-| Affect | Uses emotional response as a proxy for probability | [[Wiki/concepts/framing-effect|Framing Effect]], [[Wiki/concepts/motivated-reasoning|Motivated Reasoning]] |
-| Coherence / narrative | Constructs the most coherent story from available data | [[Wiki/concepts/confirmation-bias|Confirmation Bias]], [[Wiki/concepts/hindsight-bias|Hindsight Bias]] |
+| Affect | Uses emotional response as a proxy for probability | [[concepts/framing-effect|Framing Effect]], [[concepts/motivated-reasoning|Motivated Reasoning]] |
+| Coherence / narrative | Constructs the most coherent story from available data | [[concepts/confirmation-bias|Confirmation Bias]], [[concepts/hindsight-bias|Hindsight Bias]] |
 
 System 1 runs first, automatically. System 2 only engages when System 1 flags uncertainty — and System 1 rarely flags its own errors. **This is the fundamental problem SATs address.**
 
@@ -86,17 +86,17 @@ LLMs do not have System 1 and System 2 in the cognitive science sense — but th
 
 A core System 1 failure is **overconfidence**: the system produces confident outputs regardless of actual reliability. System 2 can modulate confidence but only when engaged. This maps directly to LLM hallucination: high-confidence output on low-reliability token predictions.
 
-SATs that force explicit confidence rating ([[Wiki/concepts/key-assumptions-check|Key Assumptions Check]], [[Wiki/concepts/quality-of-information-check|Quality of Information Check]]) are directly targeting this System 1 → System 2 gap.
+SATs that force explicit confidence rating ([[concepts/key-assumptions-check|Key Assumptions Check]], [[concepts/quality-of-information-check|Quality of Information Check]]) are directly targeting this System 1 → System 2 gap.
 
 ---
 
 ## Key Reference
 
 **Kahneman, D.** (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux.  
-Original dual-process framework developed with [[Wiki/entities/amos-tversky|Amos Tversky]] in the 1970s–1990s (Prospect Theory, heuristics and biases program).
+Original dual-process framework developed with [[entities/amos-tversky|Amos Tversky]] in the 1970s–1990s (Prospect Theory, heuristics and biases program).
 
 ---
 
 ## See Also
 
-[[Wiki/concepts/cognitive-bias|Cognitive Bias]] | [[Wiki/concepts/mind-set|Mind-Set]] | [[Wiki/entities/daniel-kahneman|Daniel Kahneman]] | [[Wiki/concepts/structured-analytic-techniques|Structured Analytic Techniques]]
+[[concepts/cognitive-bias|Cognitive Bias]] | [[concepts/mind-set|Mind-Set]] | [[entities/daniel-kahneman|Daniel Kahneman]] | [[concepts/structured-analytic-techniques|Structured Analytic Techniques]]

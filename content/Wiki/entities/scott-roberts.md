@@ -10,13 +10,13 @@ source_count: 1
 
 [entity_type::person] [role::cybersecurity-analyst-practitioner]
 
-Cybersecurity analyst and practitioner. Blogs at [sroberts.io](https://sroberts.io). Presenter at [[Wiki/entities/sans-emerging-threats-summit|SANS Emerging Threats Summit]] 2025 where he presented "LLMs and Structured Analytic Techniques."
+Cybersecurity analyst and practitioner. Blogs at [sroberts.io](https://sroberts.io). Presenter at [[entities/sans-emerging-threats-summit|SANS Emerging Threats Summit]] 2025 where he presented "LLMs and Structured Analytic Techniques."
 
 ---
 
 ## Contributions to This Wiki
 
-- [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]] — empirical implementation of LLM-assisted SATs (Starbursting, ACH, Key Assumptions Check) with working open-source tools
+- [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]] — empirical implementation of LLM-assisted SATs (Starbursting, ACH, Key Assumptions Check) with working open-source tools
 - First source in this wiki to provide **working code** and **empirical results** rather than theoretical frameworks
 - Found key LLM implementation constraints: ACH requires multi-step sequential queries; Key Assumptions Check suffers from cross-chunk context loss
 
@@ -33,4 +33,4 @@ Cybersecurity analyst and practitioner. Blogs at [sroberts.io](https://sroberts.
 
 ## Mentioned In
 
-- [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]
+- [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]

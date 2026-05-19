@@ -18,7 +18,7 @@ The tendency to **assume that adversaries, foreign actors, or other agents think
 
 **Mirror Imaging** is the intelligence community's term for the specific manifestation: analysts project their own decision-making frameworks onto foreign actors, assuming rational calculation matches their own rationality norms, risk tolerances, and value hierarchies.
 
-Named in [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]'s causality bias taxonomy:
+Named in [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]'s causality bias taxonomy:
 > "Behavior of others is attributed to some fixed nature of the person or country, while our own behavior is attributed to the situation in which we find ourselves."
 
 ---
@@ -40,28 +40,28 @@ LLMs exhibit a specific form of mirror imaging rooted in their training:
 - **Persona collapse**: agents asked to roleplay or model adversarial actors often sanitize or rationalize the adversary's behavior through the agent's own value system
 - **Homogeneity in multi-agent systems**: multiple instances of the same model "mirror image" each other, producing echo chambers rather than genuine independent analysis
 
-See [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
+See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
 
 ---
 
 ## SATs That Control For This Bias
 
-- **[[Wiki/concepts/red-team-analysis|Red Team Analysis]]** — directly and structurally requires adopting the adversary's perspective; the entire technique exists to counter mirror imaging
-- **[[Wiki/concepts/outside-in-thinking|Outside-In Thinking]]** — expands the frame beyond the analyst's natural reference point to include external constraints and logics
-- **[[Wiki/concepts/alternative-futures-analysis|Alternative Futures Analysis]]** — generates scenarios driven by adversary logic, not analyst preferences
-- **[[Wiki/concepts/devils-advocacy|Devil's Advocacy]]** — builds the strongest possible case from a different set of premises
+- **[[concepts/red-team-analysis|Red Team Analysis]]** — directly and structurally requires adopting the adversary's perspective; the entire technique exists to counter mirror imaging
+- **[[concepts/outside-in-thinking|Outside-In Thinking]]** — expands the frame beyond the analyst's natural reference point to include external constraints and logics
+- **[[concepts/alternative-futures-analysis|Alternative Futures Analysis]]** — generates scenarios driven by adversary logic, not analyst preferences
+- **[[concepts/devils-advocacy|Devil's Advocacy]]** — builds the strongest possible case from a different set of premises
 
 ---
 
 ## Key References
 
 - Ross, L. (1977). "The intuitive psychologist and his shortcomings: Distortions in the attribution process." In L. Berkowitz (Ed.), *Advances in Experimental Social Psychology*, Vol. 10, pp. 173–220. Academic Press.
-- Heuer, R. J. Jr. (1999). *The Psychology of Intelligence Analysis*, Chapter 4: "Strategies for Analytical Judgment." [[Wiki/entities/richards-j-heuer-jr|Richards j. heuer jr.]]
+- Heuer, R. J. Jr. (1999). *The Psychology of Intelligence Analysis*, Chapter 4: "Strategies for Analytical Judgment." [[entities/richards-j-heuer-jr|Richards j. heuer jr.]]
 - Chang, W., et al. (2018). "Lessons from the Intelligence Community on Improving Forecasting." *Perspectives on Psychological Science*.
-- [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] — attribution bias in causality taxonomy
+- [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] — attribution bias in causality taxonomy
 
 ---
 
 ## See Also
 
-[[Wiki/concepts/cognitive-bias|Cognitive Bias]] | [[Wiki/concepts/groupthink|Groupthink]] | [[Wiki/concepts/motivated-reasoning|Motivated Reasoning]] | [[Wiki/concepts/red-team-analysis|Red Team Analysis]]
+[[concepts/cognitive-bias|Cognitive Bias]] | [[concepts/groupthink|Groupthink]] | [[concepts/motivated-reasoning|Motivated Reasoning]] | [[concepts/red-team-analysis|Red Team Analysis]]

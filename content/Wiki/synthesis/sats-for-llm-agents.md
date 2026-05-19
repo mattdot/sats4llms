@@ -3,15 +3,15 @@ type: synthesis
 tags: [wiki/synthesis]
 date_updated: 2026-05-19
 query: "How can Structured Analytic Techniques be adapted to control cognitive biases in LLM-based agentic systems?"
-sources_used: ["[[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]", "[[Wiki/sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]]", "[[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]"]
+sources_used: ["[[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]", "[[sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]]", "[[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]"]
 confidence: medium
 ---
 
 # SATs for LLM Agentic Systems
 
-**Query:** How can [[Wiki/concepts/structured-analytic-techniques|Structured Analytic Techniques]] be adapted to control [[Wiki/concepts/cognitive-bias|cognitive biases]] in LLM-based agentic systems?
+**Query:** How can [[concepts/structured-analytic-techniques|Structured Analytic Techniques]] be adapted to control [[concepts/cognitive-bias|cognitive biases]] in LLM-based agentic systems?
 
-*Synthesis page — interpretation and extrapolation. Factual claims about LLM behavior are drawn from the field of LLM alignment and evaluation research; SAT descriptions are drawn from [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]].*
+*Synthesis page — interpretation and extrapolation. Factual claims about LLM behavior are drawn from the field of LLM alignment and evaluation research; SAT descriptions are drawn from [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]].*
 
 ---
 
@@ -38,17 +38,17 @@ The following LLM failure modes map to the classical bias library:
 
 | LLM Failure Mode | Analogous Human Bias | Description |
 |-----------------|---------------------|-------------|
-| Sycophancy | [[Wiki/concepts/confirmation-bias\|Confirmation Bias]] + [[Wiki/concepts/groupthink\|Groupthink]] | Model agrees with user framing even against evidence; rewards from RLHF aligned to approval — see [[Wiki/concepts/sycophancy\|Sycophancy]] |
-| Hallucination with confidence | [[Wiki/concepts/overconfidence-bias\|Overconfidence Bias]] | States false facts in confident register; no calibrated uncertainty — see [[Wiki/concepts/hallucination\|Hallucination]] |
-| Prompt anchoring | [[Wiki/concepts/anchoring-bias\|Anchoring Bias]] | Initial prompt framing propagates through all downstream reasoning |
-| Context recency weighting | [[Wiki/concepts/availability-heuristic\|Availability Heuristic]] | Tokens near end of context window exert disproportionate influence |
-| Training corpus frequency bias | [[Wiki/concepts/availability-heuristic\|Availability Heuristic]] | Common training patterns feel more probable and available |
-| Premature closure | [[Wiki/concepts/anchoring-bias\|Anchoring Bias]] + [[Wiki/concepts/status-quo-bias\|Status Quo Bias]] | Settles on first plausible interpretation; subsequent reasoning confirms rather than re-evaluates |
-| Persona capture / role lock | [[Wiki/concepts/mirror-imaging\|Mirror Imaging]] | Agent deeply adopts assigned persona; sanitizes adversary reasoning through its own value system |
-| Self-consistency pressure | [[Wiki/concepts/status-quo-bias\|Status Quo Bias]] | Prior output becomes "status quo"; subsequent turns motivated to maintain consistency |
-| Chain-of-thought confirmation | [[Wiki/concepts/motivated-reasoning\|Motivated Reasoning]] | Intermediate reasoning steps progressively commit to initial interpretation |
-| Multi-agent echo chambers | [[Wiki/concepts/groupthink\|Groupthink]] | Multiple instances of same base model converge on identical errors; no genuine independent review |
-| Instruction framing capture | [[Wiki/concepts/framing-effect\|Framing Effect]] | Task framing shifts output significantly independent of underlying content |
+| Sycophancy | [[concepts/confirmation-bias\|Confirmation Bias]] + [[concepts/groupthink\|Groupthink]] | Model agrees with user framing even against evidence; rewards from RLHF aligned to approval — see [[concepts/sycophancy\|Sycophancy]] |
+| Hallucination with confidence | [[concepts/overconfidence-bias\|Overconfidence Bias]] | States false facts in confident register; no calibrated uncertainty — see [[concepts/hallucination\|Hallucination]] |
+| Prompt anchoring | [[concepts/anchoring-bias\|Anchoring Bias]] | Initial prompt framing propagates through all downstream reasoning |
+| Context recency weighting | [[concepts/availability-heuristic\|Availability Heuristic]] | Tokens near end of context window exert disproportionate influence |
+| Training corpus frequency bias | [[concepts/availability-heuristic\|Availability Heuristic]] | Common training patterns feel more probable and available |
+| Premature closure | [[concepts/anchoring-bias\|Anchoring Bias]] + [[concepts/status-quo-bias\|Status Quo Bias]] | Settles on first plausible interpretation; subsequent reasoning confirms rather than re-evaluates |
+| Persona capture / role lock | [[concepts/mirror-imaging\|Mirror Imaging]] | Agent deeply adopts assigned persona; sanitizes adversary reasoning through its own value system |
+| Self-consistency pressure | [[concepts/status-quo-bias\|Status Quo Bias]] | Prior output becomes "status quo"; subsequent turns motivated to maintain consistency |
+| Chain-of-thought confirmation | [[concepts/motivated-reasoning\|Motivated Reasoning]] | Intermediate reasoning steps progressively commit to initial interpretation |
+| Multi-agent echo chambers | [[concepts/groupthink\|Groupthink]] | Multiple instances of same base model converge on identical errors; no genuine independent review |
+| Instruction framing capture | [[concepts/framing-effect\|Framing Effect]] | Task framing shifts output significantly independent of underlying content |
 
 ---
 
@@ -57,7 +57,7 @@ The following LLM failure modes map to the classical bias library:
 ### 1. ACH as Multi-Step Sequential Prompting
 **Original:** Build matrix of hypotheses × evidence; focus on disconfirmation.
 
-**LLM Adaptation (confirmed implementation from [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]):**
+**LLM Adaptation (confirmed implementation from [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]):**
 
 ACH **requires multiple sequential LLM calls** — a single prompt fails because it causes the model to anchor on the first hypothesis generated before evaluating evidence. Roberts' working implementation:
 
@@ -79,7 +79,7 @@ Post-processing: Sum scores. Export CSV. Human reviews, adds evidence, adjusts, 
 
 **⚠ Anti-pattern:** Generating hypotheses and evaluating them in a single prompt causes prompt anchoring — the first hypothesis generated dominates evaluation. This defeats the disconfirmation structure of ACH.
 
-**Biases countered:** [[Wiki/concepts/confirmation-bias|Confirmation Bias]], [[Wiki/concepts/anchoring-bias|Anchoring Bias]], [[Wiki/concepts/availability-heuristic|Availability Heuristic]], sycophancy, [[Wiki/concepts/motivated-reasoning|Motivated Reasoning]]
+**Biases countered:** [[concepts/confirmation-bias|Confirmation Bias]], [[concepts/anchoring-bias|Anchoring Bias]], [[concepts/availability-heuristic|Availability Heuristic]], sycophancy, [[concepts/motivated-reasoning|Motivated Reasoning]]
 
 **Architecture:** Streamlit + GPT-4 + LangChain + Pydantic | Live: https://sat-ach.streamlit.app/
 
@@ -101,7 +101,7 @@ equivocate — make the opposition case as strong as possible."
 - Agent B (different temperature/system prompt) is given *only* the conclusion and tasked with maximum adversarial critique
 - Agent A reviews Agent B's critique and updates if warranted
 
-**Biases countered:** [[Wiki/concepts/confirmation-bias|Confirmation Bias]], [[Wiki/concepts/groupthink|Groupthink]], [[Wiki/concepts/motivated-reasoning|Motivated Reasoning]], sycophancy
+**Biases countered:** [[concepts/confirmation-bias|Confirmation Bias]], [[concepts/groupthink|Groupthink]], [[concepts/motivated-reasoning|Motivated Reasoning]], sycophancy
 
 **Implementation note:** Single-agent devil's advocacy works but is weaker than multi-agent because the same model's self-consistency pressure reduces genuine adversariality. Different models or significantly different system prompts produce stronger adversarial challenge.
 
@@ -120,11 +120,11 @@ equivocate — make the opposition case as strong as possible."
 4. Which assumptions, if wrong, would most change your answer?"
 ```
 
-**Biases countered:** [[Wiki/concepts/anchoring-bias|Anchoring Bias]], [[Wiki/concepts/overconfidence-bias|Overconfidence Bias]], [[Wiki/concepts/motivated-reasoning|Motivated Reasoning]], [[Wiki/concepts/status-quo-bias|Status Quo Bias]]
+**Biases countered:** [[concepts/anchoring-bias|Anchoring Bias]], [[concepts/overconfidence-bias|Overconfidence Bias]], [[concepts/motivated-reasoning|Motivated Reasoning]], [[concepts/status-quo-bias|Status Quo Bias]]
 
 **Implementation note:** This is one of the highest-leverage single prompts for improving LLM reasoning quality. It consistently surfaces unstated premises that confirm-bias would have hidden.
 
-**⚠ KAC on long documents (from [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]):** Applying KAC to a full intelligence product (PDF) requires chunking due to token limits. This causes **cross-chunk context loss** — the model identifies assumptions within each chunk but misses assumptions that are only visible by cross-referencing evidence across the full document. Mitigation options: summarize the full document first, use a sliding window with overlap, or run a final consolidation pass that looks for cross-chunk inconsistencies.
+**⚠ KAC on long documents (from [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]):** Applying KAC to a full intelligence product (PDF) requires chunking due to token limits. This causes **cross-chunk context loss** — the model identifies assumptions within each chunk but misses assumptions that are only visible by cross-referencing evidence across the full document. Mitigation options: summarize the full document first, use a sliding window with overlap, or run a final consolidation pass that looks for cross-chunk inconsistencies.
 
 ---
 
@@ -143,7 +143,7 @@ through your own values. Pursue their objectives with full strategic logic."
 - Red team agent: adopts the adversary persona and evaluates what the adversary would do in response
 - Primary agent: revises plan accounting for red team findings
 
-**Biases countered:** [[Wiki/concepts/mirror-imaging|Mirror Imaging]], [[Wiki/concepts/framing-effect|Framing Effect]]
+**Biases countered:** [[concepts/mirror-imaging|Mirror Imaging]], [[concepts/framing-effect|Framing Effect]]
 
 **Implementation note:** LLMs have strong tendency toward "sanitized" adversarial reasoning — they model adversaries as having reasonable goals and operating within implicit ethical constraints. This must be explicitly overridden in the system prompt.
 
@@ -160,7 +160,7 @@ Working backwards: what went wrong? What did we miss?
 What assumptions proved false? What indicators were ignored?"
 ```
 
-**Biases countered:** [[Wiki/concepts/overconfidence-bias|Overconfidence Bias]], [[Wiki/concepts/status-quo-bias|Status Quo Bias]], [[Wiki/concepts/hindsight-bias|Hindsight Bias]]
+**Biases countered:** [[concepts/overconfidence-bias|Overconfidence Bias]], [[concepts/status-quo-bias|Status Quo Bias]], [[concepts/hindsight-bias|Hindsight Bias]]
 
 **Implementation note:** Pre-mortem prompting reliably reduces LLM overconfidence and surfaces failure modes. The temporal framing ("it's 6 months from now") helps displace the current state as the default reference.
 
@@ -177,7 +177,7 @@ describe a distinct plausible future. Give each scenario a name.
 Do NOT indicate which you think is most likely until all scenarios are developed."
 ```
 
-**Biases countered:** [[Wiki/concepts/status-quo-bias|Status Quo Bias]], [[Wiki/concepts/availability-heuristic|Availability Heuristic]], [[Wiki/concepts/overconfidence-bias|Overconfidence Bias]]
+**Biases countered:** [[concepts/status-quo-bias|Status Quo Bias]], [[concepts/availability-heuristic|Availability Heuristic]], [[concepts/overconfidence-bias|Overconfidence Bias]]
 
 ---
 
@@ -194,7 +194,7 @@ Do NOT indicate which you think is most likely until all scenarios are developed
    on this specific topic?"
 ```
 
-**Biases countered:** [[Wiki/concepts/overconfidence-bias|Overconfidence Bias]], [[Wiki/concepts/availability-heuristic|Availability Heuristic]], [[Wiki/concepts/confirmation-bias|Confirmation Bias]]
+**Biases countered:** [[concepts/overconfidence-bias|Overconfidence Bias]], [[concepts/availability-heuristic|Availability Heuristic]], [[concepts/confirmation-bias|Confirmation Bias]]
 
 ---
 
@@ -216,19 +216,19 @@ Do NOT answer any of these questions yet. Just generate the question space."
 
 **Use case:** Pre-analysis scoping. Forces the analyst and agent to define what the analysis should cover before committing to any hypothesis.
 
-**Biases countered:** [[Wiki/concepts/availability-heuristic|Availability Heuristic]], [[Wiki/concepts/anchoring-bias|Anchoring Bias]], [[Wiki/concepts/framing-effect|Framing Effect]], [[Wiki/concepts/confirmation-bias|Confirmation Bias]]
+**Biases countered:** [[concepts/availability-heuristic|Availability Heuristic]], [[concepts/anchoring-bias|Anchoring Bias]], [[concepts/framing-effect|Framing Effect]], [[concepts/confirmation-bias|Confirmation Bias]]
 
-**Architecture:** Zero-shot single query (per [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]); output can be visualized as Mermaid mind map. Live: https://sat-starburst.streamlit.app/
+**Architecture:** Zero-shot single query (per [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]); output can be visualized as Mermaid mind map. Live: https://sat-starburst.streamlit.app/
 
 ---
 
 ## Architectural Patterns
 
 ### Independent Parallel Analysis
-Run multiple agent calls on the same task with different system prompts (or different models) before any agent sees the others' outputs. Aggregate or debate results. Directly counters [[Wiki/concepts/groupthink|Groupthink]] in multi-agent systems.
+Run multiple agent calls on the same task with different system prompts (or different models) before any agent sees the others' outputs. Aggregate or debate results. Directly counters [[concepts/groupthink|Groupthink]] in multi-agent systems.
 
 ### Separation of Generation and Evaluation
-Never ask an LLM to generate options and select among them in the same prompt. Generate first (all options, no evaluation), evaluate second (all options against criteria). Counters [[Wiki/concepts/anchoring-bias|Anchoring Bias]] and [[Wiki/concepts/availability-heuristic|Availability Heuristic]].
+Never ask an LLM to generate options and select among them in the same prompt. Generate first (all options, no evaluation), evaluate second (all options against criteria). Counters [[concepts/anchoring-bias|Anchoring Bias]] and [[concepts/availability-heuristic|Availability Heuristic]].
 
 ### Explicit Uncertainty Tracking
 Require agents to output a structured confidence assessment with every substantive claim:
@@ -240,19 +240,19 @@ Require agents to output a structured confidence assessment with every substanti
   "what_would_change_this": "..."
 }
 ```
-Counters [[Wiki/concepts/overconfidence-bias|Overconfidence Bias]].
+Counters [[concepts/overconfidence-bias|Overconfidence Bias]].
 
 ### Adversarial Review Gate
-Before any agent output is acted upon, route it through an adversarial review agent with an explicit Devil's Advocacy system prompt. The primary agent must acknowledge the critique. Counters [[Wiki/concepts/confirmation-bias|Confirmation Bias]], [[Wiki/concepts/motivated-reasoning|Motivated Reasoning]].
+Before any agent output is acted upon, route it through an adversarial review agent with an explicit Devil's Advocacy system prompt. The primary agent must acknowledge the critique. Counters [[concepts/confirmation-bias|Confirmation Bias]], [[concepts/motivated-reasoning|Motivated Reasoning]].
 
 ### Context Anchoring Reset
-For long-running agent sessions, periodically re-ground the agent with a "Key Assumptions Check" prompt to surface drifted premises. Counters [[Wiki/concepts/anchoring-bias|Anchoring Bias]] and [[Wiki/concepts/status-quo-bias|Status Quo Bias]] accumulating across turns.
+For long-running agent sessions, periodically re-ground the agent with a "Key Assumptions Check" prompt to surface drifted premises. Counters [[concepts/anchoring-bias|Anchoring Bias]] and [[concepts/status-quo-bias|Status Quo Bias]] accumulating across turns.
 
 ---
 
-## Empirical Evidence (from [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]])
+## Empirical Evidence (from [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]])
 
-[[Wiki/entities/scott-roberts|Scott Roberts]] is the first source in this wiki to provide **empirical results** from actually running LLM-SAT tools on real problems. Key findings:
+[[entities/scott-roberts|Scott Roberts]] is the first source in this wiki to provide **empirical results** from actually running LLM-SAT tools on real problems. Key findings:
 
 | Finding | SAT | Status |
 |---------|-----|--------|
@@ -282,4 +282,4 @@ This directly addresses open question #1 below: there is now at least one practi
 
 ## See Also
 
-[[Wiki/concepts/structured-analytic-techniques|Structured Analytic Techniques]] | [[Wiki/concepts/cognitive-bias|Cognitive Bias]] | [[Wiki/concepts/system-1-system-2|System 1 / System 2]] | [[Wiki/synthesis/bias-sat-matrix|Bias x SAT Matrix]] | [[Wiki/synthesis/sat-selection-guide|SAT Selection Guide]] | [[Wiki/synthesis/sat-pipeline|SAT Pipeline]]
+[[concepts/structured-analytic-techniques|Structured Analytic Techniques]] | [[concepts/cognitive-bias|Cognitive Bias]] | [[concepts/system-1-system-2|System 1 / System 2]] | [[synthesis/bias-sat-matrix|Bias x SAT Matrix]] | [[synthesis/sat-selection-guide|SAT Selection Guide]] | [[synthesis/sat-pipeline|SAT Pipeline]]

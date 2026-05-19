@@ -3,7 +3,7 @@ type: synthesis
 tags: [wiki/synthesis]
 date_updated: 2026-05-19
 query: "How do SATs work together in sequence as a complete agentic workflow?"
-sources_used: ["[[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]", "[[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]"]
+sources_used: ["[[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]", "[[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]"]
 confidence: medium
 ---
 
@@ -19,7 +19,7 @@ confidence: medium
 
 SATs were designed as a toolkit — any one technique reduces bias in a specific way, but full analytic rigor requires multiple techniques applied in sequence. The sequence matters: each technique produces output that is the input for the next.
 
-For LLM agents, this means the "SAT pipeline" is a **multi-step orchestration pattern**, not a single prompt. [[Wiki/entities/scott-roberts|Scott Roberts]]' ACH implementation demonstrated this: ACH cannot be a single prompt — it requires sequential calls where hypothesis generation, evidence generation, and scoring are separate queries. The same principle extends to full pipelines.
+For LLM agents, this means the "SAT pipeline" is a **multi-step orchestration pattern**, not a single prompt. [[entities/scott-roberts|Scott Roberts]]' ACH implementation demonstrated this: ACH cannot be a single prompt — it requires sequential calls where hypothesis generation, evidence generation, and scoring are separate queries. The same principle extends to full pipelines.
 
 ---
 
@@ -66,7 +66,7 @@ For most agentic tasks, a full 8-step pipeline is overkill. The minimal high-val
 3. Quality of Info Check   → Do our sources actually support this?
 ```
 
-This 3-step sequence covers the broadest set of biases ([[Wiki/concepts/confirmation-bias|Confirmation Bias]], [[Wiki/concepts/anchoring-bias|Anchoring Bias]], [[Wiki/concepts/motivated-reasoning|Motivated Reasoning]], [[Wiki/concepts/overconfidence-bias|Overconfidence Bias]], [[Wiki/concepts/sycophancy|Sycophancy]], [[Wiki/concepts/hallucination|Hallucination]]) with minimal orchestration complexity.
+This 3-step sequence covers the broadest set of biases ([[concepts/confirmation-bias|Confirmation Bias]], [[concepts/anchoring-bias|Anchoring Bias]], [[concepts/motivated-reasoning|Motivated Reasoning]], [[concepts/overconfidence-bias|Overconfidence Bias]], [[concepts/sycophancy|Sycophancy]], [[concepts/hallucination|Hallucination]]) with minimal orchestration complexity.
 
 ---
 
@@ -122,7 +122,7 @@ Implementation:
 3. Run Adversarial Agent — receives A's and B's conclusions; tasked with maximum critique
 4. Synthesis Agent — receives all three; produces final judgment with explicit disagreement flags
 
-**Pro:** Counters [[Wiki/concepts/groupthink|Groupthink]] and self-consistency anchoring.  
+**Pro:** Counters [[concepts/groupthink|Groupthink]] and self-consistency anchoring.  
 **Con:** 3–4× compute cost; requires orchestration layer (LangChain, LangGraph, CrewAI, etc.).
 
 **Key requirement:** Agents A and B must have **no shared context** for their analyses. If they see each other's outputs before generating, Pattern B degrades to Pattern A.
@@ -146,7 +146,7 @@ Call 3 [Quality Check]: "What sources support the claims in this
   analysis? What claims are unsupported? What's missing?"
 ```
 
-This matches [[Wiki/entities/scott-roberts|Roberts]]' Key Assumptions Check implementation (applied to a finished Strider intelligence report). It's the lowest-friction pipeline entry point — requires no upfront process change, just retrospective review.
+This matches [[entities/scott-roberts|Roberts]]' Key Assumptions Check implementation (applied to a finished Strider intelligence report). It's the lowest-friction pipeline entry point — requires no upfront process change, just retrospective review.
 
 ---
 
@@ -158,11 +158,11 @@ This matches [[Wiki/entities/scott-roberts|Roberts]]' Key Assumptions Check impl
 | **Anchoring on Stage 1** | Early Starbursting/Brainstorming output shapes all downstream reasoning | Regenerate hypotheses independently before ACH; don't show Stage 1 output to ACH agent |
 | **False confidence from process** | "We ran the SAT pipeline, therefore the conclusion is sound" | The pipeline reduces bias — it doesn't eliminate it; human review of the adversarial critique is non-negotiable |
 | **Sycophantic devil's advocacy** | The adversarial agent produces mild critique rather than genuine challenge | Explicit system prompt: "Your critique should be as strong as possible. Do not hedge." Different model or temperature from primary agent |
-| **Cross-chunk context loss** | Long documents chunked for KAC lose cross-document context | Summarize full document before chunking; run a final consolidation pass (see [[Wiki/sources/roberts-llm-sats-ftw-2025\|Roberts: LLM SATs FTW (2025)]]) |
+| **Cross-chunk context loss** | Long documents chunked for KAC lose cross-document context | Summarize full document before chunking; run a final consolidation pass (see [[sources/roberts-llm-sats-ftw-2025\|Roberts: LLM SATs FTW (2025)]]) |
 
 ---
 
-## Mapping Pipelines to [[Wiki/concepts/system-1-system-2|System 1 / System 2]]
+## Mapping Pipelines to [[concepts/system-1-system-2|System 1 / System 2]]
 
 The pipeline is a System 2 scaffold:
 
@@ -175,4 +175,4 @@ Just as humans default to System 1 unless explicitly required to engage System 2
 
 ## See Also
 
-[[Wiki/synthesis/sat-selection-guide|SAT Selection Guide]] | [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] | [[Wiki/synthesis/bias-sat-matrix|Bias x SAT Matrix]]
+[[synthesis/sat-selection-guide|SAT Selection Guide]] | [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] | [[synthesis/bias-sat-matrix|Bias x SAT Matrix]]

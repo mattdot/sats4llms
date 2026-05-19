@@ -16,18 +16,18 @@ The CIA's internal research and publication arm. Produces intelligence scholarsh
 
 ## Relevance
 
-Publisher of [[Wiki/entities/richards-j-heuer-jr|Richards j. heuer jr.]]'s *The Psychology of Intelligence Analysis* (1999), the foundational text for [[Wiki/concepts/structured-analytic-techniques|Structured analytic techniques]].
+Publisher of [[entities/richards-j-heuer-jr|Richards j. heuer jr.]]'s *The Psychology of Intelligence Analysis* (1999), the foundational text for [[concepts/structured-analytic-techniques|Structured analytic techniques]].
 
-Produced the [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] (March 2009).
+Produced the [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] (March 2009).
 
 ---
 
 ## Sub-unit
 
-**[[Wiki/entities/Sherman Kent Center|Sherman kent center]]** — produces analytic methodology publications including the Occasional Papers series on cognitive bias.
+**[[entities/Sherman Kent Center|Sherman kent center]]** — produces analytic methodology publications including the Occasional Papers series on cognitive bias.
 
 ---
 
 ## Mentioned In
 
-- [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]
+- [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]

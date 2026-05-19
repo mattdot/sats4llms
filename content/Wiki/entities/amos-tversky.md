@@ -10,7 +10,7 @@ source_count: 0
 
 [entity_type::person] [role::cognitive-psychologist]
 
-Israeli-American cognitive psychologist. With [[Wiki/entities/daniel-kahneman|Daniel Kahneman]], co-founded the **heuristics and biases** research program and developed **Prospect Theory**. Died 1996; the Nobel Prize in Economics was awarded to Kahneman alone in 2002 (Nobels are not awarded posthumously).
+Israeli-American cognitive psychologist. With [[entities/daniel-kahneman|Daniel Kahneman]], co-founded the **heuristics and biases** research program and developed **Prospect Theory**. Died 1996; the Nobel Prize in Economics was awarded to Kahneman alone in 2002 (Nobels are not awarded posthumously).
 
 Tversky is widely regarded as one of the most important figures in behavioral economics and judgment research. Kahneman has said that Tversky was the more brilliant of the two.
 
@@ -36,6 +36,6 @@ Tversky is widely regarded as one of the most important figures in behavioral ec
 
 ## Mentioned In
 
-- [[Wiki/concepts/system-1-system-2]]
-- [[Wiki/concepts/cognitive-bias]]
-- [[Wiki/entities/daniel-kahneman]]
+- [[concepts/system-1-system-2]]
+- [[concepts/cognitive-bias]]
+- [[entities/daniel-kahneman]]

@@ -32,7 +32,7 @@ Motivated reasoning operates at multiple levels:
 
 ## Intelligence Analysis Context
 
-The [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] describes motivated reasoning mechanistically under "mind-set" and through the historical case studies — analysts didn't consider alternative hypotheses not because they lacked data but because they were motivated (institutionally, professionally, cognitively) to confirm existing assessments. The Tradecraft Primer does not use the term "motivated reasoning" explicitly but the entire apparatus of structured analytic techniques is designed to counter it.
+The [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] describes motivated reasoning mechanistically under "mind-set" and through the historical case studies — analysts didn't consider alternative hypotheses not because they lacked data but because they were motivated (institutionally, professionally, cognitively) to confirm existing assessments. The Tradecraft Primer does not use the term "motivated reasoning" explicitly but the entire apparatus of structured analytic techniques is designed to counter it.
 
 Common intelligence analysis triggers for motivated reasoning:
 - **Institutional commitment** — once an assessment has been officially published, analysts are motivated to confirm rather than revise it
@@ -49,16 +49,16 @@ LLMs exhibit a particularly insidious form of motivated reasoning:
 - **Instruction capture**: when given a task framed as "prove X" or "show how Y works," LLMs will marshal evidence toward that conclusion even when the honest answer is "X may be false" or "Y may not work"
 - **Persona motivation**: when assigned a role or persona, models become motivated to reason in ways consistent with that persona's expected conclusions
 
-See [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
+See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
 
 ---
 
 ## SATs That Control For This Bias
 
-- **[[Wiki/concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]]** — the disconfirmation focus is a direct structural counter to motivated reasoning; you cannot confirm your preferred hypothesis, you can only fail to disconfirm it
-- **[[Wiki/concepts/devils-advocacy|Devil's Advocacy]]** — assigns the motivation explicitly (build the strongest counter-case) rather than leaving the analyst free to reason toward their own preferred conclusion
-- **[[Wiki/concepts/key-assumptions-check|Key Assumptions Check]]** — surfaces the premises that motivated reasoning hides; making them explicit breaks the unconscious assumption-protection mechanism
-- **[[Wiki/concepts/team-a-team-b|Team A/Team B]]** — separates the motivational environment of two teams, so at least one team has a different motivational direction
+- **[[concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]]** — the disconfirmation focus is a direct structural counter to motivated reasoning; you cannot confirm your preferred hypothesis, you can only fail to disconfirm it
+- **[[concepts/devils-advocacy|Devil's Advocacy]]** — assigns the motivation explicitly (build the strongest counter-case) rather than leaving the analyst free to reason toward their own preferred conclusion
+- **[[concepts/key-assumptions-check|Key Assumptions Check]]** — surfaces the premises that motivated reasoning hides; making them explicit breaks the unconscious assumption-protection mechanism
+- **[[concepts/team-a-team-b|Team A/Team B]]** — separates the motivational environment of two teams, so at least one team has a different motivational direction
 
 ---
 
@@ -73,4 +73,4 @@ See [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mit
 
 ## See Also
 
-[[Wiki/concepts/cognitive-bias|Cognitive Bias]] | [[Wiki/concepts/confirmation-bias|Confirmation Bias]] | [[Wiki/concepts/groupthink|Groupthink]] | [[Wiki/concepts/mind-set|Mind-Set]]
+[[concepts/cognitive-bias|Cognitive Bias]] | [[concepts/confirmation-bias|Confirmation Bias]] | [[concepts/groupthink|Groupthink]] | [[concepts/mind-set|Mind-Set]]

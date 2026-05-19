@@ -10,7 +10,7 @@ source_count: 1
 
 [entity_type::person] [role::intelligence-analyst-educator]
 
-Co-author (with [[Wiki/entities/richards-j-heuer-jr|Richards j. heuer jr.]]) of *Structured Analytic Techniques for Intelligence Analysis* (multiple editions), published by SAGE/College Publishing. The primary book-length reference for the full SAT toolkit — broader in scope than the [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]], which covers only 12 techniques.
+Co-author (with [[entities/richards-j-heuer-jr|Richards j. heuer jr.]]) of *Structured Analytic Techniques for Intelligence Analysis* (multiple editions), published by SAGE/College Publishing. The primary book-length reference for the full SAT toolkit — broader in scope than the [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]], which covers only 12 techniques.
 
 ---
 
@@ -18,10 +18,10 @@ Co-author (with [[Wiki/entities/richards-j-heuer-jr|Richards j. heuer jr.]]) of 
 
 **Heuer, R.J. Jr. & Pherson, R.H.** *Structured Analytic Techniques for Intelligence Analysis* (3rd ed.). SAGE/College Publishing.
 
-Includes techniques not in the CIA Tradecraft Primer, such as [[Wiki/concepts/starbursting|Starbursting]].
+Includes techniques not in the CIA Tradecraft Primer, such as [[concepts/starbursting|Starbursting]].
 
 ---
 
 ## Mentioned In
 
-- [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]] (cited as methodology source)
+- [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]] (cited as methodology source)

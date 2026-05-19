@@ -10,16 +10,16 @@ topics: [structured-analytic-techniques, llm-agents, implementation, cybersecuri
 
 # LLM SATs FTW — Scott Roberts
 
-**Author:** [[Wiki/entities/scott-roberts|Scott Roberts]]  
+**Author:** [[entities/scott-roberts|Scott Roberts]]  
 **Platform:** sroberts.io (personal blog)  
 **URL:** https://sroberts.io/posts/llm-sats-ftw/  
-**Occasion:** Companion post to a talk at [[Wiki/entities/sans-emerging-threats-summit|SANS Emerging Threats Summit]] 2025
+**Occasion:** Companion post to a talk at [[entities/sans-emerging-threats-summit|SANS Emerging Threats Summit]] 2025
 
 ---
 
 ## Summary
 
-A practitioner post by a working cybersecurity analyst who *built and deployed* LLM-assisted tools for three SATs: [[Wiki/concepts/starbursting|Starbursting]], [[Wiki/concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]], and [[Wiki/concepts/key-assumptions-check|Key Assumptions Check]]. The post is notable for being **empirical** — Roberts actually ran the tools on real problems and reports what worked and what didn't, rather than speculating.
+A practitioner post by a working cybersecurity analyst who *built and deployed* LLM-assisted tools for three SATs: [[concepts/starbursting|Starbursting]], [[concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]], and [[concepts/key-assumptions-check|Key Assumptions Check]]. The post is notable for being **empirical** — Roberts actually ran the tools on real problems and reports what worked and what didn't, rather than speculating.
 
 Core stance: LLMs are a useful **human-machine team** tool for SATs, not a replacement for analysts. Most valuable for small teams or individual analysts who lack the human capacity to run SATs rigorously.
 
@@ -30,10 +30,10 @@ Core stance: LLMs are a useful **human-machine team** tool for SATs, not a repla
 
 ## Reference Book
 
-Roberts uses [[Wiki/entities/heuer-pherson-book|Heuer & Pherson (book)]] as his SAT methodology source:  
-**Heuer, R.J. Jr. & [[Wiki/entities/randolph-h-pherson|Randolph H. Pherson]].** *Structured Analytic Techniques for Intelligence Analysis* (3rd ed.). SAGE/College Publishing.  
+Roberts uses [[entities/heuer-pherson-book|Heuer & Pherson (book)]] as his SAT methodology source:  
+**Heuer, R.J. Jr. & [[entities/randolph-h-pherson|Randolph H. Pherson]].** *Structured Analytic Techniques for Intelligence Analysis* (3rd ed.). SAGE/College Publishing.  
 
-This is a richer and more comprehensive source than the [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]], which covers only 12 techniques. The Heuer/Pherson book includes additional techniques such as [[Wiki/concepts/starbursting|Starbursting]].
+This is a richer and more comprehensive source than the [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]], which covers only 12 techniques. The Heuer/Pherson book includes additional techniques such as [[concepts/starbursting|Starbursting]].
 
 ---
 
@@ -61,7 +61,7 @@ Process: Submit topic → LLM generates open-ended exploratory questions organiz
 Live app: https://sat-starburst.streamlit.app/  
 Code: https://github.com/sroberts/talk-llm-sats-ftw-code/blob/main/experiment-1-starburst.py
 
-See [[Wiki/concepts/starbursting|Starbursting]] for technique detail.
+See [[concepts/starbursting|Starbursting]] for technique detail.
 
 ---
 
@@ -124,7 +124,7 @@ Code: https://github.com/sroberts/talk-llm-sats-ftw-code/blob/main/experiment-3-
 
 ## Contradictions and Tensions vs. Existing Wiki
 
-**vs. [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]]:**
+**vs. [[synthesis/sats-for-llm-agents|SATs for LLM Agents]]:**
 
 Our synthesis page proposed ACH as a single multi-hypothesis prompt. Roberts' implementation shows that **effective ACH requires multiple sequential LLM calls** — hypothesis generation, then evidence generation per hypothesis, then scoring per hypothesis — not a single prompt. This is a substantive refinement: our synthesis understated the orchestration complexity required.
 
@@ -136,14 +136,14 @@ Our synthesis page proposed ACH as a single multi-hypothesis prompt. Roberts' im
 
 ## New Entities and Concepts
 
-- [[Wiki/entities/scott-roberts|Scott Roberts]] — author; cybersecurity analyst, SANS presenter
-- [[Wiki/entities/randolph-h-pherson|Randolph H. Pherson]] — co-author of the primary SAT textbook with Heuer
-- [[Wiki/entities/sans-emerging-threats-summit|SANS Emerging Threats Summit]] — venue for the talk
-- [[Wiki/concepts/starbursting|Starbursting]] — new SAT not in wiki; introduced here
+- [[entities/scott-roberts|Scott Roberts]] — author; cybersecurity analyst, SANS presenter
+- [[entities/randolph-h-pherson|Randolph H. Pherson]] — co-author of the primary SAT textbook with Heuer
+- [[entities/sans-emerging-threats-summit|SANS Emerging Threats Summit]] — venue for the talk
+- [[concepts/starbursting|Starbursting]] — new SAT not in wiki; introduced here
 
 ---
 
 ## Cross-References
 
-[[Wiki/concepts/structured-analytic-techniques|Structured Analytic Techniques]] | [[Wiki/concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]] | [[Wiki/concepts/key-assumptions-check|Key Assumptions Check]] | [[Wiki/concepts/starbursting|Starbursting]]  
-[[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] | [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]
+[[concepts/structured-analytic-techniques|Structured Analytic Techniques]] | [[concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]] | [[concepts/key-assumptions-check|Key Assumptions Check]] | [[concepts/starbursting|Starbursting]]  
+[[synthesis/sats-for-llm-agents|SATs for LLM Agents]] | [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]

@@ -9,7 +9,7 @@ sat_category: diagnostic
 
 # Quality of Information Check
 
-A [[Wiki/concepts/structured-analytic-techniques|SAT]] that evaluates the completeness and soundness of information sources used in analysis.
+A [[concepts/structured-analytic-techniques|SAT]] that evaluates the completeness and soundness of information sources used in analysis.
 
 ---
 
@@ -45,10 +45,10 @@ Build a database of information sources by type and date. Then:
 
 | Bias | How this technique counters it |
 |------|-------------------------------|
-| [[Wiki/concepts/overconfidence-bias\|Overconfidence Bias]] | Detects sources that do not warrant the confidence level being claimed |
-| [[Wiki/concepts/confirmation-bias\|Confirmation Bias]] | Systematic review of *all* sources, not just the memorable or confirming ones |
-| [[Wiki/concepts/availability-heuristic\|Availability Heuristic]] | Distinguishes between "what we know" and "what we remember" by reviewing the full source record |
-| [[Wiki/concepts/anchoring-bias\|Anchoring Bias]] | Prevents analysis from remaining anchored to a source that has been compromised or superseded |
+| [[concepts/overconfidence-bias\|Overconfidence Bias]] | Detects sources that do not warrant the confidence level being claimed |
+| [[concepts/confirmation-bias\|Confirmation Bias]] | Systematic review of *all* sources, not just the memorable or confirming ones |
+| [[concepts/availability-heuristic\|Availability Heuristic]] | Distinguishes between "what we know" and "what we remember" by reviewing the full source record |
+| [[concepts/anchoring-bias\|Anchoring Bias]] | Prevents analysis from remaining anchored to a source that has been compromised or superseded |
 
 ---
 
@@ -62,11 +62,11 @@ Commission on Intelligence Capabilities: *"The Intelligence Community relied too
 
 ## Applied in Cybersecurity
 
-- **Risk Analysts**: ensures risk analysis is based on reliable, verifiable data ([[Wiki/sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]])
+- **Risk Analysts**: ensures risk analysis is based on reliable, verifiable data ([[sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]])
 
 ---
 
 ## Sources
 
-- [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] (pp. 10–11)
-- [[Wiki/sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]]
+- [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] (pp. 10–11)
+- [[sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]]

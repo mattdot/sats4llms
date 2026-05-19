@@ -18,7 +18,7 @@ American social psychologist at Yale and UC Berkeley. Coined the term **groupthi
 
 Janis analyzed several U.S. foreign policy disasters — the Bay of Pigs invasion, Pearl Harbor intelligence failure, Korean War escalation, and Vietnam War escalation — and identified a common pattern: highly cohesive, expert groups producing decisions that any individual member would have rejected privately. He named this pattern **groupthink**, by analogy with Orwell's "doublethink."
 
-See [[Wiki/concepts/groupthink|Groupthink]] for the full concept page.
+See [[concepts/groupthink|Groupthink]] for the full concept page.
 
 **Eight symptoms Janis identified:**
 1. Illusion of invulnerability
@@ -42,10 +42,10 @@ See [[Wiki/concepts/groupthink|Groupthink]] for the full concept page.
 
 ## Relevance to This Wiki
 
-Janis's groupthink research is the empirical foundation for the [[Wiki/concepts/groupthink|Groupthink]] concept page and directly motivates [[Wiki/concepts/team-a-team-b|Team A/Team B]] and [[Wiki/concepts/devils-advocacy|Devil's Advocacy]] as SAT countermeasures. His case studies (Bay of Pigs, Pearl Harbor) are canonical examples of intelligent people making catastrophically bad decisions due to social cohesion dynamics — directly analogous to multi-agent LLM echo chambers.
+Janis's groupthink research is the empirical foundation for the [[concepts/groupthink|Groupthink]] concept page and directly motivates [[concepts/team-a-team-b|Team A/Team B]] and [[concepts/devils-advocacy|Devil's Advocacy]] as SAT countermeasures. His case studies (Bay of Pigs, Pearl Harbor) are canonical examples of intelligent people making catastrophically bad decisions due to social cohesion dynamics — directly analogous to multi-agent LLM echo chambers.
 
 ---
 
 ## Mentioned In
 
-- [[Wiki/concepts/groupthink]]
+- [[concepts/groupthink]]

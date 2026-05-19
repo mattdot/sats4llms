@@ -42,7 +42,7 @@ Framing is particularly pernicious in intelligence analysis because:
 - **Historical analogy framing**: "is this like Munich?" vs. "is this like WWI?" activates different mental models for the same situation
 - **Threat framing vs. opportunity framing**: the same foreign behavior read as aggressive or defensive depending on the analytic frame
 
-The [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] addresses framing implicitly through its emphasis on mind-sets (frames) and the explicit alternative-generation techniques.
+The [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] addresses framing implicitly through its emphasis on mind-sets (frames) and the explicit alternative-generation techniques.
 
 ---
 
@@ -54,16 +54,16 @@ LLMs are extraordinarily susceptible to framing effects:
 - **Valence framing**: asking "what's wrong with X?" vs. "what's right with X?" produces strongly asymmetric responses even when balanced analysis would give the same facts
 - **Reference point sensitivity**: LLMs evaluate "good" and "bad" relative to implicit reference points established in the prompt
 
-See [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
+See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
 
 ---
 
 ## SATs That Control For This Bias
 
-- **[[Wiki/concepts/outside-in-thinking|Outside-In Thinking]]** — deliberately reframes the problem from the outside environment inward, changing the reference point
-- **[[Wiki/concepts/brainstorming|Brainstorming]]** — generating alternatives before settling on a frame prevents premature frame lock-in
-- **[[Wiki/concepts/alternative-futures-analysis|Alternative Futures Analysis]]** — builds multiple scenarios from different starting frames, making the frame-dependency of any single scenario visible
-- **[[Wiki/concepts/key-assumptions-check|Key Assumptions Check]]** — the current analytic "frame" is a hidden assumption; making it explicit allows it to be challenged
+- **[[concepts/outside-in-thinking|Outside-In Thinking]]** — deliberately reframes the problem from the outside environment inward, changing the reference point
+- **[[concepts/brainstorming|Brainstorming]]** — generating alternatives before settling on a frame prevents premature frame lock-in
+- **[[concepts/alternative-futures-analysis|Alternative Futures Analysis]]** — builds multiple scenarios from different starting frames, making the frame-dependency of any single scenario visible
+- **[[concepts/key-assumptions-check|Key Assumptions Check]]** — the current analytic "frame" is a hidden assumption; making it explicit allows it to be challenged
 
 ---
 
@@ -77,4 +77,4 @@ See [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mit
 
 ## See Also
 
-[[Wiki/concepts/cognitive-bias|Cognitive Bias]] | [[Wiki/concepts/anchoring-bias|Anchoring Bias]] | [[Wiki/concepts/mirror-imaging|Mirror Imaging]] | [[Wiki/concepts/mind-set|Mind-Set]]
+[[concepts/cognitive-bias|Cognitive Bias]] | [[concepts/anchoring-bias|Anchoring Bias]] | [[concepts/mirror-imaging|Mirror Imaging]] | [[concepts/mind-set|Mind-Set]]

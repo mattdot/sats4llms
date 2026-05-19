@@ -9,7 +9,7 @@ sat_category: diagnostic
 
 # Analysis of Competing Hypotheses (ACH)
 
-A [[Wiki/concepts/structured-analytic-techniques|SAT]] that identifies all alternative explanations (hypotheses) and evaluates evidence to *disconfirm* rather than confirm them. The most rigorous diagnostic technique.
+A [[concepts/structured-analytic-techniques|SAT]] that identifies all alternative explanations (hypotheses) and evaluates evidence to *disconfirm* rather than confirm them. The most rigorous diagnostic technique.
 
 ---
 
@@ -67,25 +67,25 @@ Result: criminal group hypothesis most strongly disconfirmed; terrorist group hy
 
 | Bias | How this technique counters it |
 |------|-------------------------------|
-| [[Wiki/concepts/confirmation-bias\|Confirmation Bias]] | Disconfirmation focus is the structural core — you must disprove hypotheses, you cannot simply confirm a preferred one |
-| [[Wiki/concepts/anchoring-bias\|Anchoring Bias]] | Building all hypotheses simultaneously before evaluating evidence prevents any single hypothesis from becoming an anchor |
-| [[Wiki/concepts/availability-heuristic\|Availability Heuristic]] | Requires listing *all* hypotheses, including ones that don't readily come to mind; the matrix forces equal treatment |
-| [[Wiki/concepts/motivated-reasoning\|Motivated Reasoning]] | The matrix structure makes it structurally difficult to reach a preferred conclusion through selective evidence weighting |
-| [[Wiki/concepts/groupthink\|Groupthink]] | Most effective with a small team; team members challenge each other's evidence ratings across all hypotheses |
+| [[concepts/confirmation-bias\|Confirmation Bias]] | Disconfirmation focus is the structural core — you must disprove hypotheses, you cannot simply confirm a preferred one |
+| [[concepts/anchoring-bias\|Anchoring Bias]] | Building all hypotheses simultaneously before evaluating evidence prevents any single hypothesis from becoming an anchor |
+| [[concepts/availability-heuristic\|Availability Heuristic]] | Requires listing *all* hypotheses, including ones that don't readily come to mind; the matrix forces equal treatment |
+| [[concepts/motivated-reasoning\|Motivated Reasoning]] | The matrix structure makes it structurally difficult to reach a preferred conclusion through selective evidence weighting |
+| [[concepts/groupthink\|Groupthink]] | Most effective with a small team; team members challenge each other's evidence ratings across all hypotheses |
 
 ---
 
 ## Applied in Cybersecurity
 
-- **Threat Intelligence**: ensures all potential threat actors, motivations, and capabilities are rigorously evaluated ([[Wiki/sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]])
-- **Forensic Investigators**: considers all explanations for evidence, avoiding [[Wiki/concepts/confirmation-bias|Confirmation bias]]
+- **Threat Intelligence**: ensures all potential threat actors, motivations, and capabilities are rigorously evaluated ([[sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]])
+- **Forensic Investigators**: considers all explanations for evidence, avoiding [[concepts/confirmation-bias|Confirmation bias]]
 - **Risk Analysts**: evaluates likelihood of diverse threat scenarios
 
 ---
 
-## LLM Implementation (per [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]])
+## LLM Implementation (per [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]])
 
-[[Wiki/entities/scott-roberts|Scott Roberts]] found that ACH **requires multi-step sequential LLM queries** — a single zero-shot prompt fails ACH because the task is fundamentally evaluative and depends on hypotheses being generated before evidence can be evaluated. Roberts' working implementation:
+[[entities/scott-roberts|Scott Roberts]] found that ACH **requires multi-step sequential LLM queries** — a single zero-shot prompt fails ACH because the task is fundamentally evaluative and depends on hypotheses being generated before evidence can be evaluated. Roberts' working implementation:
 
 1. **Query 1:** LLM generates competing hypotheses for the analytic question
 2. **Query 2–N:** For each hypothesis, a separate query generates evidence for and against
@@ -104,6 +104,6 @@ Live app: https://sat-ach.streamlit.app/ | Code: https://github.com/sroberts/tal
 
 ## Sources
 
-- [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] (pp. 14–16)
-- [[Wiki/sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]]
-- [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]
+- [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] (pp. 14–16)
+- [[sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]]
+- [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]

@@ -10,16 +10,16 @@ source_count: 1
 
 [entity_type::org] [parent::CIA/CSI]
 
-A training and research center within [[Wiki/entities/Center for the Study of Intelligence|Center for the study of intelligence]]. Publishes Occasional Papers on analytic methodology.
+A training and research center within [[entities/Center for the Study of Intelligence|Center for the study of intelligence]]. Publishes Occasional Papers on analytic methodology.
 
 ---
 
 ## Relevance
 
-Published "Making Sense of Transnational Threats," Vol. 3, No. 1, October 2004 — the source cited in [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] for the cognitive bias taxonomy and the argument that globalization has increased the complexity of intelligence problems.
+Published "Making Sense of Transnational Threats," Vol. 3, No. 1, October 2004 — the source cited in [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] for the cognitive bias taxonomy and the argument that globalization has increased the complexity of intelligence problems.
 
 ---
 
 ## Mentioned In
 
-- [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]
+- [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]

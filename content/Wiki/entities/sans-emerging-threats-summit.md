@@ -10,7 +10,7 @@ source_count: 1
 
 [entity_type::org] [parent::SANS Institute]
 
-An annual security conference hosted by the [SANS Institute](https://www.sans.org/) focused on emerging threats in cybersecurity. The 2025 edition featured [[Wiki/entities/scott-roberts|Scott Roberts]]'s talk "LLMs and Structured Analytic Techniques."
+An annual security conference hosted by the [SANS Institute](https://www.sans.org/) focused on emerging threats in cybersecurity. The 2025 edition featured [[entities/scott-roberts|Scott Roberts]]'s talk "LLMs and Structured Analytic Techniques."
 
 Visual summary of 2025 summit: https://www.sans.org/blog/visual-summary-of-emerging-threats-summit-2025/
 
@@ -18,4 +18,4 @@ Visual summary of 2025 summit: https://www.sans.org/blog/visual-summary-of-emerg
 
 ## Mentioned In
 
-- [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]
+- [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]

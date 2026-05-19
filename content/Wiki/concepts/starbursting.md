@@ -9,7 +9,7 @@ sat_category: imaginative
 
 # Starbursting
 
-A [[Wiki/concepts/structured-analytic-techniques|SAT]] that generates questions about a topic, organized around the five W framework (Who, What, When, Where, Why), to scope a problem and identify what needs to be explored. A pre-analysis, idea-generation technique.
+A [[concepts/structured-analytic-techniques|SAT]] that generates questions about a topic, organized around the five W framework (Who, What, When, Where, Why), to scope a problem and identify what needs to be explored. A pre-analysis, idea-generation technique.
 
 ---
 
@@ -21,9 +21,9 @@ Define the scope of an analytic problem by systematically generating the questio
 
 ## How It Differs From Brainstorming
 
-[[Wiki/concepts/brainstorming|Brainstorming]] generates *answers* (hypotheses, explanations, options). Starbursting generates *questions*. Used earlier in the analytic process — before brainstorming or ACH — to define what the analysis should cover.
+[[concepts/brainstorming|Brainstorming]] generates *answers* (hypotheses, explanations, options). Starbursting generates *questions*. Used earlier in the analytic process — before brainstorming or ACH — to define what the analysis should cover.
 
-**Sequence:** Starbursting (scope questions) → [[Wiki/concepts/brainstorming|Brainstorming]] (generate hypotheses) → [[Wiki/concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]] (evaluate hypotheses)
+**Sequence:** Starbursting (scope questions) → [[concepts/brainstorming|Brainstorming]] (generate hypotheses) → [[concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]] (evaluate hypotheses)
 
 ---
 
@@ -44,14 +44,14 @@ Organize questions around the 5W framework:
 
 | Bias | How this technique counters it |
 |------|-------------------------------|
-| [[Wiki/concepts/availability-heuristic\|Availability Heuristic]] | Systematic 5W structure surfaces questions in less-salient categories (e.g., "Where?" when "Who?" dominates attention) |
-| [[Wiki/concepts/anchoring-bias\|Anchoring Bias]] | Question generation precedes hypothesis formation; prevents early hypotheses from anchoring the scope |
-| [[Wiki/concepts/framing-effect\|Framing Effect]] | Expanding to all five question categories breaks the framing of the initial problem statement |
-| [[Wiki/concepts/confirmation-bias\|Confirmation Bias]] | Pre-analysis scoping ensures questions are generated before any hypothesis is formed to confirm |
+| [[concepts/availability-heuristic\|Availability Heuristic]] | Systematic 5W structure surfaces questions in less-salient categories (e.g., "Where?" when "Who?" dominates attention) |
+| [[concepts/anchoring-bias\|Anchoring Bias]] | Question generation precedes hypothesis formation; prevents early hypotheses from anchoring the scope |
+| [[concepts/framing-effect\|Framing Effect]] | Expanding to all five question categories breaks the framing of the initial problem statement |
+| [[concepts/confirmation-bias\|Confirmation Bias]] | Pre-analysis scoping ensures questions are generated before any hypothesis is formed to confirm |
 
 ---
 
-## LLM Implementation (per [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]])
+## LLM Implementation (per [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]])
 
 **Approach:** Zero-shot single query — the simplest SAT to implement with an LLM.
 
@@ -78,10 +78,10 @@ Code: https://github.com/sroberts/talk-llm-sats-ftw-code/blob/main/experiment-1-
 
 ## Note: Not in CIA Tradecraft Primer
 
-Starbursting is from the broader [[Wiki/entities/heuer-pherson-book|Heuer & Pherson (book)]] (*Structured Analytic Techniques for Intelligence Analysis*, 3rd ed.) — not included in the [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]], which covers only 12 techniques. The full Heuer/Pherson taxonomy is larger.
+Starbursting is from the broader [[entities/heuer-pherson-book|Heuer & Pherson (book)]] (*Structured Analytic Techniques for Intelligence Analysis*, 3rd ed.) — not included in the [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]], which covers only 12 techniques. The full Heuer/Pherson taxonomy is larger.
 
 ---
 
 ## Sources
 
-- [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]
+- [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]

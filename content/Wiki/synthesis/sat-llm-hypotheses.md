@@ -3,7 +3,7 @@ type: synthesis
 tags: [wiki/synthesis]
 date_updated: 2026-05-19
 query: "What testable hypotheses could verify that SATs actually improve qualitative LLM output in bias-prone scenarios?"
-sources_used: ["[[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]", "[[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]"]
+sources_used: ["[[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]", "[[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]"]
 confidence: medium
 ---
 
@@ -25,15 +25,15 @@ The most important hypothesis to *falsify* before everything else. Do LLMs genui
 
 **If H0 holds (compliance without change), all downstream hypotheses are confounded.** A positive result on H1–H7 that fails H0 just means SAT-formatted outputs *look* better to raters, not that reasoning improved.
 
-See also: [[Wiki/concepts/sycophancy|Sycophancy]] — models may perform SAT compliance for the same reason they sycophantically agree: the structured output signals approval to the RLHF-trained reward model.
+See also: [[concepts/sycophancy|Sycophancy]] — models may perform SAT compliance for the same reason they sycophantically agree: the structured output signals approval to the RLHF-trained reward model.
 
 ---
 
 ## H1 — ACH Reduces Confirmation Bias in Evidence Evaluation
 
-**Claim:** The multi-step [[Wiki/concepts/analysis-of-competing-hypotheses|ACH]] protocol produces conclusions that better match ground truth than single-prompt "what's most likely?" queries on identical evidence.
+**Claim:** The multi-step [[concepts/analysis-of-competing-hypotheses|ACH]] protocol produces conclusions that better match ground truth than single-prompt "what's most likely?" queries on identical evidence.
 
-**Why confirmation bias is the target:** Without structure, LLMs anchor on the most salient hypothesis in the prompt and interpret subsequent evidence in its favor — a direct analog of [[Wiki/concepts/confirmation-bias|Confirmation Bias]].
+**Why confirmation bias is the target:** Without structure, LLMs anchor on the most salient hypothesis in the prompt and interpret subsequent evidence in its favor — a direct analog of [[concepts/confirmation-bias|Confirmation Bias]].
 
 **Setup:**
 - Use cases with known outcomes: security incident post-mortems, historical intelligence failures, engineering post-mortems
@@ -49,9 +49,9 @@ See also: [[Wiki/concepts/sycophancy|Sycophancy]] — models may perform SAT com
 
 ## H2 — Devil's Advocacy Suppresses Sycophancy Under Pressure
 
-**Claim:** An LLM explicitly assigned the [[Wiki/concepts/devils-advocacy|Devil's Advocacy]] role maintains counter-positions under follow-up pushback better than a standard LLM.
+**Claim:** An LLM explicitly assigned the [[concepts/devils-advocacy|Devil's Advocacy]] role maintains counter-positions under follow-up pushback better than a standard LLM.
 
-**Why sycophancy is the target:** [[Wiki/concepts/sycophancy|Sycophancy]] is most damaging in multi-turn interactions — each capitulation becomes a context anchor making further capitulation more likely. Devil's Advocacy structurally commits the model to a counter-position before social pressure is applied.
+**Why sycophancy is the target:** [[concepts/sycophancy|Sycophancy]] is most damaging in multi-turn interactions — each capitulation becomes a context anchor making further capitulation more likely. Devil's Advocacy structurally commits the model to a counter-position before social pressure is applied.
 
 **Setup:**
 - Present a conclusion the model would naturally agree with
@@ -67,9 +67,9 @@ See also: [[Wiki/concepts/sycophancy|Sycophancy]] — models may perform SAT com
 
 ## H3 — Key Assumptions Check Prevents Anchoring Propagation
 
-**Claim:** Running an explicit [[Wiki/concepts/key-assumptions-check|KAC]] before analysis reduces the degree to which initial framing determines final conclusions in multi-step chains.
+**Claim:** Running an explicit [[concepts/key-assumptions-check|KAC]] before analysis reduces the degree to which initial framing determines final conclusions in multi-step chains.
 
-**Why anchoring is the target:** [[Wiki/concepts/anchoring-bias|Anchoring Bias]] in LLMs operates at the prompt level — framing in the first few hundred tokens disproportionately shapes all downstream generation. KAC forces explicit surfacing of those assumptions before reasoning proceeds.
+**Why anchoring is the target:** [[concepts/anchoring-bias|Anchoring Bias]] in LLMs operates at the prompt level — framing in the first few hundred tokens disproportionately shapes all downstream generation. KAC forces explicit surfacing of those assumptions before reasoning proceeds.
 
 **Setup:**
 - Give identical underlying facts with two different framings (e.g., "this security incident was caused by insider threat" vs. a neutral framing of the same facts)
@@ -78,15 +78,15 @@ See also: [[Wiki/concepts/sycophancy|Sycophancy]] — models may perform SAT com
 
 **What to measure:** Semantic similarity of conclusions across framing conditions. Degree to which framing-injected assumptions appear unchallenged in final outputs.
 
-**Why it could fail:** KAC identifies assumptions but naming them may not break their grip. [[Wiki/concepts/system-1-system-2|System 1-analog]] generation has already been primed; explicit metacognition may be insufficient to override it.
+**Why it could fail:** KAC identifies assumptions but naming them may not break their grip. [[concepts/system-1-system-2|System 1-analog]] generation has already been primed; explicit metacognition may be insufficient to override it.
 
 ---
 
 ## H4 — Red Team Analysis Improves Adversarial Robustness
 
-**Claim:** Plans generated with an explicit [[Wiki/concepts/red-team-analysis|Red Team]] step contain more adversarially robust decisions than plans without it, as judged by domain experts.
+**Claim:** Plans generated with an explicit [[concepts/red-team-analysis|Red Team]] step contain more adversarially robust decisions than plans without it, as judged by domain experts.
 
-**Why mirror imaging is the target:** [[Wiki/concepts/mirror-imaging|Mirror Imaging]] causes LLMs (like human analysts) to model adversaries as rational actors sharing their own values and constraints. Red Team explicitly forces modeling of a maximally motivated, differently-valued opponent.
+**Why mirror imaging is the target:** [[concepts/mirror-imaging|Mirror Imaging]] causes LLMs (like human analysts) to model adversaries as rational actors sharing their own values and constraints. Red Team explicitly forces modeling of a maximally motivated, differently-valued opponent.
 
 **Setup:**
 - Security planning, business strategy, or incident response scenarios
@@ -102,9 +102,9 @@ See also: [[Wiki/concepts/sycophancy|Sycophancy]] — models may perform SAT com
 
 ## H5 — Multi-Agent SAT Pipelines Outperform Single-Agent Chains
 
-**Claim:** A pipeline with separate agents for (a) claim generation and (b) adversarial critique produces higher quality outputs than a single agent doing both, because multi-agent separation prevents [[Wiki/concepts/status-quo-bias|self-consistency pressure]] from suppressing genuine challenge.
+**Claim:** A pipeline with separate agents for (a) claim generation and (b) adversarial critique produces higher quality outputs than a single agent doing both, because multi-agent separation prevents [[concepts/status-quo-bias|self-consistency pressure]] from suppressing genuine challenge.
 
-**Why groupthink is the target:** [[Wiki/concepts/groupthink|Groupthink]] in LLM systems emerges when a single model's prior outputs anchor subsequent generation — the model becomes motivated to maintain consistency with itself. Separate agents with no shared context lack this pressure.
+**Why groupthink is the target:** [[concepts/groupthink|Groupthink]] in LLM systems emerges when a single model's prior outputs anchor subsequent generation — the model becomes motivated to maintain consistency with itself. Separate agents with no shared context lack this pressure.
 
 **Setup:**
 - Same analytical task run in (a) single agent chain, (b) two-agent pipeline: generator + separate critic
@@ -119,9 +119,9 @@ See also: [[Wiki/concepts/sycophancy|Sycophancy]] — models may perform SAT com
 
 ## H6 — What If? Prompting Reduces Overconfidence
 
-**Claim:** Forcing an LLM to generate concrete failure scenarios via [[Wiki/concepts/what-if-analysis|What If? Analysis]] before committing to a recommendation produces better-calibrated confidence expressions and more acknowledged uncertainty.
+**Claim:** Forcing an LLM to generate concrete failure scenarios via [[concepts/what-if-analysis|What If? Analysis]] before committing to a recommendation produces better-calibrated confidence expressions and more acknowledged uncertainty.
 
-**Why overconfidence is the target:** [[Wiki/concepts/overconfidence-bias|Overconfidence Bias]] in LLMs manifests as confident assertive language regardless of actual evidential support. What If? creates counter-scenarios that, if integrated into the final answer, should force hedging.
+**Why overconfidence is the target:** [[concepts/overconfidence-bias|Overconfidence Bias]] in LLMs manifests as confident assertive language regardless of actual evidential support. What If? creates counter-scenarios that, if integrated into the final answer, should force hedging.
 
 **Setup:**
 - Ask for a recommendation
@@ -137,7 +137,7 @@ See also: [[Wiki/concepts/sycophancy|Sycophancy]] — models may perform SAT com
 
 ## H7 — Epistemic Labeling Reduces Confident Hallucination
 
-**Claim:** Adding an explicit epistemic labeling step before synthesis — "classify each factual claim as: (a) directly stated in source, (b) inferred from source, (c) uncertain, (d) speculative" — reduces the rate of confident [[Wiki/concepts/hallucination|hallucination]] on verifiable facts.
+**Claim:** Adding an explicit epistemic labeling step before synthesis — "classify each factual claim as: (a) directly stated in source, (b) inferred from source, (c) uncertain, (d) speculative" — reduces the rate of confident [[concepts/hallucination|hallucination]] on verifiable facts.
 
 **Why hallucination is the target:** Hallucination is driven partly by the absence of any internal uncertainty signal. Forcing the model to classify its own claims before synthesizing them creates a structured opportunity to surface that uncertainty before it gets flattened into confident prose.
 
@@ -186,16 +186,16 @@ These are distinct. A system that scores well on H7 (hallucination) may score po
 
 ### The Roberts Anti-Pattern Warning
 
-[[Wiki/entities/scott-roberts|Scott Roberts]] (2025) found that single-prompt ACH is an anti-pattern — the model generates a complete narrative and then forces evidence to fit. This suggests: **format compliance is not sufficient; process order matters**. Hypotheses H1, H3, and H7 all have strict step-ordering requirements that must be enforced architecturally, not just via prompt instruction.
+[[entities/scott-roberts|Scott Roberts]] (2025) found that single-prompt ACH is an anti-pattern — the model generates a complete narrative and then forces evidence to fit. This suggests: **format compliance is not sufficient; process order matters**. Hypotheses H1, H3, and H7 all have strict step-ordering requirements that must be enforced architecturally, not just via prompt instruction.
 
 ---
 
 ## See Also
 
-- [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] — the underlying case for why SATs should work
-- [[Wiki/synthesis/sat-selection-guide|SAT Selection Guide]] — which SAT to use for which bias
-- [[Wiki/synthesis/sat-pipeline|SAT Pipeline]] — how to chain SATs into testable workflows
-- [[Wiki/synthesis/bias-sat-matrix|Bias × SAT Matrix]] — full cross-reference of bias → SAT
-- [[Wiki/concepts/sycophancy|Sycophancy]] — the bias most amenable to H2 testing
-- [[Wiki/concepts/hallucination|Hallucination]] — the failure mode targeted by H7
-- [[Wiki/concepts/system-1-system-2|System 1 / System 2]] — theoretical explanation for why H0 may hold
+- [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] — the underlying case for why SATs should work
+- [[synthesis/sat-selection-guide|SAT Selection Guide]] — which SAT to use for which bias
+- [[synthesis/sat-pipeline|SAT Pipeline]] — how to chain SATs into testable workflows
+- [[synthesis/bias-sat-matrix|Bias × SAT Matrix]] — full cross-reference of bias → SAT
+- [[concepts/sycophancy|Sycophancy]] — the bias most amenable to H2 testing
+- [[concepts/hallucination|Hallucination]] — the failure mode targeted by H7
+- [[concepts/system-1-system-2|System 1 / System 2]] — theoretical explanation for why H0 may hold

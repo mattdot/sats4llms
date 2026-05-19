@@ -29,7 +29,7 @@ The mind uses the anchor as a starting point and adjusts upward or downward. The
 
 ---
 
-## Intelligence Analysis Context (per [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]])
+## Intelligence Analysis Context (per [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]])
 
 Named directly in the primer's cognitive bias taxonomy:
 > "Probability estimates are adjusted only incrementally in response to new information or further analysis."
@@ -46,16 +46,16 @@ LLM agents exhibit strong anchoring behavior in multiple dimensions:
 - **Prior turn anchoring**: in multi-turn interactions, the agent's own prior output acts as an anchor for its next response
 - **Self-consistency anchoring**: agents trained with RLHF show reduced willingness to revise initial outputs, even when shown contradicting evidence
 
-See [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
+See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
 
 ---
 
 ## SATs That Control For This Bias
 
-- **[[Wiki/concepts/key-assumptions-check|Key Assumptions Check]]** — forces explicit examination of the initial analytic line as an assumption to be challenged, not a baseline to adjust from
-- **[[Wiki/concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]]** — builds all hypotheses simultaneously before evaluating evidence, preventing any single hypothesis from becoming an anchor
-- **[[Wiki/concepts/what-if-analysis|What If? Analysis]]** — assumes a different outcome has already occurred, displacing the current estimate as the anchor
-- **[[Wiki/concepts/brainstorming|Brainstorming]]** — deferred judgment rule prevents any early idea from becoming an anchor before alternatives are generated
+- **[[concepts/key-assumptions-check|Key Assumptions Check]]** — forces explicit examination of the initial analytic line as an assumption to be challenged, not a baseline to adjust from
+- **[[concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]]** — builds all hypotheses simultaneously before evaluating evidence, preventing any single hypothesis from becoming an anchor
+- **[[concepts/what-if-analysis|What If? Analysis]]** — assumes a different outcome has already occurred, displacing the current estimate as the anchor
+- **[[concepts/brainstorming|Brainstorming]]** — deferred judgment rule prevents any early idea from becoming an anchor before alternatives are generated
 
 ---
 
@@ -63,10 +63,10 @@ See [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mit
 
 - Tversky, A. & Kahneman, D. (1974). "Judgment Under Uncertainty: Heuristics and Biases." *Science*, 185(4157), 1124–1131.
 - Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. (Chapter 11: "Anchors")
-- [[Wiki/entities/richards-j-heuer-jr|Richards j. heuer jr.]] — *The Psychology of Intelligence Analysis* (1999), pp. 111–113
+- [[entities/richards-j-heuer-jr|Richards j. heuer jr.]] — *The Psychology of Intelligence Analysis* (1999), pp. 111–113
 
 ---
 
 ## See Also
 
-[[Wiki/concepts/cognitive-bias|Cognitive Bias]] | [[Wiki/concepts/confirmation-bias|Confirmation Bias]] | [[Wiki/concepts/overconfidence-bias|Overconfidence Bias]] | [[Wiki/concepts/mind-set|Mind-Set]]
+[[concepts/cognitive-bias|Cognitive Bias]] | [[concepts/confirmation-bias|Confirmation Bias]] | [[concepts/overconfidence-bias|Overconfidence Bias]] | [[concepts/mind-set|Mind-Set]]

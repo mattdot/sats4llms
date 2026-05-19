@@ -10,7 +10,7 @@ source_count: 0
 
 [entity_type::person] [role::cognitive-psychologist-economist]
 
-Israeli-American psychologist and Nobel laureate (Economics, 2002). With [[Wiki/entities/amos-tversky|Amos Tversky]], founded the **heuristics and biases** research program — the empirical foundation for virtually all of the individual bias pages in this wiki.
+Israeli-American psychologist and Nobel laureate (Economics, 2002). With [[entities/amos-tversky|Amos Tversky]], founded the **heuristics and biases** research program — the empirical foundation for virtually all of the individual bias pages in this wiki.
 
 ---
 
@@ -27,7 +27,7 @@ Israeli-American psychologist and Nobel laureate (Economics, 2002). With [[Wiki/
 - Nobel Prize in Economics was awarded for this work (Tversky had died in 1996)
 
 **Dual-Process Theory (synthesized in *Thinking, Fast and Slow*, 2011):**
-- Organized the entire research program into the [[Wiki/concepts/system-1-system-2|System 1 / System 2]] framework
+- Organized the entire research program into the [[concepts/system-1-system-2|System 1 / System 2]] framework
 - System 1: fast, automatic, heuristic-based → source of systematic bias
 - System 2: slow, deliberate, effortful → capable of correcting System 1 but requires activation
 
@@ -43,13 +43,13 @@ Israeli-American psychologist and Nobel laureate (Economics, 2002). With [[Wiki/
 
 ## Relevance to This Wiki
 
-The entire [[Wiki/concepts/cognitive-bias|Cognitive Bias]] library in this wiki — [[Wiki/concepts/anchoring-bias|Anchoring Bias]], [[Wiki/concepts/availability-heuristic|Availability Heuristic]], [[Wiki/concepts/framing-effect|Framing Effect]], [[Wiki/concepts/overconfidence-bias|Overconfidence Bias]], [[Wiki/concepts/confirmation-bias|Confirmation Bias]], and others — traces its empirical grounding to the Kahneman/Tversky research program.
+The entire [[concepts/cognitive-bias|Cognitive Bias]] library in this wiki — [[concepts/anchoring-bias|Anchoring Bias]], [[concepts/availability-heuristic|Availability Heuristic]], [[concepts/framing-effect|Framing Effect]], [[concepts/overconfidence-bias|Overconfidence Bias]], [[concepts/confirmation-bias|Confirmation Bias]], and others — traces its empirical grounding to the Kahneman/Tversky research program.
 
-The [[Wiki/concepts/system-1-system-2|System 1 / System 2]] framework explains *why* [[Wiki/concepts/structured-analytic-techniques|Structured Analytic Techniques]] work: they impose System 2 structure on processes that System 1 handles automatically and badly.
+The [[concepts/system-1-system-2|System 1 / System 2]] framework explains *why* [[concepts/structured-analytic-techniques|Structured Analytic Techniques]] work: they impose System 2 structure on processes that System 1 handles automatically and badly.
 
 ---
 
 ## Mentioned In
 
-- [[Wiki/concepts/system-1-system-2]] (primary reference)
-- [[Wiki/concepts/cognitive-bias]]
+- [[concepts/system-1-system-2]] (primary reference)
+- [[concepts/cognitive-bias]]

@@ -9,7 +9,7 @@ sat_category: imaginative
 
 # Red Team Analysis
 
-A [[Wiki/concepts/structured-analytic-techniques|SAT]] in which analysts adopt the perspective of an adversary or other actor to evaluate courses of action, capabilities, and intent from that actor's point of view.
+A [[concepts/structured-analytic-techniques|SAT]] in which analysts adopt the perspective of an adversary or other actor to evaluate courses of action, capabilities, and intent from that actor's point of view.
 
 ---
 
@@ -21,13 +21,13 @@ Generate insights about adversary behavior that a conventional analysis — cond
 
 ## Relationship to Attribution Bias
 
-Red Team Analysis directly counters the *attribution bias* in [[Wiki/concepts/cognitive-bias|cognitive biases]]: the tendency to attribute others' behavior to fixed nature while attributing one's own behavior to situational factors. By explicitly adopting the adversary's frame, analysts must reason from that actor's situation.
+Red Team Analysis directly counters the *attribution bias* in [[concepts/cognitive-bias|cognitive biases]]: the tendency to attribute others' behavior to fixed nature while attributing one's own behavior to situational factors. By explicitly adopting the adversary's frame, analysts must reason from that actor's situation.
 
 ---
 
 ## Applied in Cybersecurity
 
-**Threat Intelligence Analysts** ([[Wiki/sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]])  
+**Threat Intelligence Analysts** ([[sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]])  
 Models adversary TTPs (Tactics, Techniques, and Procedures) to understand and predict attacker strategies.
 
 **Forensic Investigators**  
@@ -45,9 +45,9 @@ Explores how discovered vulnerabilities might be exploited under different adver
 
 | Bias | How this technique counters it |
 |------|-------------------------------|
-| [[Wiki/concepts/mirror-imaging\|Mirror Imaging]] | The primary technique for this bias — forces analysts to inhabit the adversary's logic rather than projecting their own |
-| [[Wiki/concepts/framing-effect\|Framing Effect]] | Replacing the analyst's natural frame with the adversary's frame; outcome depends on which frame is applied |
-| [[Wiki/concepts/availability-heuristic\|Availability Heuristic]] | Adversary capabilities and motivations that are unfamiliar to the analyst are made cognitively available through structured role adoption |
+| [[concepts/mirror-imaging\|Mirror Imaging]] | The primary technique for this bias — forces analysts to inhabit the adversary's logic rather than projecting their own |
+| [[concepts/framing-effect\|Framing Effect]] | Replacing the analyst's natural frame with the adversary's frame; outcome depends on which frame is applied |
+| [[concepts/availability-heuristic\|Availability Heuristic]] | Adversary capabilities and motivations that are unfamiliar to the analyst are made cognitively available through structured role adoption |
 
 ---
 
@@ -59,5 +59,5 @@ The term "red team" is also used in cybersecurity to describe an offensive secur
 
 ## Sources
 
-- [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] (p. 31)
-- [[Wiki/sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]]
+- [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] (p. 31)
+- [[sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]]

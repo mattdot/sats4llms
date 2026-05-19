@@ -75,58 +75,58 @@ Seasoned analysts may be *more* susceptible to mind-set problems because of expe
 ### Category 1: Diagnostic Techniques
 *(Make analytic arguments, assumptions, or intelligence gaps more transparent)*
 
-**1. [[Wiki/concepts/key-assumptions-check|Key assumptions check]]**  
+**1. [[concepts/key-assumptions-check|Key assumptions check]]**  
 List and review key working assumptions on which fundamental judgments rest. Most useful at the start of a project. A four-step process: review current analytic line → articulate all premises → challenge each assumption → refine to only "must be true" assumptions. [key::diagnostic]  
 *Example:* DC Sniper case (2002) — explicit assumption checking could have prevented premature narrowing of the suspect profile.
 
-**2. [[Wiki/concepts/quality-of-information-check|Quality of information check]]**  
+**2. [[concepts/quality-of-information-check|Quality of information check]]**  
 Evaluates completeness and soundness of available information sources. Detect deception, identify intelligence gaps, help policymakers understand analyst confidence levels. [key::diagnostic]  
 *Example:* Senate Intelligence Committee report on Iraq identified "over-reliance on a single, ambiguous source" as an analytic error.
 
-**3. [[Wiki/concepts/indicators-or-signposts-of-change|Indicators or signposts of change]]**  
+**3. [[concepts/indicators-or-signposts-of-change|Indicators or signposts of change]]**  
 Periodically review observable events or trends to monitor targets and warn of unanticipated change. Creates objective baseline, can "depersonalize" disagreements among analysts. [key::diagnostic]  
 *Example:* Political instability tracking matrix — indicators across government capacity, legitimacy, opposition activity, economic factors, environmental issues, and trigger mechanisms.
 
-**4. [[Wiki/concepts/analysis-of-competing-hypotheses|Analysis of competing hypotheses (ach)]]**  
+**4. [[concepts/analysis-of-competing-hypotheses|Analysis of competing hypotheses (ach)]]**  
 Identification of alternative explanations (hypotheses) and evaluation of evidence that will disconfirm rather than confirm them. Most effective with a small team; best for controversial issues requiring a clear audit trail. Creates a matrix of hypotheses × evidence; rates evidence as consistent (C), inconsistent (I), or neutral (N). Focus is on *disproving* hypotheses rather than proving one. [key::diagnostic]  
 *Example:* Tokyo sarin attack (March 1995) — matrix evaluated four hypotheses: kooky cult, terrorist group, political movement, criminal group.
 
 ### Category 2: Contrarian Techniques
 *(Explicitly challenge current thinking)*
 
-**5. [[Wiki/concepts/devils-advocacy|Devil's advocacy]]**  
+**5. [[concepts/devils-advocacy|Devil's advocacy]]**  
 Challenging a single, strongly held view by building the best possible case for an alternative explanation. Most effective against analytic consensus or critical assumptions. [key::contrarian]
 
-**6. [[Wiki/concepts/team-a-team-b|Team a/team b]]**  
+**6. [[concepts/team-a-team-b|Team a/team b]]**  
 Two separate teams analyze the same problem from opposing assumptions or perspectives. Forces explicit articulation of competing analytical frameworks. [key::contrarian]
 
-**7. [[Wiki/concepts/high-impact-low-probability-analysis|High Impact low Probability analysis]]**  
+**7. [[concepts/high-impact-low-probability-analysis|High Impact low Probability analysis]]**  
 Examines events assessed as unlikely but which would have significant consequences if they occurred. Forces analysts to work through scenarios they might otherwise dismiss. [key::contrarian]
 
-**8. [[Wiki/concepts/what-if-analysis|What if? analysis]]**  
+**8. [[concepts/what-if-analysis|What if? analysis]]**  
 Assumes that an unexpected event has occurred and asks analysts to explain how it could have happened. Identifies indicators/signposts and forces consideration of low-probability scenarios. [key::contrarian]
 
 ### Category 3: Imaginative Thinking Techniques
 *(Develop new insights, different perspectives, alternative outcomes)*
 
-**9. [[Wiki/concepts/brainstorming|Brainstorming]]**  
+**9. [[concepts/brainstorming|Brainstorming]]**  
 Generates hypotheses and alternative explanations through free association in a group setting. Foundation technique used with many other SATs. [key::imaginative]
 
-**10. [[Wiki/concepts/outside-in-thinking|Outside In thinking]]**  
+**10. [[concepts/outside-in-thinking|Outside In thinking]]**  
 Examines the macro-level environment and how external forces (economic, political, social, technological) might shape an issue from the outside in. [key::imaginative]
 
-**11. [[Wiki/concepts/red-team-analysis|Red team analysis]]**  
+**11. [[concepts/red-team-analysis|Red team analysis]]**  
 Analysts adopt the perspective of an adversary or other actor to evaluate courses of action, capabilities, and intent from that actor's point of view. [key::imaginative]
 
-**12. [[Wiki/concepts/alternative-futures-analysis|Alternative futures analysis]]**  
+**12. [[concepts/alternative-futures-analysis|Alternative futures analysis]]**  
 Develops a range of plausible future scenarios by systematically varying key drivers and uncertainties. Prevents fixation on a single projected outcome. [key::imaginative]
 
 ---
 
 ## Key References
 
-- [[Wiki/entities/richards-j-heuer-jr|Richards j. heuer jr.]] — *The Psychology of Intelligence Analysis* (1999), Washington: Center for the Study of Intelligence. Primary intellectual foundation for the primer.
-- [[Wiki/entities/Sherman Kent Center|Sherman kent center]] — Occasional Paper "Making Sense of Transnational Threats," Vol. 3, No. 1, October 2004. Source for the cognitive bias framework.
+- [[entities/richards-j-heuer-jr|Richards j. heuer jr.]] — *The Psychology of Intelligence Analysis* (1999), Washington: Center for the Study of Intelligence. Primary intellectual foundation for the primer.
+- [[entities/Sherman Kent Center|Sherman kent center]] — Occasional Paper "Making Sense of Transnational Threats," Vol. 3, No. 1, October 2004. Source for the cognitive bias framework.
 - Senate Select Committee on Intelligence — Report on US Intelligence Community's Prewar Intelligence Assessments on Iraq
 - Commission on Intelligence Capabilities of the United States Regarding Weapons of Mass Destruction
 
@@ -134,5 +134,5 @@ Develops a range of plausible future scenarios by systematically varying key dri
 
 ## Tags for Cross-Reference
 
-[[Wiki/concepts/cognitive-bias|Cognitive bias]] | [[Wiki/concepts/mind-set|Mind Set]] | [[Wiki/concepts/structured-analytic-techniques|Structured analytic techniques]]  
-[[Wiki/entities/CIA|Cia]] | [[Wiki/entities/Center for the Study of Intelligence|Center for the study of intelligence]]
+[[concepts/cognitive-bias|Cognitive bias]] | [[concepts/mind-set|Mind Set]] | [[concepts/structured-analytic-techniques|Structured analytic techniques]]  
+[[entities/CIA|Cia]] | [[entities/Center for the Study of Intelligence|Center for the study of intelligence]]

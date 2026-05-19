@@ -30,7 +30,7 @@ The mind uses retrieval ease as a proxy for frequency or probability. This produ
 
 ---
 
-## Intelligence Analysis Context (per [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]])
+## Intelligence Analysis Context (per [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]])
 
 Named in the primer's probability-estimation bias taxonomy:
 > "Probability estimates are influenced by how easily one can imagine an event or recall similar instances."
@@ -47,17 +47,17 @@ Availability is deeply embedded in how LLMs work:
 - **Sycophancy as availability**: the most "available" response pattern for an RLHF-trained LLM is often agreeing with the user's framing — it was rewarded most frequently during training
 - **Hallucination pattern**: when a model lacks knowledge, it substitutes a plausible-sounding pattern from similar but different training examples — availability substituting for accuracy
 
-See [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
+See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
 
 ---
 
 ## SATs That Control For This Bias
 
-- **[[Wiki/concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]]** — requires explicitly listing *all* hypotheses including those that don't readily come to mind; the matrix structure surfaces low-availability alternatives
-- **[[Wiki/concepts/high-impact-low-probability-analysis|High-Impact/Low-Probability Analysis]]** — specifically designed to force attention onto events that are low-availability precisely because they are infrequent
-- **[[Wiki/concepts/alternative-futures-analysis|Alternative Futures Analysis]]** — generates scenarios through systematic variation of drivers rather than memory retrieval
-- **[[Wiki/concepts/quality-of-information-check|Quality of Information Check]]** — separates "what we know" from "what we remember" by reviewing the full source record
-- **[[Wiki/concepts/outside-in-thinking|Outside-In Thinking]]** — expands the frame to include factors outside the analyst's immediate experience base
+- **[[concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]]** — requires explicitly listing *all* hypotheses including those that don't readily come to mind; the matrix structure surfaces low-availability alternatives
+- **[[concepts/high-impact-low-probability-analysis|High-Impact/Low-Probability Analysis]]** — specifically designed to force attention onto events that are low-availability precisely because they are infrequent
+- **[[concepts/alternative-futures-analysis|Alternative Futures Analysis]]** — generates scenarios through systematic variation of drivers rather than memory retrieval
+- **[[concepts/quality-of-information-check|Quality of Information Check]]** — separates "what we know" from "what we remember" by reviewing the full source record
+- **[[concepts/outside-in-thinking|Outside-In Thinking]]** — expands the frame to include factors outside the analyst's immediate experience base
 
 ---
 
@@ -65,10 +65,10 @@ See [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mit
 
 - Tversky, A. & Kahneman, D. (1973). "Availability: A Heuristic for Judging Frequency and Probability." *Cognitive Psychology*, 5(2), 207–232.
 - Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. (Chapter 12: "The Science of Availability")
-- [[Wiki/entities/richards-j-heuer-jr|Richards j. heuer jr.]] — *The Psychology of Intelligence Analysis* (1999), pp. 114–115
+- [[entities/richards-j-heuer-jr|Richards j. heuer jr.]] — *The Psychology of Intelligence Analysis* (1999), pp. 114–115
 
 ---
 
 ## See Also
 
-[[Wiki/concepts/cognitive-bias|Cognitive Bias]] | [[Wiki/concepts/anchoring-bias|Anchoring Bias]] | [[Wiki/concepts/overconfidence-bias|Overconfidence Bias]] | [[Wiki/concepts/confirmation-bias|Confirmation Bias]]
+[[concepts/cognitive-bias|Cognitive Bias]] | [[concepts/anchoring-bias|Anchoring Bias]] | [[concepts/overconfidence-bias|Overconfidence Bias]] | [[concepts/confirmation-bias|Confirmation Bias]]

@@ -9,7 +9,7 @@ sat_category: diagnostic
 
 # Indicators or Signposts of Change
 
-A [[Wiki/concepts/structured-analytic-techniques|SAT]] that creates lists of observable events or trends to track targets, monitor developments, spot emerging patterns, and warn of unanticipated change.
+A [[concepts/structured-analytic-techniques|SAT]] that creates lists of observable events or trends to track targets, monitor developments, spot emerging patterns, and warn of unanticipated change.
 
 ---
 
@@ -26,7 +26,7 @@ Instill rigor into the analytic process by establishing objective baselines for 
 3. Regularly review and update lists to track which indicators are changing
 4. Identify the most likely hypothesis based on indicator patterns
 
-Best practice: develop *two* lists per hypothesis — indicators that a development *is* occurring and indicators that it is *not*. Especially useful in [[Wiki/concepts/what-if-analysis|What if? analysis]].
+Best practice: develop *two* lists per hypothesis — indicators that a development *is* occurring and indicators that it is *not*. Especially useful in [[concepts/what-if-analysis|What if? analysis]].
 
 ---
 
@@ -40,16 +40,16 @@ Categories tracked: Government Capacity, Legitimacy of Regime, Opposition Activi
 
 | Bias | How this technique counters it |
 |------|-------------------------------|
-| [[Wiki/concepts/availability-heuristic\|Availability Heuristic]] | Requires listing all hypotheses and their expected indicators, not just those that come readily to mind |
-| [[Wiki/concepts/status-quo-bias\|Status Quo Bias]] | Defines a set of criteria for recognizing change *before* change occurs; prevents the status quo from invisibly persisting |
-| [[Wiki/concepts/hindsight-bias\|Hindsight Bias]] | Prospectively documented indicators create a verifiable record of what was expected before the outcome, countering retrospective revision |
-| [[Wiki/concepts/overconfidence-bias\|Overconfidence Bias]] | Monitoring for indicators that *don't* appear (absence of expected evidence) surfaces uncertainty that overconfidence hides |
+| [[concepts/availability-heuristic\|Availability Heuristic]] | Requires listing all hypotheses and their expected indicators, not just those that come readily to mind |
+| [[concepts/status-quo-bias\|Status Quo Bias]] | Defines a set of criteria for recognizing change *before* change occurs; prevents the status quo from invisibly persisting |
+| [[concepts/hindsight-bias\|Hindsight Bias]] | Prospectively documented indicators create a verifiable record of what was expected before the outcome, countering retrospective revision |
+| [[concepts/overconfidence-bias\|Overconfidence Bias]] | Monitoring for indicators that *don't* appear (absence of expected evidence) surfaces uncertainty that overconfidence hides |
 
 ---
 
 ## Applied in Cybersecurity
 
-- **Threat Intelligence**: monitors long-term trends in threat actor behaviors or geopolitical shifts signaling emergent threats ([[Wiki/sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]])
+- **Threat Intelligence**: monitors long-term trends in threat actor behaviors or geopolitical shifts signaling emergent threats ([[sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]])
 - **Risk Analysis**: assesses likelihood and impact of cyber threats
 - **Cybersecurity Auditors**: tracks deviations in compliance trends suggesting deeper systemic issues
 - **Vulnerability Analysts**: tracks trends in vulnerability exploitation for proactive mitigation
@@ -58,5 +58,5 @@ Categories tracked: Government Capacity, Legitimacy of Regime, Opposition Activi
 
 ## Sources
 
-- [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] (pp. 12–13)
-- [[Wiki/sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]]
+- [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] (pp. 12–13)
+- [[sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]]

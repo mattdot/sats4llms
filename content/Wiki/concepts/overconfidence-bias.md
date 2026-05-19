@@ -30,7 +30,7 @@ Classic demonstration: subjects asked to provide 90% confidence intervals for tr
 
 ---
 
-## Intelligence Analysis Context (per [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]])
+## Intelligence Analysis Context (per [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]])
 
 Named in the primer's probability-estimation bias taxonomy:
 > "In translating feelings of certainty into a probability estimate, people are often overconfident, especially if they have considerable expertise."
@@ -50,17 +50,17 @@ LLM agents exhibit extreme overconfidence by default:
 - **Chain-of-thought false confidence**: a chain-of-thought that arrives at a conclusion through intermediate steps feels more justified — but each step can introduce error that compounds
 - **Missing evidence blindness**: LLMs rarely spontaneously note what information is absent from their analysis
 
-See [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
+See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigations.
 
 ---
 
 ## SATs That Control For This Bias
 
-- **[[Wiki/concepts/key-assumptions-check|Key Assumptions Check]]** — requires explicitly stating confidence levels for each assumption; surfaces hidden "certainties"
-- **[[Wiki/concepts/quality-of-information-check|Quality of Information Check]]** — directly evaluates whether the information base supports the confidence level being claimed
-- **[[Wiki/concepts/high-impact-low-probability-analysis|High-Impact/Low-Probability Analysis]]** — forces attention onto the distribution tail that overconfidence systematically ignores
-- **[[Wiki/concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]]** — by distributing attention across all hypotheses and their inconsistency scores, prevents false certainty about a single preferred explanation
-- **[[Wiki/concepts/what-if-analysis|What If? Analysis]]** — pre-mortem thinking (assuming failure has occurred) consistently reduces overconfidence by forcing engagement with disconfirming paths
+- **[[concepts/key-assumptions-check|Key Assumptions Check]]** — requires explicitly stating confidence levels for each assumption; surfaces hidden "certainties"
+- **[[concepts/quality-of-information-check|Quality of Information Check]]** — directly evaluates whether the information base supports the confidence level being claimed
+- **[[concepts/high-impact-low-probability-analysis|High-Impact/Low-Probability Analysis]]** — forces attention onto the distribution tail that overconfidence systematically ignores
+- **[[concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]]** — by distributing attention across all hypotheses and their inconsistency scores, prevents false certainty about a single preferred explanation
+- **[[concepts/what-if-analysis|What If? Analysis]]** — pre-mortem thinking (assuming failure has occurred) consistently reduces overconfidence by forcing engagement with disconfirming paths
 
 ---
 
@@ -69,10 +69,10 @@ See [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mit
 - Kahneman, D., Slovic, P., & Tversky, A. (Eds.). (1982). *Judgment Under Uncertainty: Heuristics and Biases*. Cambridge University Press.
 - Fischhoff, B., Slovic, P., & Lichtenstein, S. (1977). "Knowing with certainty: The appropriateness of extreme confidence." *Journal of Experimental Psychology: Human Perception and Performance*, 3(4), 552–564.
 - Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. (Chapter 19: "The Illusion of Understanding")
-- [[Wiki/entities/richards-j-heuer-jr|Richards j. heuer jr.]] — *The Psychology of Intelligence Analysis* (1999), Chapter 9
+- [[entities/richards-j-heuer-jr|Richards j. heuer jr.]] — *The Psychology of Intelligence Analysis* (1999), Chapter 9
 
 ---
 
 ## See Also
 
-[[Wiki/concepts/cognitive-bias|Cognitive Bias]] | [[Wiki/concepts/anchoring-bias|Anchoring Bias]] | [[Wiki/concepts/availability-heuristic|Availability Heuristic]] | [[Wiki/concepts/confirmation-bias|Confirmation Bias]]
+[[concepts/cognitive-bias|Cognitive Bias]] | [[concepts/anchoring-bias|Anchoring Bias]] | [[concepts/availability-heuristic|Availability Heuristic]] | [[concepts/confirmation-bias|Confirmation Bias]]

@@ -33,14 +33,14 @@ Four stated aims:
 3. **Challenge Biases** — counteract cognitive biases and limitations of mental models
 4. **Improve Transparency** — document the reasoning process clearly to facilitate review and critique
 
-Riley cites [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] as source authority for SATs in intelligence and security analysis.
+Riley cites [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] as source authority for SATs in intelligence and security analysis.
 
 ---
 
 ## Why SATs in Cybersecurity Science?
 
 Four reasons given:
-1. **Managing Cognitive Bias** — e.g., anchoring, [[Wiki/concepts/confirmation-bias|Confirmation bias]], groupthink. SATs like [[Wiki/concepts/devils-advocacy|Devil's advocacy]] and [[Wiki/concepts/analysis-of-competing-hypotheses|Analysis of competing hypotheses (ach)]] counteract these.
+1. **Managing Cognitive Bias** — e.g., anchoring, [[concepts/confirmation-bias|Confirmation bias]], groupthink. SATs like [[concepts/devils-advocacy|Devil's advocacy]] and [[concepts/analysis-of-competing-hypotheses|Analysis of competing hypotheses (ach)]] counteract these.
 2. **Addressing Complexity** — cyber threats involve complex systems and actors; scenario analysis and red-teaming model adversarial behavior.
 3. **Promoting Collaboration** — brainstorming fosters collective input; structured processes synthesize diverse perspectives.
 4. **Improving Decision Support** — produce more defensible and actionable intelligence with documented reasoning.
@@ -51,13 +51,13 @@ Four reasons given:
 
 | Role | Key SATs Applied |
 |------|-----------------|
-| Threat Intelligence Analysts | [[Wiki/concepts/analysis-of-competing-hypotheses\|Analysis of competing hypotheses (ach)]], Indicators of Change, [[Wiki/concepts/red-team-analysis\|Red team analysis]] |
-| Incident Responders | [[Wiki/concepts/key-assumptions-check\|Key assumptions check]], [[Wiki/concepts/what-if-analysis\|What if? analysis]], Imaginative Thinking / Brainstorming |
-| Risk Analysts | [[Wiki/concepts/alternative-futures-analysis\|Alternative futures analysis]], [[Wiki/concepts/high-impact-low-probability-analysis\|High Impact low Probability analysis]], Quality of Information Check |
-| Forensic Investigators | [[Wiki/concepts/analysis-of-competing-hypotheses\|Analysis of competing hypotheses (ach)]], [[Wiki/concepts/devils-advocacy\|Devil's advocacy]], [[Wiki/concepts/red-team-analysis\|Red team analysis]] |
-| Cybersecurity Auditors | Indicators of Change, [[Wiki/concepts/what-if-analysis\|What if? analysis]], Outside-In Thinking |
-| Vulnerability Analysts | Scenario Planning, [[Wiki/concepts/devils-advocacy\|Devil's advocacy]], Indicators/Signposts |
-| SOC Analysts | [[Wiki/concepts/brainstorming\|Brainstorming]], [[Wiki/concepts/red-team-analysis\|Red team analysis]], [[Wiki/concepts/key-assumptions-check\|Key assumptions check]] |
+| Threat Intelligence Analysts | [[concepts/analysis-of-competing-hypotheses\|Analysis of competing hypotheses (ach)]], Indicators of Change, [[concepts/red-team-analysis\|Red team analysis]] |
+| Incident Responders | [[concepts/key-assumptions-check\|Key assumptions check]], [[concepts/what-if-analysis\|What if? analysis]], Imaginative Thinking / Brainstorming |
+| Risk Analysts | [[concepts/alternative-futures-analysis\|Alternative futures analysis]], [[concepts/high-impact-low-probability-analysis\|High Impact low Probability analysis]], Quality of Information Check |
+| Forensic Investigators | [[concepts/analysis-of-competing-hypotheses\|Analysis of competing hypotheses (ach)]], [[concepts/devils-advocacy\|Devil's advocacy]], [[concepts/red-team-analysis\|Red team analysis]] |
+| Cybersecurity Auditors | Indicators of Change, [[concepts/what-if-analysis\|What if? analysis]], Outside-In Thinking |
+| Vulnerability Analysts | Scenario Planning, [[concepts/devils-advocacy\|Devil's advocacy]], Indicators/Signposts |
+| SOC Analysts | [[concepts/brainstorming\|Brainstorming]], [[concepts/red-team-analysis\|Red team analysis]], [[concepts/key-assumptions-check\|Key assumptions check]] |
 
 ---
 
@@ -88,5 +88,5 @@ Riley argues SATs apply across *all* cybersecurity roles because the underlying 
 
 ## Cross-References
 
-[[Wiki/concepts/structured-analytic-techniques|Structured analytic techniques]] | [[Wiki/concepts/cognitive-bias|Cognitive bias]] | [[Wiki/concepts/confirmation-bias|Confirmation bias]]  
-[[Wiki/entities/Shawn Riley|Shawn riley]] | [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]
+[[concepts/structured-analytic-techniques|Structured analytic techniques]] | [[concepts/cognitive-bias|Cognitive bias]] | [[concepts/confirmation-bias|Confirmation bias]]  
+[[entities/Shawn Riley|Shawn riley]] | [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]

@@ -9,7 +9,7 @@ sat_category: diagnostic
 
 # Key Assumptions Check
 
-A [[Wiki/concepts/structured-analytic-techniques|SAT]] that systematically lists and reviews the key working assumptions on which fundamental analytic judgments rest.
+A [[concepts/structured-analytic-techniques|SAT]] that systematically lists and reviews the key working assumptions on which fundamental analytic judgments rest.
 
 ---
 
@@ -73,24 +73,24 @@ The actual sniper was a Black man acting with an accomplice and driving a blue C
 
 | Bias | How this technique counters it |
 |------|-------------------------------|
-| [[Wiki/concepts/anchoring-bias\|Anchoring Bias]] | Forces the *current analytic line* to be written down as an assumption to be challenged, not as the reference point to adjust from |
-| [[Wiki/concepts/confirmation-bias\|Confirmation Bias]] | Making assumptions explicit breaks the unconscious protection mechanism that lets confirmation bias operate invisibly |
-| [[Wiki/concepts/motivated-reasoning\|Motivated Reasoning]] | Requires articulating *why* each assumption must be true; this surfaces motivated premises |
-| [[Wiki/concepts/overconfidence-bias\|Overconfidence Bias]] | Forces assignment of explicit confidence levels to assumptions, revealing hidden certainties |
-| [[Wiki/concepts/status-quo-bias\|Status Quo Bias]] | "The current situation will continue" is made explicit as an assumption rather than remaining a background default |
+| [[concepts/anchoring-bias\|Anchoring Bias]] | Forces the *current analytic line* to be written down as an assumption to be challenged, not as the reference point to adjust from |
+| [[concepts/confirmation-bias\|Confirmation Bias]] | Making assumptions explicit breaks the unconscious protection mechanism that lets confirmation bias operate invisibly |
+| [[concepts/motivated-reasoning\|Motivated Reasoning]] | Requires articulating *why* each assumption must be true; this surfaces motivated premises |
+| [[concepts/overconfidence-bias\|Overconfidence Bias]] | Forces assignment of explicit confidence levels to assumptions, revealing hidden certainties |
+| [[concepts/status-quo-bias\|Status Quo Bias]] | "The current situation will continue" is made explicit as an assumption rather than remaining a background default |
 
 ---
 
 ## Applied in Cybersecurity
 
-- **Incident Response**: ensure responders don't base actions on flawed assumptions (e.g., assuming an alert is a false positive) ([[Wiki/sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]])
+- **Incident Response**: ensure responders don't base actions on flawed assumptions (e.g., assuming an alert is a false positive) ([[sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]])
 - **SOC Analysts**: don't prematurely dismiss or prioritize alerts based on faulty logic
 
 ---
 
-## LLM Implementation (per [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]])
+## LLM Implementation (per [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]])
 
-[[Wiki/entities/scott-roberts|Scott Roberts]] applied KAC to a finished PDF intelligence product — the Strider report on North Korean IT Workers (2025). Implementation:
+[[entities/scott-roberts|Scott Roberts]] applied KAC to a finished PDF intelligence product — the Strider report on North Korean IT Workers (2025). Implementation:
 
 1. **Input:** Analyst uploads a finished intelligence product (PDF)
 2. **Extraction:** PDF text extracted and chunked (required; hits token limits on full documents)
@@ -110,6 +110,6 @@ Live app: https://sat-kac.streamlit.app/ | Code: https://github.com/sroberts/tal
 
 ## Sources
 
-- [[Wiki/sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] (pp. 7–9)
-- [[Wiki/sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]]
-- [[Wiki/sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]
+- [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] (pp. 7–9)
+- [[sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]]
+- [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]

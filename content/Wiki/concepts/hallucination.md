@@ -11,7 +11,7 @@ domain: llm-alignment
 
 The tendency of an LLM to **generate confident, fluent, plausible-sounding statements that are factually incorrect, unsupported, or fabricated** — without any internal signal that the output is unreliable. The model does not know it doesn't know.
 
-Hallucination is the LLM analog of [[Wiki/concepts/overconfidence-bias|Overconfidence Bias]], but with a structural difference: human overconfidence involves *underestimating uncertainty*; LLM hallucination involves *having no uncertainty signal at all* for many outputs.
+Hallucination is the LLM analog of [[concepts/overconfidence-bias|Overconfidence Bias]], but with a structural difference: human overconfidence involves *underestimating uncertainty*; LLM hallucination involves *having no uncertainty signal at all* for many outputs.
 
 ---
 
@@ -52,10 +52,10 @@ In a single-turn chat, a hallucinated fact can be caught by a skeptical user. In
 
 | Hallucination Pattern | Human Analogue | Difference |
 |----------------------|----------------|-----------|
-| High confidence on weak evidence | [[Wiki/concepts/overconfidence-bias\|Overconfidence Bias]] | Human overconfidence: underestimates uncertainty. LLM: no uncertainty signal. |
-| Fabricates supporting sources | [[Wiki/concepts/confirmation-bias\|Confirmation Bias]] | Human: selectively attends to confirming sources. LLM: invents them. |
-| Plausible-sounding gap-filling | [[Wiki/concepts/availability-heuristic\|Availability Heuristic]] | Human: uses available patterns. LLM: uses fluency patterns from training. |
-| Consistent-with-prior outputs | [[Wiki/concepts/anchoring-bias\|Anchoring Bias]] | Human: adjusts from anchor. LLM: maintains self-consistency. |
+| High confidence on weak evidence | [[concepts/overconfidence-bias\|Overconfidence Bias]] | Human overconfidence: underestimates uncertainty. LLM: no uncertainty signal. |
+| Fabricates supporting sources | [[concepts/confirmation-bias\|Confirmation Bias]] | Human: selectively attends to confirming sources. LLM: invents them. |
+| Plausible-sounding gap-filling | [[concepts/availability-heuristic\|Availability Heuristic]] | Human: uses available patterns. LLM: uses fluency patterns from training. |
+| Consistent-with-prior outputs | [[concepts/anchoring-bias\|Anchoring Bias]] | Human: adjusts from anchor. LLM: maintains self-consistency. |
 
 ---
 
@@ -63,10 +63,10 @@ In a single-turn chat, a hallucinated fact can be caught by a skeptical user. In
 
 | Technique | How It Counters Hallucination |
 |-----------|------------------------------|
-| [[Wiki/concepts/quality-of-information-check\|Quality of Information Check]] | Forces explicit source audit — agent must identify *what* it actually has access to vs. what it's inferring |
-| [[Wiki/concepts/key-assumptions-check\|Key Assumptions Check]] | Requires distinguishing "known fact" from "assumed" from "inferred" — surfaces the epistemic gaps hallucination fills |
-| [[Wiki/concepts/devils-advocacy\|Devil's Advocacy]] | Adversarial review agent looks specifically for unsupported claims, missing citations, fabricated specifics |
-| [[Wiki/concepts/indicators-or-signposts-of-change\|Indicators or Signposts of Change]] | Forces explicit statement of what *evidence* would be needed to support each claim — hallucinated claims typically can't specify real evidence |
+| [[concepts/quality-of-information-check\|Quality of Information Check]] | Forces explicit source audit — agent must identify *what* it actually has access to vs. what it's inferring |
+| [[concepts/key-assumptions-check\|Key Assumptions Check]] | Requires distinguishing "known fact" from "assumed" from "inferred" — surfaces the epistemic gaps hallucination fills |
+| [[concepts/devils-advocacy\|Devil's Advocacy]] | Adversarial review agent looks specifically for unsupported claims, missing citations, fabricated specifics |
+| [[concepts/indicators-or-signposts-of-change\|Indicators or Signposts of Change]] | Forces explicit statement of what *evidence* would be needed to support each claim — hallucinated claims typically can't specify real evidence |
 
 ---
 
@@ -103,7 +103,7 @@ What are you filling in from pattern rather than evidence?"
 
 Both are LLM-native failure modes, but the trigger differs:
 
-| | [[Wiki/concepts/sycophancy\|Sycophancy]] | Hallucination |
+| | [[concepts/sycophancy\|Sycophancy]] | Hallucination |
 |-|------------|---------------|
 | **Trigger** | Social/approval signal (user preference) | Fluency signal (plausible completion) |
 | **Target** | Agreement with user's views | Filling gaps with fluent content |
@@ -116,4 +116,4 @@ In practice they interact: a hallucinated claim that the user implicitly wants t
 
 ## See Also
 
-[[Wiki/concepts/overconfidence-bias|Overconfidence Bias]] | [[Wiki/concepts/sycophancy|Sycophancy]] | [[Wiki/concepts/quality-of-information-check|Quality of Information Check]] | [[Wiki/concepts/key-assumptions-check|Key Assumptions Check]] | [[Wiki/synthesis/sats-for-llm-agents|SATs for LLM Agents]]
+[[concepts/overconfidence-bias|Overconfidence Bias]] | [[concepts/sycophancy|Sycophancy]] | [[concepts/quality-of-information-check|Quality of Information Check]] | [[concepts/key-assumptions-check|Key Assumptions Check]] | [[synthesis/sats-for-llm-agents|SATs for LLM Agents]]
