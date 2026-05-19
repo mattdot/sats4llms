@@ -1,4 +1,5 @@
 ---
+title: SATs for LLMs — Index
 type: index
 tags: [wiki/index]
 date_updated: 2026-05-19
