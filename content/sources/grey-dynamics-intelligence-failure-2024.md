@@ -1,5 +1,5 @@
 ---
-title: Grey Dynamics — "Intelligence Failure: What, When, Why and How" (2024)
+title: 'Grey Dynamics — "Intelligence Failure: What, When, Why and How" (2024)'
 type: source
 tags: [wiki/source]
 date_ingested: 2026-05-19
