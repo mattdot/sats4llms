@@ -72,17 +72,45 @@ Three things converge to make this worth building:
 ## Key Synthesis Pages
 
 - [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] — the core synthesis: bias taxonomy, 8 SAT prompt adaptations, architectural patterns, empirical evidence
-- [[synthesis/bias-sat-matrix|Bias x SAT Matrix]] — full cross-reference: which SAT controls which bias, in both directions
+- [[synthesis/bias-sat-matrix|Bias × SAT Matrix]] — full cross-reference: which SAT controls which bias, in both directions
+- [[synthesis/sat-selection-guide|SAT Selection Guide]] — given a problem type or bias risk, which SAT to apply
+- [[synthesis/sat-pipeline|SAT Pipeline]] — how SATs compose into a complete agentic workflow
+- [[synthesis/sat-llm-hypotheses|Testable Hypotheses]] — experimental designs to verify the SAT-LLM thesis (overview below)
 
 ---
 
-## Open Questions
+## Testable Hypotheses
+
+The structural analogy between human cognitive biases and LLM failure modes is well-grounded. The claim that SATs *control* those failure modes in LLMs is largely untested. → [[synthesis/sat-llm-hypotheses|Testable Hypotheses: SATs + LLM Quality]] lays out eight specific experiments — what to measure, why each could fail, and which failure modes are confounded with each other.
+
+**Test this first:** **H0 — Structural compliance ≠ debiasing.** Do LLMs reason differently when following SAT structure, or do they just reformat the same biased output? If H0 holds, every other positive result is compliance theater. Most likely confounded with [[concepts/sycophancy|sycophancy]] — models perform SAT structure because it signals approval to RLHF reward models.
+
+The seven downstream hypotheses, each targeted at a specific bias:
+
+| # | Hypothesis | Bias / failure targeted |
+|---|---|---|
+| H1 | [[concepts/analysis-of-competing-hypotheses\|ACH]] improves conclusion accuracy on ambiguous evidence | [[concepts/confirmation-bias\|Confirmation bias]] |
+| H2 | [[concepts/devils-advocacy\|Devil's Advocacy]] maintains positions under multi-turn pushback | [[concepts/sycophancy\|Sycophancy]] |
+| H3 | [[concepts/key-assumptions-check\|KAC]] breaks framing-driven anchoring propagation | [[concepts/anchoring-bias\|Anchoring]] |
+| H4 | [[concepts/red-team-analysis\|Red Team]] produces adversarially robust plans | [[concepts/mirror-imaging\|Mirror imaging]] |
+| H5 | Multi-agent pipelines outperform single-agent chains | [[concepts/groupthink\|Groupthink]] |
+| H6 | [[concepts/what-if-analysis\|What If?]] reduces overconfidence / improves calibration | [[concepts/overconfidence-bias\|Overconfidence]] |
+| H7 | Epistemic labeling reduces confident hallucination rate | [[concepts/hallucination\|Hallucination]] |
+
+**Where the empirical record stands today:** Sparse. [[sources/rand-rr1408-2016|RAND RR1408 (2016)]] is the most authoritative public source on SAT evaluation and concludes that SATs largely have *face validity* but lack *empirical validity* — even within the human intelligence community. RAND surfaces three cautionary findings that should shape any LLM experiment:
+
+- **Mitre (2004)** — ACH reduced confirmation bias *only* among non-professional analysts. Implication: ACH may help a general-purpose LLM more than a domain-tuned one. Variant worth testing.
+- **Nemeth, Brown & Rogers (2001)** — formal devil's advocacy may *increase* confidence in preferred hypotheses rather than challenge them. Direct caution for H2.
+- **Tetlock (2005)** — scenario development *reduced* prediction accuracy in two experiments. Caution for any LLM forecast-via-scenarios pipeline.
+
+[[sources/roberts-llm-sats-ftw-2025|Roberts (2025)]] provides the only public empirical implementation in an LLM context — confirms multi-step ACH works, single-prompt ACH is an anti-pattern, and chunking breaks KAC across document boundaries.
+
+**Open questions outside the hypotheses framework:**
 
 - How do SAT-structured prompts interact with chain-of-thought? Does CoT amplify or reduce the targeted biases?
-- Can ACH's cross-chunk context loss in long documents be fully mitigated by map-reduce or sliding-window approaches?
-- What does RAND RR1408 add? See [[sources/rand-rr1408-2016|Artner, Girven & Bruce (2016)]] — empirical pilot study; key finding is that SATs largely have *face validity* but lack *empirical validity*; provides specific experimental references (Mitre 2004 on ACH, Nemeth 2001 on devil's advocacy, Tetlock 2005 on scenarios) that directly inform [[synthesis/sat-llm-hypotheses|the LLM hypothesis page]]
-- The Heuer/Pherson book (*Structured Analytic Techniques for Intelligence Analysis*, 3rd ed.) covers a broader technique set than the CIA Primer — worth ingesting if accessible.
+- Can the cross-chunk context loss in long-document KAC be fully mitigated by map-reduce or sliding-window approaches?
+- Heuer & Pherson's [[entities/heuer-pherson-book|*Structured Analytic Techniques for Intelligence Analysis*]] (3rd ed.) covers 30+ techniques vs. the CIA Primer's 12 — worth ingesting if accessible.
 
 ---
 
-*See [[catalog|Catalog]] for the full catalog. Last updated after ingesting 3 sources.*
+*See [[catalog|Catalog]] for the full catalog. Last updated after ingesting 4 sources.*
