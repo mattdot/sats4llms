@@ -1,14 +1,10 @@
 ---
-title: SATs for LLMs
+title: SATs for LLMs — Overview
 type: overview
 tags: [wiki/overview]
 aliases: [overview]
 date_updated: 2026-05-19
 source_count: 3
----
-
-# SATs for LLMs — Overview
-
 ---
 
 ## The Central Thesis
