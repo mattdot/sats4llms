@@ -77,7 +77,7 @@ On the LLM side, the empirical foundation has substantially improved: [[sources/
 
 ---
 
-## What This Wiki Helps You Do
+## In Practice
 
 *Assuming the thesis holds — that SATs control the LLM analogs of cognitive bias — here's where to look depending on your goal:*
 
