@@ -53,13 +53,13 @@ The seven downstream hypotheses, each targeted at a specific bias:
 
 | # | Hypothesis | Bias / failure targeted |
 |---|---|---|
-| H1 | [[concepts/analysis-of-competing-hypotheses\|ACH]] improves conclusion accuracy on ambiguous evidence | [[concepts/confirmation-bias\|Confirmation bias]] |
-| H2 | [[concepts/devils-advocacy\|Devil's Advocacy]] maintains positions under multi-turn pushback | [[concepts/sycophancy\|Sycophancy]] |
-| H3 | [[concepts/key-assumptions-check\|KAC]] breaks framing-driven anchoring propagation | [[concepts/anchoring-bias\|Anchoring]] |
-| H4 | [[concepts/red-team-analysis\|Red Team]] produces adversarially robust plans | [[concepts/mirror-imaging\|Mirror imaging]] |
-| H5 | Multi-agent pipelines outperform single-agent chains | [[concepts/groupthink\|Groupthink]] |
-| H6 | [[concepts/what-if-analysis\|What If?]] reduces overconfidence / improves calibration | [[concepts/overconfidence-bias\|Overconfidence]] |
-| H7 | Epistemic labeling reduces confident hallucination rate | [[concepts/hallucination\|Hallucination]] |
+| [[synthesis/sat-llm-hypotheses#h1-ach-reduces-confirmation-bias-in-evidence-evaluation\|H1]] | [[concepts/analysis-of-competing-hypotheses\|ACH]] improves conclusion accuracy on ambiguous evidence | [[concepts/confirmation-bias\|Confirmation bias]] |
+| [[synthesis/sat-llm-hypotheses#h2-devils-advocacy-suppresses-sycophancy-under-pressure\|H2]] | [[concepts/devils-advocacy\|Devil's Advocacy]] maintains positions under multi-turn pushback | [[concepts/sycophancy\|Sycophancy]] |
+| [[synthesis/sat-llm-hypotheses#h3-key-assumptions-check-prevents-anchoring-propagation\|H3]] | [[concepts/key-assumptions-check\|KAC]] breaks framing-driven anchoring propagation | [[concepts/anchoring-bias\|Anchoring]] |
+| [[synthesis/sat-llm-hypotheses#h4-red-team-analysis-improves-adversarial-robustness\|H4]] | [[concepts/red-team-analysis\|Red Team]] produces adversarially robust plans | [[concepts/mirror-imaging\|Mirror imaging]] |
+| [[synthesis/sat-llm-hypotheses#h5-multi-agent-sat-pipelines-outperform-single-agent-chains\|H5]] | Multi-agent pipelines outperform single-agent chains | [[concepts/groupthink\|Groupthink]] |
+| [[synthesis/sat-llm-hypotheses#h6-what-if-prompting-reduces-overconfidence\|H6]] | [[concepts/what-if-analysis\|What If?]] reduces overconfidence / improves calibration | [[concepts/overconfidence-bias\|Overconfidence]] |
+| [[synthesis/sat-llm-hypotheses#h7-epistemic-labeling-reduces-confident-hallucination\|H7]] | Epistemic labeling reduces confident hallucination rate | [[concepts/hallucination\|Hallucination]] |
 
 **Where the empirical record stands today:** Mixed. [[sources/rand-rr1408-2016|RAND RR1408 (2016)]] is the most authoritative public source on SAT evaluation and concludes that SATs largely have *face validity* but lack *empirical validity* — even within the human intelligence community. RAND surfaces three cautionary findings that should shape any LLM experiment:
 
