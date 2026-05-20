@@ -112,6 +112,7 @@ This is the master catalog. Read this first before answering any query or starti
 | H5: Multi-agent + Groupthink | [[synthesis/hypotheses/h5-multi-agent-groupthink\|H5]] | 2026-05-19 | Do multi-agent pipelines outperform single-agent chains, controlling for shared base model? |
 | H6: What If? + Overconfidence | [[synthesis/hypotheses/h6-what-if-overconfidence\|H6]] | 2026-05-19 | Does What If? prompting improve LLM calibration? |
 | H7: Epistemic Labeling + Hallucination | [[synthesis/hypotheses/h7-epistemic-labeling-hallucination\|H7]] | 2026-05-19 | Does forced epistemic labeling reduce confident hallucination? |
+| Bias Evaluations | [[synthesis/bias-evals\|Bias Evaluations]] | 2026-05-19 | How do you measure whether a specific bias degraded an LLM/agentic flow? Methodology for building bias judges. |
 
 ---
 
@@ -131,5 +132,5 @@ Sources in `Clippings/` not yet ingested into the wiki:
 - **Sources ingested:** 12 (+8 LLM-bias empirical papers: Sharma, Perez, Huang, Kadavath, Tian, Du, Durmus, Echterhoff)
 - **Entity pages:** 24 (+8: Anthropic, Sharma, Perez, Kadavath, Durmus, Tian, Du, Echterhoff)
 - **Concept pages:** 30 (all 12 bias pages + 2 LLM-native + others updated with Empirical Evidence sections)
-- **Synthesis pages:** 12 (5 prior + H1–H7 each as a dedicated page; sat-llm-hypotheses is now the framework parent)
+- **Synthesis pages:** 13 (added Bias Evaluations as a methodology page bridging the hypotheses framework and concrete experiments)
 - **Last updated:** 2026-05-19

@@ -23,7 +23,7 @@ Three things converge to make this worth building:
 
 **2. LLMs exhibit analogous failure modes.** [[concepts/sycophancy|Sycophancy]] mirrors [[concepts/confirmation-bias|confirmation bias]]. Prompt anchoring mirrors [[concepts/anchoring-bias|anchoring bias]]. Multi-agent echo chambers mirror [[concepts/groupthink|groupthink]]. [[concepts/hallucination|Hallucination]] with confidence mirrors [[concepts/overconfidence-bias|overconfidence]]. Persona capture mirrors [[concepts/mirror-imaging|mirror imaging]]. The parallel is close enough that the SAT countermeasures translate directly — and is now empirically supported by work from [[entities/anthropic|Anthropic]] ([[sources/sharma-sycophancy-2023|Sharma 2023]], [[sources/durmus-global-opinions-2023|Durmus 2023]], [[sources/kadavath-know-2022|Kadavath 2022]]) and others ([[sources/echterhoff-biasbuster-2024|Echterhoff 2024]] on anchoring/framing/availability).
 
-**3. Implementation is now proven, not theoretical.** [[entities/scott-roberts|Scott Roberts]] ([[entities/sans-emerging-threats-summit|SANS]] 2025) built working Streamlit + GPT-4 tools implementing [[concepts/starbursting|Starbursting]], [[concepts/analysis-of-competing-hypotheses|ACH]], and [[concepts/key-assumptions-check|Key Assumptions Check]], ran them on real problems, and published the code. The key finding: SAT-structured LLM workflows work — but some techniques (especially [[concepts/analysis-of-competing-hypotheses|ACH]]) require multi-step orchestration rather than single prompts, and long-document analysis hits token-limit failure modes that need architectural mitigations. [[sources/du-debate-2023|Du et al. (MIT, 2023)]] independently validated that multi-agent debate improves factuality — supporting the same architectural argument.
+**3. We can measure it.** LLM evaluations have matured enough that we can build **judges** — automated, human, or hybrid — that detect specific bias failure modes in reasoning traces. This is what makes the SAT-LLM thesis *testable* rather than purely speculative. See [[synthesis/bias-evals|Bias Evaluations]] for the methodology and [[synthesis/sat-llm-hypotheses|the hypotheses framework]] for what to test. Early empirical signal exists — [[entities/scott-roberts|Scott Roberts]] ([[entities/sans-emerging-threats-summit|SANS]] 2025) shipped working Streamlit + GPT-4 implementations of [[concepts/starbursting|Starbursting]], [[concepts/analysis-of-competing-hypotheses|ACH]], and [[concepts/key-assumptions-check|KAC]] and surfaced concrete failure modes (single-prompt ACH is an anti-pattern; chunking breaks KAC across document boundaries); [[sources/du-debate-2023|Du et al. (MIT, 2023)]] independently showed multi-agent debate improves factuality. These are existence proofs that the patterns are tractable in practice, not proof that they work in general.
 
 ---
 
@@ -89,6 +89,9 @@ On the LLM side, the empirical foundation has substantially improved: [[sources/
 
 - **"I want to chain SATs into a complete workflow."**
   → [[synthesis/sat-pipeline|SAT Pipeline]] — full end-to-end pipelines with three orchestration patterns (sequential single-agent, parallel + adversarial, post-hoc audit) plus failure modes.
+
+- **"I want to measure whether a bias actually impaired my flow."**
+  → [[synthesis/bias-evals|Bias Evaluations]] — methodology for building judges that detect each bias as a failure mode in a reasoning trace. The operational link between the hypotheses framework and a real experiment.
 
 - **"I want the full argument and prompt patterns."**
   → [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] — the core synthesis. Bias taxonomy, 8 SAT prompt adaptations, architectural patterns, empirical evidence.
