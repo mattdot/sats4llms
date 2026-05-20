@@ -2,7 +2,7 @@
 title: "H1 — ACH Reduces Confirmation Bias in Evidence Evaluation"
 type: synthesis
 tags: [wiki/synthesis, hypothesis]
-date_updated: 2026-05-19
+date_updated: 2026-05-20
 parent: "[[synthesis/sat-llm-hypotheses|Testable Hypotheses (framework)]]"
 targets_bias: "[[concepts/confirmation-bias|Confirmation Bias]]"
 targets_sat: "[[concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses]]"
@@ -41,8 +41,11 @@ LLMs may generate multiple hypotheses in step 1 then collapse back to the most p
 | [[sources/rand-rr1408-2016\|RAND RR1408 (2016)]] citing Cheikes et al. (Mitre, 2004) | Human ACH **reduced confirmation bias only among non-professional analysts**; expert analysts already exhibited what ACH formalizes | Variant test: does ACH help a general-purpose LLM more than a domain-tuned one? |
 | [[sources/echterhoff-biasbuster-2024\|Echterhoff et al. (BiasBuster, 2024)]] | Confirmation bias is directly measurable in LLM decision-making across commercial and open-source models | Confirms the bias H1 targets is real and present |
 | [[sources/roberts-llm-sats-ftw-2025\|Roberts (2025)]] | **Single-prompt ACH is an anti-pattern** — the model generates a narrative first and forces evidence to fit. Multi-step sequential ACH works. | Step-ordering must be architecturally enforced, not just prompt-described |
+| [[sources/suprathermal-ach-grounding-2024\|suprathermal — ACH-Grounding (2024)]] | Independent open-source ACH+RAG implementation converges on the same multi-step pattern, and goes further: **LLM only fills matrix cells; classical algorithms do synthesis.** Cites provable hallucination bounds (arXiv:2401.11817) as motivation. | Two independent implementations arriving at the same architecture is empirical evidence for the design principle. Suggests H1 should be tested in *cell-level* form, not single-prompt form. |
 
-**The Mitre 2004 caveat is the most important finding.** It implies that a positive H1 result might depend on which model is used — a generalist model might benefit more than a finetuned domain expert, mirroring the human pattern.
+**The Mitre 2004 caveat is the most important finding.**It implies that a positive H1 result might depend on which model is used — a generalist model might benefit more than a finetuned domain expert, mirroring the human pattern.
+
+**Architecture refinement from convergent implementations.** Both Roberts and suprathermal externalize the synthesis step. This suggests H1 should be tested with the matrix-filling-only design (Condition B = LLM scores cells, classical code totals), not by asking the model for a final ranking. Otherwise we'd be measuring whether the LLM can be talked into structured output, not whether ACH reduces confirmation bias.
 
 ## See Also
 

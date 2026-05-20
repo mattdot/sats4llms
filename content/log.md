@@ -9,6 +9,22 @@ Append-only. Format: `## [YYYY-MM-DD] operation | Title`
 
 ---
 
+## [2026-05-20] ingest | suprathermal — ACH-Grounding (GitHub, 2024)
+
+User-supplied source: open-source Python implementation of ACH as an LLM grounding mechanism. https://github.com/suprathermal/ACH-Grounding
+
+Created:
+- `sources/suprathermal-ach-grounding-2024.md` — full source summary
+- `entities/suprathermal.md` — author entity
+
+Updated:
+- `concepts/analysis-of-competing-hypotheses.md` — added "ACH as RAG Grounding" section documenting the matrix-cell-only LLM design + classical synthesis pattern; bumped source_count 2→4 (Roberts + suprathermal both cite this concept now); added source row
+- `synthesis/hypotheses/h1-ach-confirmation-bias.md` — added evidence row for suprathermal; added paragraph on architecture refinement (test the cell-level form, not single-prompt)
+
+Key finding: **Two independent implementations (Roberts 2025, suprathermal 2024) converge on the same architecture** — multi-step LLM calls + externalized synthesis. suprathermal goes further by delegating *all* combinatorial reasoning to classical algorithms, citing provable hallucination bounds (arXiv:2401.11817). This is meaningful empirical evidence for H1's design: ACH-as-pipeline works, ACH-as-prompt fails.
+
+---
+
 ## [2026-05-19] ingest | Grey Dynamics — Intelligence Failure (2024)
 
 User-supplied source on intelligence failure as a multi-stage phenomenon. Two distinct contributions to the wiki:

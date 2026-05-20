@@ -30,6 +30,7 @@ This is the master catalog. Read this first before answering any query or starti
 | Lost in the Middle: How LMs Use Long Contexts (Liu et al., TACL) | [[sources/liu-lost-in-middle-2023\|Liu et al. (2023)]] | 2026-05-19 | long-context, positional-bias, availability-analog |
 | Open Problems and Fundamental Limitations of RLHF (Casper et al.) | [[sources/casper-rlhf-2023\|Casper et al. (2023)]] | 2026-05-19 | RLHF, reward-hacking, sycophancy, motivated-reasoning, alignment |
 | Intelligence Failure: What, When, Why and How (Grey Dynamics) | [[sources/grey-dynamics-intelligence-failure-2024\|Grey Dynamics (2024)]] | 2026-05-19 | intelligence-failure, intelligence-cycle, case-studies, Iraq, Ukraine |
+| ACH-Grounding (suprathermal, GitHub) | [[sources/suprathermal-ach-grounding-2024\|suprathermal — ACH-Grounding (2024)]] | 2026-05-20 | ACH, RAG, grounding, hallucination-mitigation, hybrid-symbolic-LLM, implementation |
 
 ---
 
@@ -46,6 +47,7 @@ This is the master catalog. Read this first before answering any query or starti
 | SANS Emerging Threats Summit | [[entities/sans-emerging-threats-summit\|SANS Emerging Threats Summit]] | org | 1 |
 | Structured Analytic Techniques for Intelligence Analysis (Book) | [[entities/heuer-pherson-book\|Heuer & Pherson (book)]] | book | 1 |
 | Grey Dynamics | [[entities/grey-dynamics\|Grey Dynamics]] | org | 1 |
+| suprathermal | [[entities/suprathermal\|suprathermal]] | person | 1 |
 | Daniel Kahneman | [[entities/daniel-kahneman\|Daniel Kahneman]] | person | 0 |
 | Amos Tversky | [[entities/amos-tversky\|Amos Tversky]] | person | 0 |
 | Irving Janis | [[entities/irving-janis\|Irving Janis]] | person | 0 |
@@ -92,7 +94,7 @@ This is the master catalog. Read this first before answering any query or starti
 | Key Assumptions Check | [[concepts/key-assumptions-check\|Key Assumptions Check]] | SAT/diagnostic | high | 3 |
 | Quality of Information Check | [[concepts/quality-of-information-check\|Quality of Information Check]] | SAT/diagnostic | high | 1 |
 | Indicators or Signposts of Change | [[concepts/indicators-or-signposts-of-change\|Indicators or Signposts of Change]] | SAT/diagnostic | high | 2 |
-| Analysis of Competing Hypotheses (ACH) | [[concepts/analysis-of-competing-hypotheses\|Analysis of Competing Hypotheses (ACH)]] | SAT/diagnostic | high | 3 |
+| Analysis of Competing Hypotheses (ACH) | [[concepts/analysis-of-competing-hypotheses\|Analysis of Competing Hypotheses (ACH)]] | SAT/diagnostic | high | 4 |
 | Devil's Advocacy | [[concepts/devils-advocacy\|Devil's Advocacy]] | SAT/contrarian | high | 2 |
 | Team A/Team B | [[concepts/team-a-team-b\|Team A/Team B]] | SAT/contrarian | medium | 1 |
 | High-Impact Low-Probability Analysis | [[concepts/high-impact-low-probability-analysis\|High-Impact/Low-Probability Analysis]] | SAT/contrarian | high | 2 |
@@ -137,9 +139,8 @@ Sources in `Clippings/` not yet ingested into the wiki:
 
 ## Stats
 
-- **Sources ingested:** 16 (+1: Grey Dynamics Intelligence Failure 2024)
-- **Entity pages:** 25 (+1: Grey Dynamics)
-- **Concept pages:** 33 (+1: Intelligence Cycle)
+- **Sources ingested:** 17 (+1: ACH-Grounding 2024)
+- **Entity pages:** 26 (+1: suprathermal)
+- **Concept pages:** 33
 - **Synthesis pages:** 13
-- **Last updated:** 2026-05-19
-- **Last updated:** 2026-05-19
+- **Last updated:** 2026-05-20

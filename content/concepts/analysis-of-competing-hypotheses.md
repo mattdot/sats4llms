@@ -3,8 +3,9 @@ type: concept
 tags: [wiki/concept, wiki/sat]
 date_updated: 2026-05-19
 confidence: high
-source_count: 2
+source_count: 4
 sat_category: diagnostic
+date_updated: 2026-05-20
 ---
 
 # Analysis of Competing Hypotheses (ACH)
@@ -102,8 +103,27 @@ Live app: https://sat-ach.streamlit.app/ | Code: https://github.com/sroberts/tal
 
 ---
 
+## ACH as RAG Grounding (per [[sources/suprathermal-ach-grounding-2024|suprathermal — ACH-Grounding]])
+
+A second independent open-source implementation ([[entities/suprathermal|suprathermal]], https://github.com/suprathermal/ACH-Grounding) converges on the same multi-step pattern but adds a sharper architectural claim: **the LLM should only fill matrix cells; synthesis must be done by classical deterministic code.**
+
+Key design points:
+
+- **Cell-level LLM calls** — each (evidence, hypothesis) pair is scored in its own focused judgment, where the model is strong
+- **Classical algorithms compute likelihood** over the matrix, where LLMs are unreliable due to provable hallucination bounds on combinatorially complex problems (cites arXiv:2401.11817, arXiv:2508.01781)
+- **`ExtraH` / `ExtraE` config** — verified hypotheses and evidence can be injected as grounding constraints
+- **Iterative RAG** — previously generated hypotheses and evidence are fed back as context for subsequent calls
+- **Cost model:** O((|Evidence| + |Hypotheses|)²) tokens — practical only for "few hypotheses, few precious pieces of evidence, everything highly uncertain" cases
+
+**Convergent finding:** Two independent implementations ([[entities/scott-roberts|Roberts]] and [[entities/suprathermal|suprathermal]]) arrived at the same architectural pattern — multi-step LLM calls + externalized synthesis. The convergence is empirical evidence for the principle that ACH-as-LLM-prompt fails and ACH-as-pipeline works.
+
+This positions ACH not just as a debiasing technique but as a **general LLM grounding mechanism** — a structural pattern for forcing exhaustive cross-referencing of every evidence against every hypothesis.
+
+---
+
 ## Sources
 
 - [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] (pp. 14–16)
 - [[sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]]
 - [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]
+- [[sources/suprathermal-ach-grounding-2024|suprathermal — ACH-Grounding (2024)]]
