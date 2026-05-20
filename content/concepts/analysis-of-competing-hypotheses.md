@@ -1,11 +1,10 @@
 ---
 type: concept
 tags: [wiki/concept, wiki/sat]
-date_updated: 2026-05-19
+date_updated: 2026-05-20
 confidence: high
 source_count: 4
 sat_category: diagnostic
-date_updated: 2026-05-20
 ---
 
 # Analysis of Competing Hypotheses (ACH)
