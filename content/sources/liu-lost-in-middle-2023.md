@@ -1,5 +1,5 @@
 ---
-title: Liu et al. — Lost in the Middle: How Language Models Use Long Contexts (TACL, 2023)
+title: 'Liu et al. — Lost in the Middle: How Language Models Use Long Contexts (TACL, 2023)'
 type: source
 tags: [wiki/source]
 date_ingested: 2026-05-19
