@@ -15,7 +15,7 @@ This vault implements the **llm-wiki pattern** based on [Karpathy's design](http
 Three layers:
 
 1. **Raw sources** (`Clippings/`) — immutable clippings and captures. Read only, never modify.
-2. **The wiki** (`Wiki/`) — LLM-generated, interlinked markdown. You own this entirely.
+2. **The wiki** (``) — LLM-generated, interlinked markdown. You own this entirely.
 3. **The schema** (`CLAUDE.md`) — these instructions. Tells you how to maintain the wiki.
 
 ---
@@ -23,19 +23,20 @@ Three layers:
 ### Wiki Directory Structure
 
 ```
-Wiki/
-├── index.md          # content catalog — read this FIRST on every operation
-├── log.md            # append-only operation log
-├── overview.md       # high-level synthesis of everything
-├── sources/          # one summary page per ingested raw source
-├── entities/         # people, tools, orgs, repos
-├── concepts/         # ideas, patterns, techniques
-└── synthesis/        # query answers filed back into wiki
+content/                # Quartz content root + Obsidian vault root
+├── index.md            # Overview — homepage at /
+├── catalog.md          # full catalog of every page — read this FIRST on every operation
+├── log.md              # append-only operation log
+├── sources/            # one summary page per ingested raw source
+├── entities/           # people, tools, orgs, repos
+├── concepts/           # ideas, patterns, techniques
+└── synthesis/          # query answers filed back into wiki
 ```
 
-Supporting directories:
-- `Clippings/` — raw source files (immutable)
-- `assets/` — downloaded images (attachment folder)
+Supporting (repo root, outside `content/`):
+- `CLAUDE.md` — this schema file
+- `quartz.config.ts` — site config
+- `.github/workflows/deploy.yml` — auto-build on push to main
 
 ---
 
@@ -46,7 +47,7 @@ Every wiki page **must** have:
 ```yaml
 ---
 type: <source-summary | entity | concept | synthesis>
-tags: [wiki/<type>]
+tags: [<type>]
 date_updated: YYYY-MM-DD
 ---
 ```
@@ -76,16 +77,16 @@ source_count: N
 **synthesis:**
 ```yaml
 query: "the question that prompted this synthesis"
-sources_used: ["[[Wiki/sources/X]]", "[[Wiki/sources/Y]]"]
+sources_used: ["[[sources/X]]", "[[sources/Y]]"]
 ```
 
 Style rules:
 - Use `[[wikilinks]]` with display text — every mention of a known entity or concept gets a wikilink
-  - Format: `[[Wiki/section/slug|Human Readable Name]]` — e.g., `[[Wiki/concepts/confirmation-bias|Confirmation Bias]]`
+  - Format: `[[section/slug|Human Readable Name]]` — e.g., `[[concepts/confirmation-bias|Confirmation Bias]]`
   - **Slug must be kebab-case matching the actual filename** — `confirmation-bias` not `Confirmation Bias` or `Confirmation bias`
   - Always include the display text after `|` so links read naturally in both edit and preview mode
-  - Never use bare `[[Wiki/concepts/slug]]` without a display name
-  - **Inside table cells**, use `\|` instead of `|`: `[[Wiki/concepts/confirmation-bias\|Confirmation Bias]]` — a plain `|` breaks the table column separator
+  - Never use bare `[[concepts/slug]]` without a display name
+  - **Inside table cells**, use `\|` instead of `|`: `[[concepts/confirmation-bias\|Confirmation Bias]]` — a plain `|` breaks the table column separator
 - **Never use `[key::value]` inline fields in page bodies** — Obsidian renders them as broken links. All metadata goes in YAML frontmatter only.
 - Use `---` section separators for readability
 - Keep sentences in source summaries factual and attributable
@@ -99,12 +100,12 @@ Style rules:
 
 Steps (always in this order):
 1. Read the raw source completely
-2. Create `Wiki/sources/<slug>.md` — factual summary, key quotes, all entities and concepts mentioned as wikilinks
-3. Create or update `Wiki/entities/<name>.md` for each person, tool, org, or repo mentioned
-4. Create or update `Wiki/concepts/<name>.md` for each idea or pattern
-5. Update `Wiki/index.md` — add row to Sources table, add/update Entities and Concepts tables, remove from Unprocessed Sources list, update Stats
-6. Update `Wiki/overview.md` if the big picture changed
-7. Append to `Wiki/log.md`: `## [YYYY-MM-DD] ingest | <Source Title>`
+2. Create `sources/<slug>.md` — factual summary, key quotes, all entities and concepts mentioned as wikilinks
+3. Create or update `entities/<name>.md` for each person, tool, org, or repo mentioned
+4. Create or update `concepts/<name>.md` for each idea or pattern
+5. Update `catalog.md` — add row to Sources table, add/update Entities and Concepts tables, remove from Unprocessed Sources list, update Stats
+6. Update `index.md` (the Overview) if the big picture changed
+7. Append to `log.md`: `## [YYYY-MM-DD] ingest | <Source Title>`
 
 A single ingest typically touches 5–15 wiki pages.
 
@@ -113,11 +114,11 @@ A single ingest typically touches 5–15 wiki pages.
 #### QUERY — Answer a question from the wiki
 
 Steps:
-1. Read `Wiki/index.md` to identify relevant pages
+1. Read `catalog.md` to identify relevant pages
 2. Read relevant wiki pages (prefer wiki over raw sources — the wiki should have what you need)
 3. Synthesize an answer with wikilinks to supporting pages
-4. If the answer is substantial, file it as `Wiki/synthesis/<slug>.md`
-5. If synthesis page was created: update `Wiki/index.md` and append to `Wiki/log.md`
+4. If the answer is substantial, file it as `synthesis/<slug>.md`
+5. If synthesis page was created: update `catalog.md` and append to `log.md`
 
 #### LINT — Health-check the wiki
 
@@ -130,18 +131,18 @@ Check for:
 - Missing cross-references (entity X mentioned in 5 pages but only linked in 2)
 - Sources in `Clippings/` not in the Unprocessed or ingested list
 
-Report findings as a checklist. File result as `Wiki/synthesis/lint-YYYY-MM-DD.md` and update index + log.
+Report findings as a checklist. File result as `synthesis/lint-YYYY-MM-DD.md` and update index + log.
 
 ---
 
 ### Absolute Rules
 
 1. **Never modify files in `Clippings/`** — they are immutable raw sources
-2. **Always update `Wiki/index.md` and `Wiki/log.md`** on every wiki change, no exceptions
+2. **Always update `catalog.md` and `log.md`** on every wiki change, no exceptions
 3. **Source summaries are factual** — no interpretation, no editorializing
 4. **Contradictions are surfaced explicitly** — never silently overwrite
-5. **Every wiki page gets `type:` frontmatter and `wiki/*` tags**
-6. **Use `[[Wiki/section/slug|Display Name]]` for every mention** of an entity or concept that has a wiki page — always include the display name after `|`
+5. **Every wiki page gets `type:` frontmatter and `*` tags**
+6. **Use `[[section/slug|Display Name]]` for every mention** of an entity or concept that has a wiki page — always include the display name after `|`
 
 ---
 
@@ -162,7 +163,7 @@ qmd update && qmd embed
 qmd context add qmd://sats/ "Obsidian vault with LLM wiki and raw source clippings"
 qmd context add qmd://sats/Wiki "LLM-generated wiki: source summaries, entities, concepts, synthesis"
 ```
-At small scale, `Wiki/index.md` is sufficient for navigation.
+At small scale, `catalog.md` is sufficient for navigation.
 
 ---
 

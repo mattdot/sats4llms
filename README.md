@@ -33,15 +33,14 @@ The wiki currently contains:
 
 ```
 sats4llms/
-├── content/
-│   └── Wiki/              # The actual wiki (Quartz content root)
-│       ├── concepts/      # SATs and biases
-│       ├── entities/      # People, orgs, books
-│       ├── sources/       # Ingested source summaries
-│       ├── synthesis/     # Cross-source analysis pages
-│       ├── index.md       # Catalog (homepage)
-│       ├── log.md         # Operations log
-│       └── overview.md    # Thesis & wiki structure
+├── content/               # Quartz content root + Obsidian vault root
+│   ├── concepts/          # SATs and biases
+│   ├── entities/          # People, orgs, books
+│   ├── sources/           # Ingested source summaries
+│   ├── synthesis/         # Cross-source analysis pages
+│   ├── index.md           # Homepage (Overview)
+│   ├── catalog.md         # Full catalog of every page
+│   └── log.md             # Operations log
 ├── CLAUDE.md              # Schema for AI agents maintaining the wiki
 ├── quartz.config.ts       # Static site config
 └── .github/workflows/
@@ -56,7 +55,7 @@ To preview locally:
 
 ```bash
 npm ci
-npx quartz build --directory content/Wiki --serve
+npx quartz build --serve
 ```
 
 Then open <http://localhost:8080>.

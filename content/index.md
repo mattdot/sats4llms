@@ -2,6 +2,7 @@
 title: SATs for LLMs
 type: overview
 tags: [wiki/overview]
+aliases: [overview]
 date_updated: 2026-05-19
 source_count: 3
 ---
