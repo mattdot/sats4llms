@@ -9,6 +9,24 @@ Append-only. Format: `## [YYYY-MM-DD] operation | Title`
 
 ---
 
+## [2026-05-19] ingest | Grey Dynamics — Intelligence Failure (2024)
+
+User-supplied source on intelligence failure as a multi-stage phenomenon. Two distinct contributions to the wiki:
+
+- Real-world case studies — Iraq WMD (2003) and Russia/Ukraine (2022) — grounding the abstract bias library in documented consequential events
+- The **Intelligence Cycle** as a 5-stage process framework (Direction → Collection → Processing → Analysis → Dissemination) that maps cleanly onto LLM agentic pipelines
+
+**Created:**
+- `sources/grey-dynamics-intelligence-failure-2024.md` — full source summary with case studies, biases catalog, key quotes, LLM relevance
+- `entities/grey-dynamics.md` — publisher entity
+- `concepts/intelligence-cycle.md` — process framework concept; includes 5-stage table mapped to LLM agentic pipeline analogs and per-stage LLM failure modes
+
+**Note:** Article mentions "Proportionality Bias" which is outside the wiki's current 12-bias scope; not ingested as a concept page per prior scope decision.
+
+Pages touched: 4
+
+---
+
 ## [2026-05-19] expand | Fill in Structural Parallel research backing
 
 User noted the Structural Parallel table on the homepage had many unlinked cells — Premature Closure had no concept page, and the LLM Equivalents column was largely descriptive prose with no supporting research linked. Filled the gaps:

@@ -81,6 +81,10 @@ This is an **open empirical question** — does motivated reasoning manifest in 
 
 ---
 
+## Case Studies
+
+- **Russia/Ukraine 2022.** Per [[sources/grey-dynamics-intelligence-failure-2024|Grey Dynamics (2024)]]: Senior FSB officials told Putin a Russian invasion would face minimal Ukrainian resistance and Kyiv could be encircled in under three days. The actual outcome (500,000+ Russian casualties, Kyiv never captured) is one of the cleanest contemporary documented examples of institutional motivated reasoning — analysts producing the assessment leadership wanted to hear. The structural parallel to LLM sycophancy is direct.
+
 ## See Also
 
 [[concepts/cognitive-bias|Cognitive Bias]] | [[concepts/confirmation-bias|Confirmation Bias]] | [[concepts/groupthink|Groupthink]] | [[concepts/mind-set|Mind-Set]]

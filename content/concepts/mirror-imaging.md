@@ -72,6 +72,10 @@ See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigati
 
 ---
 
+## Case Studies
+
+- **Iraq WMD 2003.** The Kerr Report (cited in [[sources/grey-dynamics-intelligence-failure-2024|Grey Dynamics 2024]]) found US satellite imagery analysis "failed to acknowledge the political/cultural context" of Saddam's actions — a direct instance of mirror imaging at the collection-strategy level. US intelligence had **zero HUMINT sources in Iraq from 1998–2003**, meaning analysis ran on overhead imagery interpreted through Western assumptions about a leader operating with very different incentives and information.
+
 ## See Also
 
 [[concepts/cognitive-bias|Cognitive Bias]] | [[concepts/groupthink|Groupthink]] | [[concepts/motivated-reasoning|Motivated Reasoning]] | [[concepts/red-team-analysis|Red Team Analysis]]

@@ -29,6 +29,7 @@ This is the master catalog. Read this first before answering any query or starti
 | Role play with large language models (Shanahan, McDonell & Reynolds, Nature) | [[sources/shanahan-roleplay-2023\|Shanahan et al. (2023)]] | 2026-05-19 | persona, role-play, anthropomorphism, alignment |
 | Lost in the Middle: How LMs Use Long Contexts (Liu et al., TACL) | [[sources/liu-lost-in-middle-2023\|Liu et al. (2023)]] | 2026-05-19 | long-context, positional-bias, availability-analog |
 | Open Problems and Fundamental Limitations of RLHF (Casper et al.) | [[sources/casper-rlhf-2023\|Casper et al. (2023)]] | 2026-05-19 | RLHF, reward-hacking, sycophancy, motivated-reasoning, alignment |
+| Intelligence Failure: What, When, Why and How (Grey Dynamics) | [[sources/grey-dynamics-intelligence-failure-2024\|Grey Dynamics (2024)]] | 2026-05-19 | intelligence-failure, intelligence-cycle, case-studies, Iraq, Ukraine |
 
 ---
 
@@ -44,6 +45,7 @@ This is the master catalog. Read this first before answering any query or starti
 | Randolph H. Pherson | [[entities/randolph-h-pherson\|Randolph H. Pherson]] | person | 1 |
 | SANS Emerging Threats Summit | [[entities/sans-emerging-threats-summit\|SANS Emerging Threats Summit]] | org | 1 |
 | Structured Analytic Techniques for Intelligence Analysis (Book) | [[entities/heuer-pherson-book\|Heuer & Pherson (book)]] | book | 1 |
+| Grey Dynamics | [[entities/grey-dynamics\|Grey Dynamics]] | org | 1 |
 | Daniel Kahneman | [[entities/daniel-kahneman\|Daniel Kahneman]] | person | 0 |
 | Amos Tversky | [[entities/amos-tversky\|Amos Tversky]] | person | 0 |
 | Irving Janis | [[entities/irving-janis\|Irving Janis]] | person | 0 |
@@ -69,6 +71,7 @@ This is the master catalog. Read this first before answering any query or starti
 |------|------|----------|------------|--------------|
 | Structured Analytic Techniques | [[concepts/structured-analytic-techniques\|Structured Analytic Techniques]] | meta | high | 3 |
 | Cognitive Bias (hub) | [[concepts/cognitive-bias\|Cognitive Bias]] | psychology | high | 3 |
+| **Intelligence Cycle** | [[concepts/intelligence-cycle\|Intelligence Cycle]] | framework/process | high | 2 |
 | **Premature Closure** | [[concepts/premature-closure\|Premature Closure]] | bias | high | 3 |
 | **Persona Capture** *(LLM-native)* | [[concepts/persona-capture\|Persona Capture]] | llm-bias | high | 2 |
 | System 1 / System 2 | [[concepts/system-1-system-2\|System 1 / System 2]] | psychology/theory | high | 0 |
@@ -134,9 +137,9 @@ Sources in `Clippings/` not yet ingested into the wiki:
 
 ## Stats
 
-- **Sources ingested:** 15 (+3: Shanahan role-play, Liu Lost-in-the-Middle, Casper RLHF open problems)
-- **Entity pages:** 24
-- **Concept pages:** 32 (+2: Premature Closure, Persona Capture)
+- **Sources ingested:** 16 (+1: Grey Dynamics Intelligence Failure 2024)
+- **Entity pages:** 25 (+1: Grey Dynamics)
+- **Concept pages:** 33 (+1: Intelligence Cycle)
 - **Synthesis pages:** 13
 - **Last updated:** 2026-05-19
 - **Last updated:** 2026-05-19
