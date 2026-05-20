@@ -43,41 +43,6 @@ Three things converge to make this worth building:
 
 ---
 
-## Key Themes
-
-1. **SATs are structural, not aspirational.** They don't ask analysts (or agents) to be less biased — they change the process so the bias has nowhere to operate. This is why they translate to software. Rooted in [[concepts/system-1-system-2|Kahneman's dual-process theory]]: SATs force System 2 engagement by making the reasoning steps externally visible.
-
-2. **Disconfirmation over confirmation.** The most rigorous SATs ([[concepts/analysis-of-competing-hypotheses|ACH]], [[concepts/devils-advocacy|Devil's Advocacy]]) are built around *disproving* hypotheses rather than confirming them. Single-prompt LLM calls that generate and evaluate in one step defeat this structure — sequential calls are required (confirmed empirically by [[entities/scott-roberts|Roberts 2025]]).
-
-3. **Human-machine team, not replacement.** Roberts' empirical finding: LLMs handle the structural work (generating hypotheses, surfacing assumptions, mapping question space) while humans handle judgment (reviewing CSV output, adjusting scores, making final calls). The value is making rigorous SAT processes tractable for small teams.
-
-4. **The bias library matters.** Twelve individual [[concepts/cognitive-bias|biases]] are documented in this wiki with academic citations, mechanisms, and specific SAT countermeasures. Knowing *which* bias a technique targets tells you *when* to apply it and *how* to structure the prompt — see the [[synthesis/bias-sat-matrix|Bias × SAT Matrix]].
-
----
-
-## The Technique Inventory
-
-**Diagnostic** *(make gaps and assumptions transparent)*
-[[concepts/key-assumptions-check|Key Assumptions Check]] · [[concepts/quality-of-information-check|Quality of Information Check]] · [[concepts/indicators-or-signposts-of-change|Indicators or Signposts of Change]] · [[concepts/analysis-of-competing-hypotheses|Analysis of Competing Hypotheses (ACH)]]
-
-**Contrarian** *(challenge current thinking)*
-[[concepts/devils-advocacy|Devil's Advocacy]] · [[concepts/team-a-team-b|Team A/Team B]] · [[concepts/high-impact-low-probability-analysis|High-Impact/Low-Probability Analysis]] · [[concepts/what-if-analysis|What If? Analysis]]
-
-**Imaginative** *(generate new perspectives and scope problems)*
-[[concepts/brainstorming|Brainstorming]] · [[concepts/outside-in-thinking|Outside-In Thinking]] · [[concepts/red-team-analysis|Red Team Analysis]] · [[concepts/alternative-futures-analysis|Alternative Futures Analysis]] · [[concepts/starbursting|Starbursting]]
-
----
-
-## Key Synthesis Pages
-
-- [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] — the core synthesis: bias taxonomy, 8 SAT prompt adaptations, architectural patterns, empirical evidence
-- [[synthesis/bias-sat-matrix|Bias × SAT Matrix]] — full cross-reference: which SAT controls which bias, in both directions
-- [[synthesis/sat-selection-guide|SAT Selection Guide]] — given a problem type or bias risk, which SAT to apply
-- [[synthesis/sat-pipeline|SAT Pipeline]] — how SATs compose into a complete agentic workflow
-- [[synthesis/sat-llm-hypotheses|Testable Hypotheses]] — experimental designs to verify the SAT-LLM thesis (overview below)
-
----
-
 ## Testable Hypotheses
 
 The structural analogy between human cognitive biases and LLM failure modes is well-grounded. The claim that SATs *control* those failure modes in LLMs is largely untested. → [[synthesis/sat-llm-hypotheses|Testable Hypotheses: SATs + LLM Quality]] lays out eight specific experiments — what to measure, why each could fail, and which failure modes are confounded with each other.
@@ -109,6 +74,27 @@ On the LLM side, the empirical foundation has substantially improved: [[sources/
 - How do SAT-structured prompts interact with chain-of-thought? Does CoT amplify or reduce the targeted biases?
 - Can the cross-chunk context loss in long-document [[concepts/key-assumptions-check|KAC]] be fully mitigated by map-reduce or sliding-window approaches?
 - [[entities/richards-j-heuer-jr|Heuer]] & [[entities/randolph-h-pherson|Pherson]]'s [[entities/heuer-pherson-book|*Structured Analytic Techniques for Intelligence Analysis*]] (3rd ed.) covers 30+ techniques vs. the CIA Primer's 12 — worth ingesting if accessible.
+
+---
+
+## What This Wiki Helps You Do
+
+*Assuming the thesis holds — that SATs control the LLM analogs of cognitive bias — here's where to look depending on your goal:*
+
+- **"I'm building an agent and need to defend against bias X."**
+  → [[synthesis/bias-sat-matrix|Bias × SAT Matrix]] — lookup table mapping each bias to the SAT(s) that counter it (in both directions).
+
+- **"I have a specific problem and need to pick a technique."**
+  → [[synthesis/sat-selection-guide|SAT Selection Guide]] — decision guide organized by problem type, by bias risk, and by process stage. Includes a "minimum viable intervention" ranking.
+
+- **"I want to chain SATs into a complete workflow."**
+  → [[synthesis/sat-pipeline|SAT Pipeline]] — full end-to-end pipelines with three orchestration patterns (sequential single-agent, parallel + adversarial, post-hoc audit) plus failure modes.
+
+- **"I want the full argument and prompt patterns."**
+  → [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] — the core synthesis. Bias taxonomy, 8 SAT prompt adaptations, architectural patterns, empirical evidence.
+
+- **"Just show me a specific bias or technique."**
+  → [[concepts/cognitive-bias|Cognitive Bias hub]] for the 12 biases · [[concepts/structured-analytic-techniques|Structured Analytic Techniques]] for the 13 SATs.
 
 ---
 
