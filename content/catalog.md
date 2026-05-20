@@ -18,6 +18,7 @@ This is the master catalog. Read this first before answering any query or starti
 | A Tradecraft Primer: Structured Analytic Techniques for Improving Intelligence Analysis | [[sources/tradecraft-primer-2009\|CIA Tradecraft Primer (2009)]] | 2026-05-19 | SATs, cognitive-bias, mind-sets, intelligence-analysis |
 | SATs: Explanation and Relevance (Shawn Riley, LinkedIn) | [[sources/riley-sats-cybersecurity-2024\|Riley: SATs in Cybersecurity (2024)]] | 2026-05-19 | SATs, cybersecurity, roles |
 | LLM SATs FTW (Scott Roberts, sroberts.io) | [[sources/roberts-llm-sats-ftw-2025\|Roberts: LLM SATs FTW (2025)]] | 2026-05-19 | SATs, LLM-implementation, tools, starbursting, ACH, KAC |
+| Assessing the Value of SATs in the U.S. IC (Artner, Girven & Bruce — RAND) | [[sources/rand-rr1408-2016\|RAND RR1408 (2016)]] | 2026-05-19 | SAT-evaluation, ICD-203, empirical-studies, methodology, puzzles-mysteries-complexities |
 
 ---
 
@@ -36,6 +37,11 @@ This is the master catalog. Read this first before answering any query or starti
 | Daniel Kahneman | [[entities/daniel-kahneman\|Daniel Kahneman]] | person | 0 |
 | Amos Tversky | [[entities/amos-tversky\|Amos Tversky]] | person | 0 |
 | Irving Janis | [[entities/irving-janis\|Irving Janis]] | person | 0 |
+| Stephen Artner | [[entities/stephen-artner\|Stephen Artner]] | person | 1 |
+| Richard S. Girven | [[entities/richard-girven\|Richard S. Girven]] | person | 1 |
+| James B. Bruce | [[entities/james-bruce\|James B. Bruce]] | person | 1 |
+| RAND Corporation | [[entities/rand-corporation\|RAND Corporation]] | org | 1 |
+| Office of the Director of National Intelligence (ODNI) | [[entities/odni\|ODNI]] | org | 1 |
 
 ---
 
@@ -93,15 +99,15 @@ Sources in `Clippings/` not yet ingested into the wiki:
 
 - `Tradecraft-Primer-apr09.pdf` — ✅ ingested as [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]
 - `roberts-llm-sats-ftw-2025.md` — ✅ ingested as [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]
-- RAND RR1408 — ❌ blocked (403); needs alternate access method
+- RAND RR1408 — ✅ ingested as [[sources/rand-rr1408-2016|Artner, Girven & Bruce — Assessing SATs (RAND, 2016)]]
 - Heuer/Pherson book (*Structured Analytic Techniques for Intelligence Analysis*, 3rd ed.) — ❌ not acquired; high value; known via [[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]
 
 ---
 
 ## Stats
 
-- **Sources ingested:** 3
-- **Entity pages:** 11 (+3: Kahneman, Tversky, Janis)
-- **Concept pages:** 30 (+4: System 1/2, Sycophancy, Hallucination + original 26)
-- **Synthesis pages:** 5 (+1: SAT–LLM Hypotheses)
+- **Sources ingested:** 4 (+1: RAND RR1408)
+- **Entity pages:** 16 (+5: Artner, Girven, Bruce, RAND Corporation, ODNI)
+- **Concept pages:** 30
+- **Synthesis pages:** 5
 - **Last updated:** 2026-05-19

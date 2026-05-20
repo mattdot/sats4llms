@@ -47,6 +47,23 @@ Parse latest entries: `grep "^## \[" Wiki/log.md | tail -5`
 
 ---
 
+## [2026-05-19] ingest | RAND RR1408 — Assessing the Value of SATs in the U.S. IC (Artner, Girven & Bruce, 2016)
+
+- Source URL: https://www.rand.org/pubs/research_reports/RR1408.html (previously blocked; user provided downloaded PDF)
+- Created `sources/rand-rr1408-2016.md` — full source summary including pilot study findings, empirical literature review, proposed evaluation methodology
+- Created entities: `stephen-artner.md`, `richard-girven.md`, `james-bruce.md`, `rand-corporation.md`, `odni.md`
+- Replaced the three "blocked" references in `catalog.md`, `index.md`, `log.md` with working links to the canonical RAND URL
+- Updated catalog Sources and Entities tables; updated Stats (4 sources, 16 entities)
+- Key empirical findings now in wiki:
+  - Mitre 2004 — ACH reduces confirmation bias only for non-professional analysts
+  - Nemeth 2001 — formal devil's advocacy may heighten confidence in preferred hypotheses
+  - Tetlock 2005 — scenarios reduced prediction accuracy in two experiments
+  - Folker 2000 — structured hypothesis testing improved accuracy in 1 of 2 experiments
+- Key conceptual contribution: face validity vs. empirical validity distinction; Treverton typology (puzzles/mysteries/complexities); ICD 203 standards
+- Pages touched: 8
+
+---
+
 ## [2026-05-19] expand | Bias reference pages + LLM synthesis
 
 - Created 9 individual bias concept pages with full academic references and LLM agentic systems context:

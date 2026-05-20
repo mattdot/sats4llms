@@ -80,7 +80,7 @@ Three things converge to make this worth building:
 
 - How do SAT-structured prompts interact with chain-of-thought? Does CoT amplify or reduce the targeted biases?
 - Can ACH's cross-chunk context loss in long documents be fully mitigated by map-reduce or sliding-window approaches?
-- What does RAND RR1408 add? (Currently inaccessible — 403)
+- What does RAND RR1408 add? See [[sources/rand-rr1408-2016|Artner, Girven & Bruce (2016)]] — empirical pilot study; key finding is that SATs largely have *face validity* but lack *empirical validity*; provides specific experimental references (Mitre 2004 on ACH, Nemeth 2001 on devil's advocacy, Tetlock 2005 on scenarios) that directly inform [[synthesis/sat-llm-hypotheses|the LLM hypothesis page]]
 - The Heuer/Pherson book (*Structured Analytic Techniques for Intelligence Analysis*, 3rd ed.) covers a broader technique set than the CIA Primer — worth ingesting if accessible.
 
 ---
