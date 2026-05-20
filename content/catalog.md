@@ -104,7 +104,14 @@ This is the master catalog. Read this first before answering any query or starti
 | Bias × SAT Matrix | [[synthesis/bias-sat-matrix\|Bias x SAT Matrix]] | 2026-05-19 | Which SAT controls which cognitive bias? Full cross-reference. |
 | SAT Selection Guide | [[synthesis/sat-selection-guide\|SAT Selection Guide]] | 2026-05-19 | Given a problem type or bias risk, which SAT should I apply? |
 | SAT Pipeline | [[synthesis/sat-pipeline\|SAT Pipeline]] | 2026-05-19 | How do SATs compose into a complete analytic pipeline? |
-| Testable Hypotheses: SATs + LLM Quality | [[synthesis/sat-llm-hypotheses\|SAT–LLM Hypotheses]] | 2026-05-19 | What experiments could verify that SATs actually improve qualitative LLM output? |
+| Testable Hypotheses: SATs + LLM Quality (Framework) | [[synthesis/sat-llm-hypotheses\|SAT–LLM Hypotheses (framework)]] | 2026-05-19 | What experiments could verify that SATs actually improve qualitative LLM output? Framework page + H0 + status overview. |
+| H1: ACH + Confirmation Bias | [[synthesis/hypotheses/h1-ach-confirmation-bias\|H1]] | 2026-05-19 | Does ACH reduce confirmation bias in LLM evidence evaluation? |
+| H2: Devil's Advocacy + Sycophancy | [[synthesis/hypotheses/h2-devils-advocacy-sycophancy\|H2]] | 2026-05-19 | Does Devil's Advocacy maintain counter-positions under multi-turn pushback? |
+| H3: KAC + Anchoring | [[synthesis/hypotheses/h3-kac-anchoring\|H3]] | 2026-05-19 | Does KAC prevent anchoring from initial prompt framing? |
+| H4: Red Team + Mirror Imaging | [[synthesis/hypotheses/h4-red-team-mirror-imaging\|H4]] | 2026-05-19 | Does Red Team analysis improve adversarial robustness? |
+| H5: Multi-agent + Groupthink | [[synthesis/hypotheses/h5-multi-agent-groupthink\|H5]] | 2026-05-19 | Do multi-agent pipelines outperform single-agent chains, controlling for shared base model? |
+| H6: What If? + Overconfidence | [[synthesis/hypotheses/h6-what-if-overconfidence\|H6]] | 2026-05-19 | Does What If? prompting improve LLM calibration? |
+| H7: Epistemic Labeling + Hallucination | [[synthesis/hypotheses/h7-epistemic-labeling-hallucination\|H7]] | 2026-05-19 | Does forced epistemic labeling reduce confident hallucination? |
 
 ---
 
@@ -124,5 +131,5 @@ Sources in `Clippings/` not yet ingested into the wiki:
 - **Sources ingested:** 12 (+8 LLM-bias empirical papers: Sharma, Perez, Huang, Kadavath, Tian, Du, Durmus, Echterhoff)
 - **Entity pages:** 24 (+8: Anthropic, Sharma, Perez, Kadavath, Durmus, Tian, Du, Echterhoff)
 - **Concept pages:** 30 (all 12 bias pages + 2 LLM-native + others updated with Empirical Evidence sections)
-- **Synthesis pages:** 5 (hypotheses page significantly updated with empirical-status table)
+- **Synthesis pages:** 12 (5 prior + H1–H7 each as a dedicated page; sat-llm-hypotheses is now the framework parent)
 - **Last updated:** 2026-05-19

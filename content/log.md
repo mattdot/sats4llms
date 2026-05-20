@@ -99,6 +99,26 @@ Pages touched: 30
 
 ---
 
+## [2026-05-19] restructure | Split each hypothesis into its own page
+
+Per user request — each H# now has its own dedicated page in `synthesis/hypotheses/`. The parent `synthesis/sat-llm-hypotheses.md` is now a framework page holding H0 (meta), the empirical-status overview table linking to all 7 children, and the cross-cutting experimental design principles.
+
+- Created `synthesis/hypotheses/h1-ach-confirmation-bias.md`
+- Created `synthesis/hypotheses/h2-devils-advocacy-sycophancy.md`
+- Created `synthesis/hypotheses/h3-kac-anchoring.md`
+- Created `synthesis/hypotheses/h4-red-team-mirror-imaging.md`
+- Created `synthesis/hypotheses/h5-multi-agent-groupthink.md`
+- Created `synthesis/hypotheses/h6-what-if-overconfidence.md`
+- Created `synthesis/hypotheses/h7-epistemic-labeling-hallucination.md`
+- Each child page has its own Empirical Evidence section with the relevant citations
+- Slimmed parent page significantly; replaced anchor-based table links with whole-page links
+- Updated homepage H1–H7 table to link to children, not anchors
+- Updated catalog Synthesis Pages table
+
+Pages touched: 11
+
+---
+
 ## [2026-05-19] expand | Bias reference pages + LLM synthesis
 
 - Created 9 individual bias concept pages with full academic references and LLM agentic systems context:
