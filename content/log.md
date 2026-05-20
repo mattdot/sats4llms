@@ -9,6 +9,27 @@ Append-only. Format: `## [YYYY-MM-DD] operation | Title`
 
 ---
 
+## [2026-05-19] expand | Fill in Structural Parallel research backing
+
+User noted the Structural Parallel table on the homepage had many unlinked cells — Premature Closure had no concept page, and the LLM Equivalents column was largely descriptive prose with no supporting research linked. Filled the gaps:
+
+**New concept pages:**
+- `concepts/premature-closure.md` — distinct human bias (also called satisficing per Heuer/RAND). Covers LLM manifestation (single-hypothesis generation, CoT rationalization, greedy decoding), with empirical evidence from Roberts and Echterhoff.
+- `concepts/persona-capture.md` — LLM-native failure mode (third in the LLM-native bias group with sycophancy and hallucination). Covers manifestations including persona-driven jailbreaks, cross-cultural simulation distortion, role-locked agentic systems.
+
+**New source pages:**
+- `sources/shanahan-roleplay-2023.md` — Murray Shanahan et al. *Role play with large language models* (Nature 2023). Theoretical foundation for persona capture.
+- `sources/liu-lost-in-middle-2023.md` — Nelson Liu et al. *Lost in the Middle* (TACL 2023). Canonical evidence for context positional bias as the LLM analog of availability heuristic.
+- `sources/casper-rlhf-2023.md` — Stephen Casper et al. *Open Problems and Fundamental Limitations of RLHF* (2023). Theoretical foundation for RLHF reward-following as the LLM analog of motivated reasoning.
+
+**Homepage Structural Parallel table updated:** every cell now wikilinked. The LLM Equivalents column now includes inline source citations (e.g., "Persona capture (Shanahan 2023, Durmus 2023)") so the research backing is visible at a glance.
+
+Catalog: 15 sources, 32 concepts. Stats updated.
+
+Pages touched: 8
+
+---
+
 ## [2026-05-19] add | Bias Evaluations methodology page + soften homepage overclaim
 
 User feedback: bullet #3 on the homepage ("Implementation is now proven, not theoretical") overstated where the field actually is. Roberts and Du are early signal, not proof. Also: the idea of evaluations — building judges that detect bias as a failure mode in a reasoning trace — deserves its own page since it's the operational bridge from "hypothesis claim" to "actual experiment."

@@ -32,14 +32,14 @@ Three things converge to make this worth building:
 | Human Analysis Problem | LLM Equivalent | SAT Countermeasure |
 |------------------------|----------------|-------------------|
 | [[concepts/confirmation-bias\|Confirmation bias]] | [[concepts/sycophancy\|Sycophancy]] / prompt confirmation | [[concepts/analysis-of-competing-hypotheses\|ACH]], [[concepts/devils-advocacy\|Devil's Advocacy]] |
-| [[concepts/anchoring-bias\|Anchoring bias]] | Prompt framing lock-in | [[concepts/key-assumptions-check\|Key Assumptions Check]], generate-then-evaluate separation |
-| [[concepts/groupthink\|Groupthink]] | Multi-agent echo chambers | [[concepts/team-a-team-b\|Team A/Team B]], independent parallel analysis |
-| [[concepts/overconfidence-bias\|Overconfidence]] | [[concepts/hallucination\|Hallucination]] with false certainty | [[concepts/what-if-analysis\|What If? Analysis]], explicit uncertainty tracking |
-| [[concepts/mirror-imaging\|Mirror imaging]] | Persona capture | [[concepts/red-team-analysis\|Red Team Analysis]] |
-| Premature closure | Single-hypothesis generation | [[concepts/starbursting\|Starbursting]], [[concepts/brainstorming\|Brainstorming]] |
-| [[concepts/motivated-reasoning\|Motivated reasoning]] | RLHF reward-following | [[concepts/devils-advocacy\|Devil's Advocacy]], adversarial agents |
-| [[concepts/availability-heuristic\|Availability heuristic]] | Context recency weighting | [[concepts/key-assumptions-check\|KAC]], [[concepts/outside-in-thinking\|Outside-In Thinking]] |
-| [[concepts/framing-effect\|Framing effect]] | Prompt framing | [[concepts/key-assumptions-check\|KAC]], alternative framings |
+| [[concepts/anchoring-bias\|Anchoring bias]] | [[concepts/anchoring-bias\|Prompt framing lock-in]] ([[sources/echterhoff-biasbuster-2024\|Echterhoff 2024]]) | [[concepts/key-assumptions-check\|Key Assumptions Check]], generate-then-evaluate separation |
+| [[concepts/groupthink\|Groupthink]] | Multi-agent echo chambers ([[sources/du-debate-2023\|Du 2023]]) | [[concepts/team-a-team-b\|Team A/Team B]], independent parallel analysis |
+| [[concepts/overconfidence-bias\|Overconfidence]] | [[concepts/hallucination\|Hallucination]] with false certainty ([[sources/kadavath-know-2022\|Kadavath 2022]]) | [[concepts/what-if-analysis\|What If? Analysis]], explicit uncertainty tracking ([[sources/tian-calibration-2023\|Tian 2023]]) |
+| [[concepts/mirror-imaging\|Mirror imaging]] | [[concepts/persona-capture\|Persona capture]] ([[sources/shanahan-roleplay-2023\|Shanahan 2023]], [[sources/durmus-global-opinions-2023\|Durmus 2023]]) | [[concepts/red-team-analysis\|Red Team Analysis]] |
+| [[concepts/premature-closure\|Premature closure]] | Single-hypothesis generation ([[sources/roberts-llm-sats-ftw-2025\|Roberts 2025]]) | [[concepts/starbursting\|Starbursting]], [[concepts/brainstorming\|Brainstorming]] |
+| [[concepts/motivated-reasoning\|Motivated reasoning]] | RLHF reward-following ([[sources/casper-rlhf-2023\|Casper 2023]], [[sources/sharma-sycophancy-2023\|Sharma 2023]]) | [[concepts/devils-advocacy\|Devil's Advocacy]], adversarial agents |
+| [[concepts/availability-heuristic\|Availability heuristic]] | Context recency/positional weighting ([[sources/liu-lost-in-middle-2023\|Liu 2023]]) | [[concepts/key-assumptions-check\|KAC]], [[concepts/outside-in-thinking\|Outside-In Thinking]] |
+| [[concepts/framing-effect\|Framing effect]] | Prompt framing ([[sources/echterhoff-biasbuster-2024\|Echterhoff 2024]]) | [[concepts/key-assumptions-check\|KAC]], alternative framings |
 
 ---
 

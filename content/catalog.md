@@ -26,6 +26,9 @@ This is the master catalog. Read this first before answering any query or starti
 | Improving Factuality and Reasoning through Multiagent Debate (Du et al., MIT) | [[sources/du-debate-2023\|Du et al. (2023)]] | 2026-05-19 | multi-agent, debate, groupthink, factuality, reasoning |
 | Towards Measuring Subjective Global Opinions (Durmus et al., Anthropic) | [[sources/durmus-global-opinions-2023\|Durmus et al. (2023)]] | 2026-05-19 | cultural-bias, mirror-imaging, WEIRD, alignment |
 | Cognitive Bias in Decision-Making with LLMs (Echterhoff et al., BiasBuster) | [[sources/echterhoff-biasbuster-2024\|Echterhoff et al. (2024)]] | 2026-05-19 | cognitive-bias, anchoring, framing, availability, confirmation, debiasing |
+| Role play with large language models (Shanahan, McDonell & Reynolds, Nature) | [[sources/shanahan-roleplay-2023\|Shanahan et al. (2023)]] | 2026-05-19 | persona, role-play, anthropomorphism, alignment |
+| Lost in the Middle: How LMs Use Long Contexts (Liu et al., TACL) | [[sources/liu-lost-in-middle-2023\|Liu et al. (2023)]] | 2026-05-19 | long-context, positional-bias, availability-analog |
+| Open Problems and Fundamental Limitations of RLHF (Casper et al.) | [[sources/casper-rlhf-2023\|Casper et al. (2023)]] | 2026-05-19 | RLHF, reward-hacking, sycophancy, motivated-reasoning, alignment |
 
 ---
 
@@ -66,6 +69,8 @@ This is the master catalog. Read this first before answering any query or starti
 |------|------|----------|------------|--------------|
 | Structured Analytic Techniques | [[concepts/structured-analytic-techniques\|Structured Analytic Techniques]] | meta | high | 3 |
 | Cognitive Bias (hub) | [[concepts/cognitive-bias\|Cognitive Bias]] | psychology | high | 3 |
+| **Premature Closure** | [[concepts/premature-closure\|Premature Closure]] | bias | high | 3 |
+| **Persona Capture** *(LLM-native)* | [[concepts/persona-capture\|Persona Capture]] | llm-bias | high | 2 |
 | System 1 / System 2 | [[concepts/system-1-system-2\|System 1 / System 2]] | psychology/theory | high | 0 |
 | Mind-Set | [[concepts/mind-set\|Mind-Set]] | psychology | high | 1 |
 | **Anchoring Bias** | [[concepts/anchoring-bias\|Anchoring Bias]] | bias | high | 1 |
@@ -129,8 +134,9 @@ Sources in `Clippings/` not yet ingested into the wiki:
 
 ## Stats
 
-- **Sources ingested:** 12 (+8 LLM-bias empirical papers: Sharma, Perez, Huang, Kadavath, Tian, Du, Durmus, Echterhoff)
-- **Entity pages:** 24 (+8: Anthropic, Sharma, Perez, Kadavath, Durmus, Tian, Du, Echterhoff)
-- **Concept pages:** 30 (all 12 bias pages + 2 LLM-native + others updated with Empirical Evidence sections)
-- **Synthesis pages:** 13 (added Bias Evaluations as a methodology page bridging the hypotheses framework and concrete experiments)
+- **Sources ingested:** 15 (+3: Shanahan role-play, Liu Lost-in-the-Middle, Casper RLHF open problems)
+- **Entity pages:** 24
+- **Concept pages:** 32 (+2: Premature Closure, Persona Capture)
+- **Synthesis pages:** 13
+- **Last updated:** 2026-05-19
 - **Last updated:** 2026-05-19
