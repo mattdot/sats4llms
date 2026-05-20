@@ -1,5 +1,5 @@
 ---
-title: SATs for LLMs — Overview
+title: SATs for LLMs
 type: overview
 tags: [wiki/overview]
 aliases: [overview]

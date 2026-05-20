@@ -25,18 +25,15 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ContentMeta(),
     Component.TagList(),
   ],
-  left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
+  left: [],
+  right: [
     Component.Flex({
       components: [
-        { Component: Component.Darkmode(), grow: true },
+        { Component: Component.Search(), grow: true },
+        { Component: Component.Darkmode() },
         { Component: Component.ReaderMode() },
       ],
     }),
-  ],
-  right: [
-    Component.Search(),
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
@@ -46,10 +43,13 @@ export const defaultContentPageLayout: PageLayout = {
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
-  left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Darkmode(),
+  left: [],
+  right: [
+    Component.Flex({
+      components: [
+        { Component: Component.Search(), grow: true },
+        { Component: Component.Darkmode() },
+      ],
+    }),
   ],
-  right: [Component.Search()],
 }
