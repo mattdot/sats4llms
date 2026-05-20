@@ -3,7 +3,7 @@ type: concept
 tags: [wiki/concept, wiki/bias]
 date_updated: 2026-05-19
 confidence: high
-source_count: 1
+source_count: 3
 ---
 
 # Overconfidence Bias
@@ -70,6 +70,17 @@ See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigati
 - Fischhoff, B., Slovic, P., & Lichtenstein, S. (1977). "Knowing with certainty: The appropriateness of extreme confidence." *Journal of Experimental Psychology: Human Perception and Performance*, 3(4), 552–564.
 - Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. (Chapter 19: "The Illusion of Understanding")
 - [[entities/richards-j-heuer-jr|Richards j. heuer jr.]] — *The Psychology of Intelligence Analysis* (1999), Chapter 9
+
+---
+
+## Empirical Evidence (LLM)
+
+| Study | Finding |
+|---|---|
+| [[sources/tian-calibration-2023\|Tian et al. (EMNLP 2023)]] | RLHF wrecks token-probability calibration, but *verbalized* confidence ("how sure are you?") recovers it — ~50% relative reduction in expected calibration error on TriviaQA, SciQ, TruthfulQA. |
+| [[sources/kadavath-know-2022\|Kadavath et al. (2022)]] | Large models can produce well-calibrated self-evaluations; the information needed for calibration exists internally and improves with scale. |
+
+**Implication for SATs:** uncertainty-elicitation prompts (e.g. [[concepts/what-if-analysis\|What If?]], explicit confidence rating) have direct empirical support. Direct relevance to [[synthesis/sat-llm-hypotheses\|H6]].
 
 ---
 

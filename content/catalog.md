@@ -18,6 +18,14 @@ This is the master catalog. Read this first before answering any query or starti
 | SATs: Explanation and Relevance (Shawn Riley, LinkedIn) | [[sources/riley-sats-cybersecurity-2024\|Riley: SATs in Cybersecurity (2024)]] | 2026-05-19 | SATs, cybersecurity, roles |
 | LLM SATs FTW (Scott Roberts, sroberts.io) | [[sources/roberts-llm-sats-ftw-2025\|Roberts: LLM SATs FTW (2025)]] | 2026-05-19 | SATs, LLM-implementation, tools, starbursting, ACH, KAC |
 | Assessing the Value of SATs in the U.S. IC (Artner, Girven & Bruce — RAND) | [[sources/rand-rr1408-2016\|RAND RR1408 (2016)]] | 2026-05-19 | SAT-evaluation, ICD-203, empirical-studies, methodology, puzzles-mysteries-complexities |
+| Towards Understanding Sycophancy in Language Models (Sharma et al., Anthropic) | [[sources/sharma-sycophancy-2023\|Sharma et al. (2023)]] | 2026-05-19 | sycophancy, RLHF, alignment, preference-data |
+| Discovering Language Model Behaviors with Model-Written Evaluations (Perez et al., Anthropic) | [[sources/perez-mwe-2022\|Perez et al. (2022)]] | 2026-05-19 | sycophancy, inverse-scaling, evaluation, alignment |
+| A Survey on Hallucination in LLMs (Huang et al., ACM TOIS) | [[sources/huang-hallucination-survey-2023\|Huang et al. (2023)]] | 2026-05-19 | hallucination, taxonomy, detection, mitigation, RAG |
+| Language Models (Mostly) Know What They Know (Kadavath et al., Anthropic) | [[sources/kadavath-know-2022\|Kadavath et al. (2022)]] | 2026-05-19 | self-knowledge, calibration, introspection, hallucination |
+| Just Ask for Calibration (Tian et al., EMNLP 2023) | [[sources/tian-calibration-2023\|Tian et al. (2023)]] | 2026-05-19 | calibration, overconfidence, verbalized-uncertainty, RLHF |
+| Improving Factuality and Reasoning through Multiagent Debate (Du et al., MIT) | [[sources/du-debate-2023\|Du et al. (2023)]] | 2026-05-19 | multi-agent, debate, groupthink, factuality, reasoning |
+| Towards Measuring Subjective Global Opinions (Durmus et al., Anthropic) | [[sources/durmus-global-opinions-2023\|Durmus et al. (2023)]] | 2026-05-19 | cultural-bias, mirror-imaging, WEIRD, alignment |
+| Cognitive Bias in Decision-Making with LLMs (Echterhoff et al., BiasBuster) | [[sources/echterhoff-biasbuster-2024\|Echterhoff et al. (2024)]] | 2026-05-19 | cognitive-bias, anchoring, framing, availability, confirmation, debiasing |
 
 ---
 
@@ -41,6 +49,14 @@ This is the master catalog. Read this first before answering any query or starti
 | James B. Bruce | [[entities/james-bruce\|James B. Bruce]] | person | 1 |
 | RAND Corporation | [[entities/rand-corporation\|RAND Corporation]] | org | 1 |
 | Office of the Director of National Intelligence (ODNI) | [[entities/odni\|ODNI]] | org | 1 |
+| Anthropic | [[entities/anthropic\|Anthropic]] | org | 4 |
+| Mrinank Sharma | [[entities/mrinank-sharma\|Mrinank Sharma]] | person | 1 |
+| Ethan Perez | [[entities/ethan-perez\|Ethan Perez]] | person | 3 |
+| Saurav Kadavath | [[entities/saurav-kadavath\|Saurav Kadavath]] | person | 1 |
+| Esin Durmus | [[entities/esin-durmus\|Esin Durmus]] | person | 2 |
+| Katherine Tian | [[entities/katherine-tian\|Katherine Tian]] | person | 1 |
+| Yilun Du | [[entities/yilun-du\|Yilun Du]] | person | 1 |
+| Jessica Maria Echterhoff | [[entities/jessica-echterhoff\|Jessica Maria Echterhoff]] | person | 1 |
 
 ---
 
@@ -105,8 +121,8 @@ Sources in `Clippings/` not yet ingested into the wiki:
 
 ## Stats
 
-- **Sources ingested:** 4 (+1: RAND RR1408)
-- **Entity pages:** 16 (+5: Artner, Girven, Bruce, RAND Corporation, ODNI)
-- **Concept pages:** 30
-- **Synthesis pages:** 5
+- **Sources ingested:** 12 (+8 LLM-bias empirical papers: Sharma, Perez, Huang, Kadavath, Tian, Du, Durmus, Echterhoff)
+- **Entity pages:** 24 (+8: Anthropic, Sharma, Perez, Kadavath, Durmus, Tian, Du, Echterhoff)
+- **Concept pages:** 30 (all 12 bias pages + 2 LLM-native + others updated with Empirical Evidence sections)
+- **Synthesis pages:** 5 (hypotheses page significantly updated with empirical-status table)
 - **Last updated:** 2026-05-19

@@ -70,6 +70,14 @@ See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigati
 
 ---
 
+## Empirical Evidence (LLM)
+
+**No direct LLM studies of status quo bias were identified.** Adjacent literature on *self-consistency* (Wang et al. 2022 *Self-Consistency Improves Chain of Thought*) and on multi-turn consistency suggests LLMs drift toward maintaining their prior outputs — the functional equivalent of status quo bias in an agentic context.
+
+This is an **open empirical question**.
+
+---
+
 ## See Also
 
 [[concepts/cognitive-bias|Cognitive Bias]] | [[concepts/anchoring-bias|Anchoring Bias]] | [[concepts/motivated-reasoning|Motivated Reasoning]] | [[concepts/mind-set|Mind-Set]]

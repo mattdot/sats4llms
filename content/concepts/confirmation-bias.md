@@ -3,7 +3,7 @@ type: concept
 tags: [wiki/concept, wiki/bias]
 date_updated: 2026-05-19
 confidence: high
-source_count: 2
+source_count: 3
 ---
 
 # Confirmation Bias
@@ -75,6 +75,15 @@ See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigati
 - Nickerson, R. S. (1998). "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises." *Review of General Psychology*, 2(2), 175–220.
 - Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. (Chapter 4, Chapter 20)
 - [[entities/richards-j-heuer-jr|Richards j. heuer jr.]] — *The Psychology of Intelligence Analysis* (1999), Chapter 8
+
+---
+
+## Empirical Evidence (LLM)
+
+| Study | Finding |
+|---|---|
+| [[sources/echterhoff-biasbuster-2024\|Echterhoff et al. (BiasBuster, 2024)]] | Direct measurement of confirmation-bias-style probing in LLM decision-making. Bias is present across commercial and open-source models. |
+| [[sources/rand-rr1408-2016\|RAND RR1408 (2016)]] cites Mitre 2004 | ACH reduced confirmation bias in human analysts — but *only* among non-professionals. Implication: ACH may help generalist LLMs more than domain-tuned ones. Direct caution for [[synthesis/sat-llm-hypotheses\|H1]] experimental design. |
 
 ---
 

@@ -3,7 +3,7 @@ type: synthesis
 tags: [wiki/synthesis]
 date_updated: 2026-05-19
 query: "What testable hypotheses could verify that SATs actually improve qualitative LLM output in bias-prone scenarios?"
-sources_used: ["[[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]", "[[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]"]
+sources_used: ["[[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]]", "[[sources/roberts-llm-sats-ftw-2025|Roberts: LLM SATs FTW (2025)]]", "[[sources/rand-rr1408-2016|RAND RR1408 (2016)]]", "[[sources/sharma-sycophancy-2023|Sharma et al. (2023)]]", "[[sources/perez-mwe-2022|Perez et al. (2022)]]", "[[sources/huang-hallucination-survey-2023|Huang et al. (2023)]]", "[[sources/kadavath-know-2022|Kadavath et al. (2022)]]", "[[sources/tian-calibration-2023|Tian et al. (2023)]]", "[[sources/du-debate-2023|Du et al. (2023)]]", "[[sources/durmus-global-opinions-2023|Durmus et al. (2023)]]", "[[sources/echterhoff-biasbuster-2024|Echterhoff et al. (2024)]]"]
 confidence: medium
 ---
 
@@ -12,6 +12,25 @@ confidence: medium
 **Query:** What testable hypotheses could verify that [[Structured Analytic Techniques]] actually improve the *qualitative* output of LLMs in scenarios where [[Cognitive Bias]] is a likely failure mode?
 
 *Synthesis page — these are proposed experimental designs, not established findings. Confidence is medium: the bias-LLM analogies are well-grounded; the SAT-as-intervention claim is largely untested empirically.*
+
+---
+
+## Empirical Status Summary
+
+The wiki now references 9 papers directly relevant to these hypotheses. Where each H stands:
+
+| # | Status | Most relevant evidence |
+|---|---|---|
+| H0 | **Untested.** No published study directly measures semantic distance between SAT-structured and unstructured LLM outputs on identical inputs. | — |
+| H1 | **Partial caution.** [[sources/rand-rr1408-2016\|RAND RR1408]] cites Mitre 2004 — human ACH reduced confirmation bias only for non-experts. No LLM ACH-vs-baseline controlled comparison. | Mitre 2004; [[sources/echterhoff-biasbuster-2024\|Echterhoff 2024]] (confirmation bias is real in LLMs) |
+| H2 | **Strong caution.** [[sources/sharma-sycophancy-2023\|Sharma 2023]] confirms sycophancy is RLHF-induced and pervasive. No direct test of devil's-advocate roles surviving multi-turn pushback. | [[sources/sharma-sycophancy-2023\|Sharma 2023]], [[sources/perez-mwe-2022\|Perez 2022]] |
+| H3 | **Partial support.** [[sources/echterhoff-biasbuster-2024\|Echterhoff 2024]] shows self-debiasing prompts (functionally KAC-like) reduce anchoring effects. Open: does the effect hold across multi-turn agentic chains? | [[sources/echterhoff-biasbuster-2024\|Echterhoff 2024]] |
+| H4 | **Caution from cultural-bias work.** [[sources/durmus-global-opinions-2023\|Durmus 2023]] shows LLMs default to WEIRD opinions; persona-prompting works imperfectly. Adversarial robustness of LLM red-teaming not directly measured. | [[sources/durmus-global-opinions-2023\|Durmus 2023]] |
+| H5 | **Partial support.** [[sources/du-debate-2023\|Du 2023]] confirms multi-instance debate improves factuality and reasoning. Caveat: shared base model in Du's design — does not isolate the genuine-independence contribution. | [[sources/du-debate-2023\|Du 2023]] |
+| H6 | **Strong support.** [[sources/tian-calibration-2023\|Tian 2023]] shows verbalized confidence prompts recover ~50% of ECE. [[sources/kadavath-know-2022\|Kadavath 2022]] shows the information is internally present. What If? is a specific structured prompt that should activate the same mechanism. | [[sources/tian-calibration-2023\|Tian 2023]], [[sources/kadavath-know-2022\|Kadavath 2022]] |
+| H7 | **Foundational mechanism confirmed.** [[sources/kadavath-know-2022\|Kadavath 2022]] establishes that models internally represent uncertainty about their own claims. [[sources/huang-hallucination-survey-2023\|Huang 2023]] splits faithfulness from factuality — epistemic labeling is most plausible for the former. No direct test of structured labeling-before-synthesis. | [[sources/kadavath-know-2022\|Kadavath 2022]], [[sources/huang-hallucination-survey-2023\|Huang 2023]] |
+
+**Bottom line:** the structural argument has empirical backing (the biases are real in LLMs, and the *mechanisms* the SATs target are internally accessible). The intervention argument — that the specific SAT protocols actually exploit those mechanisms — is largely untested. The closest existing work is [[sources/echterhoff-biasbuster-2024\|Echterhoff's BiasBuster]] and [[sources/du-debate-2023\|Du's multi-agent debate]], both partial validations of H3 and H5 respectively.
 
 ---
 

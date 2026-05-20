@@ -3,7 +3,7 @@ type: concept
 tags: [wiki/concept, wiki/bias]
 date_updated: 2026-05-19
 confidence: high
-source_count: 1
+source_count: 2
 ---
 
 # Framing Effect
@@ -72,6 +72,14 @@ See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigati
 - Tversky, A. & Kahneman, D. (1981). "The Framing of Decisions and the Psychology of Choice." *Science*, 211(4481), 453–458.
 - Kahneman, D. & Tversky, A. (1979). "Prospect Theory: An Analysis of Decision under Risk." *Econometrica*, 47(2), 263–291.
 - Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. (Chapter 26: "Prospect Theory")
+
+---
+
+## Empirical Evidence (LLM)
+
+| Study | Finding |
+|---|---|
+| [[sources/echterhoff-biasbuster-2024\|Echterhoff et al. (BiasBuster, 2024)]] | Direct measurement of framing effects across LLMs — model responses shift with prompt framing even when underlying facts are identical. Mitigatable via self-debiasing prompts. |
 
 ---
 

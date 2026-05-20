@@ -3,7 +3,7 @@ type: concept
 tags: [wiki/concept, wiki/bias]
 date_updated: 2026-05-19
 confidence: high
-source_count: 1
+source_count: 2
 ---
 
 # Mirror Imaging
@@ -59,6 +59,16 @@ See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigati
 - Heuer, R. J. Jr. (1999). *The Psychology of Intelligence Analysis*, Chapter 4: "Strategies for Analytical Judgment." [[entities/richards-j-heuer-jr|Richards j. heuer jr.]]
 - Chang, W., et al. (2018). "Lessons from the Intelligence Community on Improving Forecasting." *Perspectives on Psychological Science*.
 - [[sources/tradecraft-primer-2009|CIA Tradecraft Primer (2009)]] — attribution bias in causality taxonomy
+
+---
+
+## Empirical Evidence (LLM)
+
+| Study | Finding |
+|---|---|
+| [[sources/durmus-global-opinions-2023\|Durmus et al. (2023)]] | LLM default responses align most with USA / Western European opinions (GlobalOpinionQA benchmark, derived from Pew + World Values Survey). Country-conditioning shifts opinion but introduces stereotyping. Translation alone does not shift opinion alignment. |
+
+**Implication for SATs:** [[concepts/red-team-analysis\|Red Team]] and [[concepts/outside-in-thinking\|Outside-In Thinking]] in an LLM context are operating on top of WEIRD priors. Persona prompts work imperfectly. Adversary modeling tends to produce sanitized Western-flavored adversaries by default. See [[synthesis/sat-llm-hypotheses\|H4]].
 
 ---
 

@@ -3,7 +3,7 @@ type: concept
 tags: [wiki/concept, wiki/bias]
 date_updated: 2026-05-19
 confidence: high
-source_count: 1
+source_count: 2
 ---
 
 # Anchoring Bias
@@ -64,6 +64,16 @@ See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigati
 - Tversky, A. & Kahneman, D. (1974). "Judgment Under Uncertainty: Heuristics and Biases." *Science*, 185(4157), 1124–1131.
 - Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. (Chapter 11: "Anchors")
 - [[entities/richards-j-heuer-jr|Richards j. heuer jr.]] — *The Psychology of Intelligence Analysis* (1999), pp. 111–113
+
+---
+
+## Empirical Evidence (LLM)
+
+| Study | Finding |
+|---|---|
+| [[sources/echterhoff-biasbuster-2024\|Echterhoff et al. (BiasBuster, 2024)]] | Direct measurement of anchoring across commercial and open-source models using a 13,465-prompt dataset. Anchoring is one of the strongest measured effects. Self-debiasing prompts (asking the model to identify and counter its own bias) reduce the effect. |
+
+**Implication for SATs:** [[concepts/key-assumptions-check\|KAC]]-style prompts that surface prompt-embedded anchors have empirical support. See [[synthesis/sat-llm-hypotheses\|H3]].
 
 ---
 

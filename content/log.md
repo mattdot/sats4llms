@@ -64,6 +64,41 @@ Parse latest entries: `grep "^## \[" Wiki/log.md | tail -5`
 
 ---
 
+## [2026-05-19] ingest | Eight LLM-bias empirical papers
+
+Following user request to ingest existing LLM-bias research rather than just cite it inline. Ingested as full source pages per CLAUDE.md schema, with author/institution entities and concept-page citations.
+
+**New source pages (8):**
+- `sources/sharma-sycophancy-2023.md` — Sharma et al. (Anthropic) on RLHF-induced sycophancy
+- `sources/perez-mwe-2022.md` — Perez et al. (Anthropic) model-written evals; sycophancy increases with scale + RLHF
+- `sources/huang-hallucination-survey-2023.md` — Huang et al. canonical hallucination survey (ACM TOIS); faithfulness vs factuality split
+- `sources/kadavath-know-2022.md` — Kadavath et al. (Anthropic) on LLM self-knowledge; P(True) is well-calibrated at scale
+- `sources/tian-calibration-2023.md` — Tian et al. (Stanford, EMNLP 2023) verbalized confidence recovers calibration
+- `sources/du-debate-2023.md` — Du et al. (MIT) multi-agent debate improves factuality/reasoning
+- `sources/durmus-global-opinions-2023.md` — Durmus et al. (Anthropic) GlobalOpinionQA, WEIRD bias quantified
+- `sources/echterhoff-biasbuster-2024.md` — Echterhoff et al. BiasBuster: anchoring, framing, availability, confirmation in LLMs
+
+**New entity pages (8):** Anthropic, Mrinank Sharma, Ethan Perez, Saurav Kadavath, Esin Durmus, Katherine Tian, Yilun Du, Jessica Echterhoff
+
+**Concept pages updated with Empirical Evidence (LLM) sections (12):**
+- Sycophancy (Sharma, Perez)
+- Hallucination (Huang, Kadavath)
+- Overconfidence Bias (Tian, Kadavath)
+- Mirror Imaging (Durmus)
+- Groupthink (Du)
+- Anchoring Bias, Framing Effect, Availability Heuristic, Confirmation Bias (Echterhoff)
+- Motivated Reasoning, Hindsight Bias, Status Quo Bias — gap notes added (no direct LLM studies)
+
+**Synthesis updated:**
+- `synthesis/sat-llm-hypotheses.md` — added "Empirical Status Summary" table mapping each of H0-H7 to current evidence
+- Sources_used frontmatter updated to include all 11 sources
+
+**Catalog updated:** Sources table (+8), Entities table (+8), Stats (12 sources / 24 entities)
+
+Pages touched: 30
+
+---
+
 ## [2026-05-19] expand | Bias reference pages + LLM synthesis
 
 - Created 9 individual bias concept pages with full academic references and LLM agentic systems context:

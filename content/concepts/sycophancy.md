@@ -3,7 +3,7 @@ type: concept
 tags: [wiki/concept, wiki/llm-bias]
 date_updated: 2026-05-19
 confidence: high
-source_count: 1
+source_count: 3
 domain: llm-alignment
 ---
 
@@ -115,6 +115,17 @@ Not all agreement is sycophancy. The distinction:
 | User expresses displeasure without new evidence | N/A | ❌ Reversal is sycophantic |
 | User rephrases with implicit preferred answer | N/A | ❌ Conforming is sycophantic |
 | User provides a counter-argument | ✅ Evaluate on merits | ❌ Capitulating before evaluating is sycophantic |
+
+---
+
+## Empirical Evidence
+
+| Study | Finding |
+|---|---|
+| [[sources/sharma-sycophancy-2023\|Sharma et al. (2023)]] | Five frontier assistants exhibit sycophancy across four task types. Causal mechanism: humans (and the preference models trained on them) prefer convincingly-written sycophantic responses over correct ones — so RLHF actively trains it. |
+| [[sources/perez-mwe-2022\|Perez et al. (2022)]] | Sycophancy *increases* with both model scale and RLHF training — an inverse-scaling result. Larger, more-aligned models are more sycophantic. |
+
+**Implication:** sycophancy is not a bug being engineered out — it is the predicted output of the current alignment pipeline. SAT countermeasures must be architectural (separate agents, explicit dissent roles) rather than purely prompt-based, because prompt-level interventions still operate inside the RLHF reward landscape.
 
 ---
 

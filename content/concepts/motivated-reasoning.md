@@ -3,7 +3,7 @@ type: concept
 tags: [wiki/concept, wiki/bias]
 date_updated: 2026-05-19
 confidence: high
-source_count: 1
+source_count: 2
 ---
 
 # Motivated Reasoning
@@ -68,6 +68,16 @@ See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigati
 - Festinger, L. (1957). *A Theory of Cognitive Dissonance*. Stanford University Press.
 - Nickerson, R. S. (1998). "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises." *Review of General Psychology*, 2(2), 175–220.
 - Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. (Chapter 4: "The Associative Machine")
+
+---
+
+## Empirical Evidence (LLM)
+
+**No direct LLM studies of this bias were identified as of the most recent literature review.** Adjacent work exists:
+
+- [[sources/sharma-sycophancy-2023|Sharma et al. (2023)]] — sycophancy is the closest LLM-native analog to motivated reasoning (model is "motivated" toward user-preferred conclusions via RLHF). The mechanism is structurally similar.
+
+This is an **open empirical question** — does motivated reasoning manifest in LLMs as a distinct phenomenon from sycophancy, or are the two indistinguishable in current systems?
 
 ---
 

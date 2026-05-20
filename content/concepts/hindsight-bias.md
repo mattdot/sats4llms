@@ -68,6 +68,14 @@ See [[synthesis/sats-for-llm-agents|SATs for LLM Agents]] for SAT-based mitigati
 
 ---
 
+## Empirical Evidence (LLM)
+
+**No direct LLM studies of hindsight bias were identified.** Adjacent observation: the practice of generating chain-of-thought *after* committing to an answer is functionally a study of LLM hindsight bias — the model rationalizes a pre-committed answer rather than reasoning to it. This pattern is well-documented anecdotally but has not been formally studied as a hindsight-bias phenomenon.
+
+This is an **open empirical question**.
+
+---
+
 ## See Also
 
 [[concepts/cognitive-bias|Cognitive Bias]] | [[concepts/overconfidence-bias|Overconfidence Bias]] | [[concepts/what-if-analysis|What If? Analysis]] | [[concepts/confirmation-bias|Confirmation Bias]]

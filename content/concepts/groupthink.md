@@ -3,7 +3,7 @@ type: concept
 tags: [wiki/concept, wiki/bias]
 date_updated: 2026-05-19
 confidence: high
-source_count: 2
+source_count: 3
 ---
 
 # Groupthink
@@ -68,6 +68,16 @@ Mitigation: architectural diversity (different models, different prompting), exp
 - Janis, I. L. (1982). *Groupthink: Psychological Studies of Policy Decisions and Fiascoes* (2nd ed.). Houghton Mifflin.
 - Kahneman, D. (2011). *Thinking, Fast and Slow*. (Chapter 23: "The Outside View")
 - [[sources/riley-sats-cybersecurity-2024|Riley: SATs in Cybersecurity (2024)]] — names groupthink as a target bias for cybersecurity SAT application
+
+---
+
+## Empirical Evidence (LLM)
+
+| Study | Finding |
+|---|---|
+| [[sources/du-debate-2023\|Du et al. (MIT, 2023)]] | Multi-instance multi-round debate significantly improves factuality and reasoning, reduces hallucination. The foundational "society of minds" result. |
+
+**Critical caveat for SAT design:** Du et al.'s "multiple instances" share the same base model. They share priors, biases, and failure modes — like polling identical analysts. Genuine groupthink-style independence requires *different* base models or genuinely-diverse prompt conditioning. See [[synthesis/sat-llm-hypotheses\|H5]] for the controlled-comparison design this implies.
 
 ---
 

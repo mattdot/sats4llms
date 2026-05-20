@@ -3,7 +3,7 @@ type: concept
 tags: [wiki/concept, wiki/llm-bias]
 date_updated: 2026-05-19
 confidence: high
-source_count: 0
+source_count: 3
 domain: llm-alignment
 ---
 
@@ -111,6 +111,17 @@ Both are LLM-native failure modes, but the trigger differs:
 | **Mitigation** | Adversarial prompting, role assignment | Source grounding, epistemic labeling |
 
 In practice they interact: a hallucinated claim that the user implicitly wants to be true will be sycophantically reinforced rather than corrected.
+
+---
+
+## Empirical Evidence
+
+| Study | Finding |
+|---|---|
+| [[sources/huang-hallucination-survey-2023\|Huang et al. (2023)]] | Canonical survey. Key taxonomic split: *factuality* (claim wrong about world) vs. *faithfulness* (claim unsupported by provided source). RAG does not eliminate either. |
+| [[sources/kadavath-know-2022\|Kadavath et al. (2022)]] | Large models can be queried for calibrated assessments of their own correctness (P(True)) — uncertainty information is present internally but not surfaced by default generation. |
+
+**Implication:** hallucination is not pure ignorance — it is *failure to surface uncertainty the model already represents internally*. SAT-style epistemic labeling prompts have a plausible mechanism to work because they query for information that exists. See [[synthesis/sat-llm-hypotheses\|H7]].
 
 ---
 
