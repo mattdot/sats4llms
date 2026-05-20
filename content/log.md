@@ -7,6 +7,19 @@ tags: [wiki/log]
 
 Append-only. Format: `## [YYYY-MM-DD] operation | Title`
 
+---
+
+## [2026-05-19] add | Bias Evaluations methodology page + soften homepage overclaim
+
+User feedback: bullet #3 on the homepage ("Implementation is now proven, not theoretical") overstated where the field actually is. Roberts and Du are early signal, not proof. Also: the idea of evaluations — building judges that detect bias as a failure mode in a reasoning trace — deserves its own page since it's the operational bridge from "hypothesis claim" to "actual experiment."
+
+- Created `synthesis/bias-evals.md` — methodology for bias judges. Covers: what a judge looks like per bias, three implementation modes (LLM, human, hybrid), methodology principles (process not outcome, counterfactual framing, multi-turn for sycophancy, different-model judges, pre-registration, calibration), per-hypothesis judge mapping, and what's new vs. existing eval literature.
+- Updated homepage bullet #3: now leads with "We can measure it" framing — evals + judges as what makes the thesis testable. Roberts and Du framed as "existence proofs in practice, not proof in general."
+- Added "I want to measure whether a bias actually impaired my flow" item to homepage "In Practice" section pointing to bias-evals
+- Updated catalog Synthesis Pages table (13 total)
+- Pages touched: 4
+
+
 Parse latest entries: `grep "^## \[" Wiki/log.md | tail -5`
 
 ---
